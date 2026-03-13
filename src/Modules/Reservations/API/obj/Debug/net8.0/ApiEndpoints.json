@@ -1,0 +1,34 @@
+[
+  {
+    "ContainingType": "EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController",
+    "Method": "CreateReservation",
+    "RelativePath": "api/modules/reservations",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "EventDrivenBookingPlatform.Modules.Reservations.Application.Commands.CreateReservation.CreateReservationCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController",
+    "Method": "GetReservation",
+    "RelativePath": "api/modules/reservations/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
