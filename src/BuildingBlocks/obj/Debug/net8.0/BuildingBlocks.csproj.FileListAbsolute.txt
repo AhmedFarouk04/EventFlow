@@ -10,3 +10,4 @@ C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Bu
 C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\BuildingBlocks\obj\Debug\net8.0\refint\BuildingBlocks.dll
 C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\BuildingBlocks\obj\Debug\net8.0\BuildingBlocks.pdb
 C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\BuildingBlocks\obj\Debug\net8.0\ref\BuildingBlocks.dll
+C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\BuildingBlocks\obj\Debug\net8.0\BuildingBlocks.sourcelink.json

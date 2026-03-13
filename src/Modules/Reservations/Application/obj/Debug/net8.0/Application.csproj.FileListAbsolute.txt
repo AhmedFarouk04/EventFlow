@@ -17,3 +17,4 @@ C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Mo
 C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Reservations\Application\obj\Debug\net8.0\refint\Application.dll
 C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Reservations\Application\obj\Debug\net8.0\Application.pdb
 C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Reservations\Application\obj\Debug\net8.0\ref\Application.dll
+C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Reservations\Application\obj\Debug\net8.0\Application.sourcelink.json

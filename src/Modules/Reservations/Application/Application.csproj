@@ -12,9 +12,7 @@
 
   <ItemGroup>
     <Folder Include="Events\" />
-    <Folder Include="DTOs\" />
     <Folder Include="Behaviors\" />
-    <Folder Include="Queries\" />
   </ItemGroup>
 
   <ItemGroup>

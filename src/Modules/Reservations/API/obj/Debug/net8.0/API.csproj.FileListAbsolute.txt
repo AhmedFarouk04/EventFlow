@@ -174,3 +174,4 @@ C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Mo
 C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Reservations\API\obj\Debug\net8.0\API.genruntimeconfig.cache
 C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Reservations\API\obj\Debug\net8.0\ref\API.dll
 C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Reservations\API\obj\Debug\net8.0\API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Reservations\API\obj\Debug\net8.0\API.sourcelink.json

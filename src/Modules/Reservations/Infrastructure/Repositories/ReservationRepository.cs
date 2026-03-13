@@ -36,4 +36,9 @@ public class ReservationRepository : IReservationRepository
     {
         await _dbContext.SaveChangesAsync(cancellationToken);
     }
+    public async Task<Reservation?> GetByIdAsync(Guid id)
+    {
+        return await _dbContext.Reservations
+            .FirstOrDefaultAsync(r => r.Id == id);
+    }
 }

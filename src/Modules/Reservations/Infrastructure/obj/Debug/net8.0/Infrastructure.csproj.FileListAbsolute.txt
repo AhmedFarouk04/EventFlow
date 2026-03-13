@@ -21,3 +21,4 @@ C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Mo
 C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Reservations\Infrastructure\obj\Debug\net8.0\Infrastructure.pdb
 C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Reservations\Infrastructure\obj\Debug\net8.0\Infrastructure.genruntimeconfig.cache
 C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Reservations\Infrastructure\obj\Debug\net8.0\ref\Infrastructure.dll
+C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Reservations\Infrastructure\obj\Debug\net8.0\Infrastructure.sourcelink.json

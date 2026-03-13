@@ -3,6 +3,30 @@
   "WorkspaceRootPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{475CFD7A-F446-4786-A707-13CA42249DEA}|src\\Modules\\Reservations\\API\\API.csproj|c:\\users\\ahmed\\downloads\\my-github\\eventdriven\\eventdrivenbookingplatform\\src\\modules\\reservations\\api\\controllers\\reservationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{475CFD7A-F446-4786-A707-13CA42249DEA}|src\\Modules\\Reservations\\API\\API.csproj|solutionrelative:src\\modules\\reservations\\api\\controllers\\reservationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CDD0B9B-2806-4AD1-996C-34C403148EAD}|src\\Modules\\Reservations\\Infrastructure\\Infrastructure.csproj|c:\\users\\ahmed\\downloads\\my-github\\eventdriven\\eventdrivenbookingplatform\\src\\modules\\reservations\\infrastructure\\repositories\\reservationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CDD0B9B-2806-4AD1-996C-34C403148EAD}|src\\Modules\\Reservations\\Infrastructure\\Infrastructure.csproj|solutionrelative:src\\modules\\reservations\\infrastructure\\repositories\\reservationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{120C1EA5-8648-42D6-3DD5-36D0D4E0EF2A}|src\\Modules\\Reservations\\Application\\Application.csproj|c:\\users\\ahmed\\downloads\\my-github\\eventdriven\\eventdrivenbookingplatform\\src\\modules\\reservations\\application\\interfaces\\ireservationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{120C1EA5-8648-42D6-3DD5-36D0D4E0EF2A}|src\\Modules\\Reservations\\Application\\Application.csproj|solutionrelative:src\\modules\\reservations\\application\\interfaces\\ireservationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{120C1EA5-8648-42D6-3DD5-36D0D4E0EF2A}|src\\Modules\\Reservations\\Application\\Application.csproj|c:\\users\\ahmed\\downloads\\my-github\\eventdriven\\eventdrivenbookingplatform\\src\\modules\\reservations\\application\\queries\\getreservationbyid\\getreservationbyidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{120C1EA5-8648-42D6-3DD5-36D0D4E0EF2A}|src\\Modules\\Reservations\\Application\\Application.csproj|solutionrelative:src\\modules\\reservations\\application\\queries\\getreservationbyid\\getreservationbyidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{120C1EA5-8648-42D6-3DD5-36D0D4E0EF2A}|src\\Modules\\Reservations\\Application\\Application.csproj|c:\\users\\ahmed\\downloads\\my-github\\eventdriven\\eventdrivenbookingplatform\\src\\modules\\reservations\\application\\queries\\getreservationbyid\\getreservationbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{120C1EA5-8648-42D6-3DD5-36D0D4E0EF2A}|src\\Modules\\Reservations\\Application\\Application.csproj|solutionrelative:src\\modules\\reservations\\application\\queries\\getreservationbyid\\getreservationbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{120C1EA5-8648-42D6-3DD5-36D0D4E0EF2A}|src\\Modules\\Reservations\\Application\\Application.csproj|c:\\users\\ahmed\\downloads\\my-github\\eventdriven\\eventdrivenbookingplatform\\src\\modules\\reservations\\application\\dtos\\reservationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{120C1EA5-8648-42D6-3DD5-36D0D4E0EF2A}|src\\Modules\\Reservations\\Application\\Application.csproj|solutionrelative:src\\modules\\reservations\\application\\dtos\\reservationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{475CFD7A-F446-4786-A707-13CA42249DEA}|src\\Modules\\Reservations\\API\\API.csproj|c:\\users\\ahmed\\downloads\\my-github\\eventdriven\\eventdrivenbookingplatform\\src\\modules\\reservations\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{475CFD7A-F446-4786-A707-13CA42249DEA}|src\\Modules\\Reservations\\API\\API.csproj|solutionrelative:src\\modules\\reservations\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8CDD0B9B-2806-4AD1-996C-34C403148EAD}|src\\Modules\\Reservations\\Infrastructure\\Infrastructure.csproj|c:\\users\\ahmed\\downloads\\my-github\\eventdriven\\eventdrivenbookingplatform\\src\\modules\\reservations\\infrastructure\\messaging\\outbox\\outboxstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8CDD0B9B-2806-4AD1-996C-34C403148EAD}|src\\Modules\\Reservations\\Infrastructure\\Infrastructure.csproj|solutionrelative:src\\modules\\reservations\\infrastructure\\messaging\\outbox\\outboxstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Infrastructure\\Persistence\\Migrations\\20260313064528_AddOutboxTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Modules\\Reservations\\Infrastructure\\Persistence\\Migrations\\20260313064528_AddOutboxTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8CDD0B9B-2806-4AD1-996C-34C403148EAD}|src\\Modules\\Reservations\\Infrastructure\\Infrastructure.csproj|c:\\users\\ahmed\\downloads\\my-github\\eventdriven\\eventdrivenbookingplatform\\src\\modules\\reservations\\infrastructure\\persistence\\reservationsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -79,28 +99,12 @@
       "RelativeMoniker": "D:0:0:{2C59E140-58BE-2575-EFA6-5EEF08D86238}|src\\BuildingBlocks\\BuildingBlocks.csproj|solutionrelative:src\\buildingblocks\\eventbus\\abstractions\\iintegrationevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Infrastructure\\Persistence\\Migrations\\20260313053331_InitialReservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Modules\\Reservations\\Infrastructure\\Persistence\\Migrations\\20260313053331_InitialReservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{475CFD7A-F446-4786-A707-13CA42249DEA}|src\\Modules\\Reservations\\API\\API.csproj|c:\\users\\ahmed\\downloads\\my-github\\eventdriven\\eventdrivenbookingplatform\\src\\modules\\reservations\\api\\controllers\\reservationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{475CFD7A-F446-4786-A707-13CA42249DEA}|src\\Modules\\Reservations\\API\\API.csproj|solutionrelative:src\\modules\\reservations\\api\\controllers\\reservationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8CDD0B9B-2806-4AD1-996C-34C403148EAD}|src\\Modules\\Reservations\\Infrastructure\\Infrastructure.csproj|c:\\users\\ahmed\\downloads\\my-github\\eventdriven\\eventdrivenbookingplatform\\src\\modules\\reservations\\infrastructure\\repositories\\reservationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8CDD0B9B-2806-4AD1-996C-34C403148EAD}|src\\Modules\\Reservations\\Infrastructure\\Infrastructure.csproj|solutionrelative:src\\modules\\reservations\\infrastructure\\repositories\\reservationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8CDD0B9B-2806-4AD1-996C-34C403148EAD}|src\\Modules\\Reservations\\Infrastructure\\Infrastructure.csproj|c:\\users\\ahmed\\downloads\\my-github\\eventdriven\\eventdrivenbookingplatform\\src\\modules\\reservations\\infrastructure\\persistence\\configurations\\reservationconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8CDD0B9B-2806-4AD1-996C-34C403148EAD}|src\\Modules\\Reservations\\Infrastructure\\Infrastructure.csproj|solutionrelative:src\\modules\\reservations\\infrastructure\\persistence\\configurations\\reservationconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{120C1EA5-8648-42D6-3DD5-36D0D4E0EF2A}|src\\Modules\\Reservations\\Application\\Application.csproj|c:\\users\\ahmed\\downloads\\my-github\\eventdriven\\eventdrivenbookingplatform\\src\\modules\\reservations\\application\\commands\\createreservation\\createreservationcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{120C1EA5-8648-42D6-3DD5-36D0D4E0EF2A}|src\\Modules\\Reservations\\Application\\Application.csproj|solutionrelative:src\\modules\\reservations\\application\\commands\\createreservation\\createreservationcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{120C1EA5-8648-42D6-3DD5-36D0D4E0EF2A}|src\\Modules\\Reservations\\Application\\Application.csproj|c:\\users\\ahmed\\downloads\\my-github\\eventdriven\\eventdrivenbookingplatform\\src\\modules\\reservations\\application\\interfaces\\ireservationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{120C1EA5-8648-42D6-3DD5-36D0D4E0EF2A}|src\\Modules\\Reservations\\Application\\Application.csproj|solutionrelative:src\\modules\\reservations\\application\\interfaces\\ireservationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{120C1EA5-8648-42D6-3DD5-36D0D4E0EF2A}|src\\Modules\\Reservations\\Application\\Application.csproj|c:\\users\\ahmed\\downloads\\my-github\\eventdriven\\eventdrivenbookingplatform\\src\\modules\\reservations\\application\\commands\\createreservation\\createreservationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -148,6 +152,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\EventDrivenBookingPlatform.Modules.Reservations.Domain\\Aggregates\\ReservationStatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EventDrivenBookingPlatform.Modules.Reservations.Domain\\Aggregates\\ReservationStatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CDD0B9B-2806-4AD1-996C-34C403148EAD}|src\\Modules\\Reservations\\Infrastructure\\Infrastructure.csproj|c:\\users\\ahmed\\downloads\\my-github\\eventdriven\\eventdrivenbookingplatform\\src\\modules\\reservations\\infrastructure\\persistence\\migrations\\20260313064528_addoutboxtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CDD0B9B-2806-4AD1-996C-34C403148EAD}|src\\Modules\\Reservations\\Infrastructure\\Infrastructure.csproj|solutionrelative:src\\modules\\reservations\\infrastructure\\persistence\\migrations\\20260313064528_addoutboxtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CDD0B9B-2806-4AD1-996C-34C403148EAD}|src\\Modules\\Reservations\\Infrastructure\\Infrastructure.csproj|c:\\users\\ahmed\\downloads\\my-github\\eventdriven\\eventdrivenbookingplatform\\src\\modules\\reservations\\infrastructure\\persistence\\migrations\\20260313053331_initialreservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CDD0B9B-2806-4AD1-996C-34C403148EAD}|src\\Modules\\Reservations\\Infrastructure\\Infrastructure.csproj|solutionrelative:src\\modules\\reservations\\infrastructure\\persistence\\migrations\\20260313053331_initialreservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -157,359 +169,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 19,
+          "SelectedChildIndex": 24,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\API\\appsettings.json",
-              "RelativeDocumentMoniker": "src\\Modules\\Reservations\\API\\appsettings.json",
-              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\API\\appsettings.json",
-              "RelativeToolTip": "src\\Modules\\Reservations\\API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-03-13T06:48:48.245Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "OutboxStore.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Infrastructure\\Messaging\\Outbox\\OutboxStore.cs",
-              "RelativeDocumentMoniker": "src\\Modules\\Reservations\\Infrastructure\\Messaging\\Outbox\\OutboxStore.cs",
-              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Infrastructure\\Messaging\\Outbox\\OutboxStore.cs",
-              "RelativeToolTip": "src\\Modules\\Reservations\\Infrastructure\\Messaging\\Outbox\\OutboxStore.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAIwCYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T06:48:23.256Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "20260313064528_AddOutboxTable.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Infrastructure\\Persistence\\Migrations\\20260313064528_AddOutboxTable.cs",
-              "RelativeDocumentMoniker": "src\\Modules\\Reservations\\Infrastructure\\Persistence\\Migrations\\20260313064528_AddOutboxTable.cs",
-              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Infrastructure\\Persistence\\Migrations\\20260313064528_AddOutboxTable.cs",
-              "RelativeToolTip": "src\\Modules\\Reservations\\Infrastructure\\Persistence\\Migrations\\20260313064528_AddOutboxTable.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAswA8AAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T06:45:29.133Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ReservationCreatedIntegrationEvent.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Contracts\\IntegrationEvents\\ReservationCreatedIntegrationEvent.cs",
-              "RelativeDocumentMoniker": "src\\Modules\\Reservations\\Contracts\\IntegrationEvents\\ReservationCreatedIntegrationEvent.cs",
-              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Contracts\\IntegrationEvents\\ReservationCreatedIntegrationEvent.cs",
-              "RelativeToolTip": "src\\Modules\\Reservations\\Contracts\\IntegrationEvents\\ReservationCreatedIntegrationEvent.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T06:44:07.963Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IdempotentHandler.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\Messaging\\Idempotency\\IdempotentHandler.cs",
-              "RelativeDocumentMoniker": "src\\BuildingBlocks\\Messaging\\Idempotency\\IdempotentHandler.cs",
-              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\Messaging\\Idempotency\\IdempotentHandler.cs",
-              "RelativeToolTip": "src\\BuildingBlocks\\Messaging\\Idempotency\\IdempotentHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T06:33:54.481Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ProcessedMessage.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\Messaging\\Idempotency\\ProcessedMessage.cs",
-              "RelativeDocumentMoniker": "src\\BuildingBlocks\\Messaging\\Idempotency\\ProcessedMessage.cs",
-              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\Messaging\\Idempotency\\ProcessedMessage.cs",
-              "RelativeToolTip": "src\\BuildingBlocks\\Messaging\\Idempotency\\ProcessedMessage.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T06:33:32.818Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "InboxProcessor.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\Messaging\\Inbox\\InboxProcessor.cs",
-              "RelativeDocumentMoniker": "src\\BuildingBlocks\\Messaging\\Inbox\\InboxProcessor.cs",
-              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\Messaging\\Inbox\\InboxProcessor.cs",
-              "RelativeToolTip": "src\\BuildingBlocks\\Messaging\\Inbox\\InboxProcessor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T06:33:16.583Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "InboxMessage.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\Messaging\\Inbox\\InboxMessage.cs",
-              "RelativeDocumentMoniker": "src\\BuildingBlocks\\Messaging\\Inbox\\InboxMessage.cs",
-              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\Messaging\\Inbox\\InboxMessage.cs",
-              "RelativeToolTip": "src\\BuildingBlocks\\Messaging\\Inbox\\InboxMessage.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T06:33:01.613Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "OutboxProcessor.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\Messaging\\Outbox\\OutboxProcessor.cs",
-              "RelativeDocumentMoniker": "src\\BuildingBlocks\\Messaging\\Outbox\\OutboxProcessor.cs",
-              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\Messaging\\Outbox\\OutboxProcessor.cs",
-              "RelativeToolTip": "src\\BuildingBlocks\\Messaging\\Outbox\\OutboxProcessor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T06:32:39.515Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "IOutboxStore.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\Messaging\\Outbox\\IOutboxStore.cs",
-              "RelativeDocumentMoniker": "src\\BuildingBlocks\\Messaging\\Outbox\\IOutboxStore.cs",
-              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\Messaging\\Outbox\\IOutboxStore.cs",
-              "RelativeToolTip": "src\\BuildingBlocks\\Messaging\\Outbox\\IOutboxStore.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T06:32:21.671Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "OutboxMessage.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\Messaging\\Outbox\\OutboxMessage.cs",
-              "RelativeDocumentMoniker": "src\\BuildingBlocks\\Messaging\\Outbox\\OutboxMessage.cs",
-              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\Messaging\\Outbox\\OutboxMessage.cs",
-              "RelativeToolTip": "src\\BuildingBlocks\\Messaging\\Outbox\\OutboxMessage.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T06:32:03.889Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "RabbitMqEventBus.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\EventBus\\RabbitMQ\\RabbitMqEventBus.cs",
-              "RelativeDocumentMoniker": "src\\BuildingBlocks\\EventBus\\RabbitMQ\\RabbitMqEventBus.cs",
-              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\EventBus\\RabbitMQ\\RabbitMqEventBus.cs",
-              "RelativeToolTip": "src\\BuildingBlocks\\EventBus\\RabbitMQ\\RabbitMqEventBus.cs",
-              "ViewState": "AgIAAJQAAAAAAAAAAAAIwLUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T06:04:50.424Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "RabbitMqConnection.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\EventBus\\RabbitMQ\\RabbitMqConnection.cs",
-              "RelativeDocumentMoniker": "src\\BuildingBlocks\\EventBus\\RabbitMQ\\RabbitMqConnection.cs",
-              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\EventBus\\RabbitMQ\\RabbitMqConnection.cs",
-              "RelativeToolTip": "src\\BuildingBlocks\\EventBus\\RabbitMQ\\RabbitMqConnection.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAIwGUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T05:42:21.181Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "RabbitMqOptions.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\EventBus\\RabbitMQ\\RabbitMqOptions.cs",
-              "RelativeDocumentMoniker": "src\\BuildingBlocks\\EventBus\\RabbitMQ\\RabbitMqOptions.cs",
-              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\EventBus\\RabbitMQ\\RabbitMqOptions.cs",
-              "RelativeToolTip": "src\\BuildingBlocks\\EventBus\\RabbitMQ\\RabbitMqOptions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T05:42:06.937Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "IEventBus.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\EventBus\\Abstractions\\IEventBus.cs",
-              "RelativeDocumentMoniker": "src\\BuildingBlocks\\EventBus\\Abstractions\\IEventBus.cs",
-              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\EventBus\\Abstractions\\IEventBus.cs",
-              "RelativeToolTip": "src\\BuildingBlocks\\EventBus\\Abstractions\\IEventBus.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T05:40:50.188Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "IIntegrationEventHandler.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\EventBus\\Abstractions\\IIntegrationEventHandler.cs",
-              "RelativeDocumentMoniker": "src\\BuildingBlocks\\EventBus\\Abstractions\\IIntegrationEventHandler.cs",
-              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\EventBus\\Abstractions\\IIntegrationEventHandler.cs",
-              "RelativeToolTip": "src\\BuildingBlocks\\EventBus\\Abstractions\\IIntegrationEventHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T05:40:34.908Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "IIntegrationEvent.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\EventBus\\Abstractions\\IIntegrationEvent.cs",
-              "RelativeDocumentMoniker": "src\\BuildingBlocks\\EventBus\\Abstractions\\IIntegrationEvent.cs",
-              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\EventBus\\Abstractions\\IIntegrationEvent.cs",
-              "RelativeToolTip": "src\\BuildingBlocks\\EventBus\\Abstractions\\IIntegrationEvent.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T05:40:14.221Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "20260313053331_InitialReservation.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Infrastructure\\Persistence\\Migrations\\20260313053331_InitialReservation.cs",
-              "RelativeDocumentMoniker": "src\\Modules\\Reservations\\Infrastructure\\Persistence\\Migrations\\20260313053331_InitialReservation.cs",
-              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Infrastructure\\Persistence\\Migrations\\20260313053331_InitialReservation.cs",
-              "RelativeToolTip": "src\\Modules\\Reservations\\Infrastructure\\Persistence\\Migrations\\20260313053331_InitialReservation.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAADwvzcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T05:33:31.567Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "ReservationsController.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\API\\Controllers\\ReservationsController.cs",
-              "RelativeDocumentMoniker": "src\\Modules\\Reservations\\API\\Controllers\\ReservationsController.cs",
-              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\API\\Controllers\\ReservationsController.cs",
-              "RelativeToolTip": "src\\Modules\\Reservations\\API\\Controllers\\ReservationsController.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAUwCUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T05:28:16.428Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\API\\Program.cs",
-              "RelativeDocumentMoniker": "src\\Modules\\Reservations\\API\\Program.cs",
-              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\API\\Program.cs",
-              "RelativeToolTip": "src\\Modules\\Reservations\\API\\Program.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAIwFEAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T05:27:57.668Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "ReservationRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Infrastructure\\Repositories\\ReservationRepository.cs",
-              "RelativeDocumentMoniker": "src\\Modules\\Reservations\\Infrastructure\\Repositories\\ReservationRepository.cs",
-              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Infrastructure\\Repositories\\ReservationRepository.cs",
-              "RelativeToolTip": "src\\Modules\\Reservations\\Infrastructure\\Repositories\\ReservationRepository.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAIwCYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T05:12:39.458Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ReservationsDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Infrastructure\\Persistence\\ReservationsDbContext.cs",
-              "RelativeDocumentMoniker": "src\\Modules\\Reservations\\Infrastructure\\Persistence\\ReservationsDbContext.cs",
-              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Infrastructure\\Persistence\\ReservationsDbContext.cs",
-              "RelativeToolTip": "src\\Modules\\Reservations\\Infrastructure\\Persistence\\ReservationsDbContext.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAD4vzQAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T05:12:19.947Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "ReservationConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Infrastructure\\Persistence\\Configurations\\ReservationConfiguration.cs",
-              "RelativeDocumentMoniker": "src\\Modules\\Reservations\\Infrastructure\\Persistence\\Configurations\\ReservationConfiguration.cs",
-              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Infrastructure\\Persistence\\Configurations\\ReservationConfiguration.cs",
-              "RelativeToolTip": "src\\Modules\\Reservations\\Infrastructure\\Persistence\\Configurations\\ReservationConfiguration.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAIwDAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T05:11:57.423Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "CreateReservationHandler.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Application\\Commands\\CreateReservation\\CreateReservationHandler.cs",
-              "RelativeDocumentMoniker": "src\\Modules\\Reservations\\Application\\Commands\\CreateReservation\\CreateReservationHandler.cs",
-              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Application\\Commands\\CreateReservation\\CreateReservationHandler.cs",
-              "RelativeToolTip": "src\\Modules\\Reservations\\Application\\Commands\\CreateReservation\\CreateReservationHandler.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAApwBMAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T05:04:49.993Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "CreateReservationCommand.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Application\\Commands\\CreateReservation\\CreateReservationCommand.cs",
-              "RelativeDocumentMoniker": "src\\Modules\\Reservations\\Application\\Commands\\CreateReservation\\CreateReservationCommand.cs",
-              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Application\\Commands\\CreateReservation\\CreateReservationCommand.cs",
-              "RelativeToolTip": "src\\Modules\\Reservations\\Application\\Commands\\CreateReservation\\CreateReservationCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T05:04:25.692Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "IReservationRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Application\\Interfaces\\IReservationRepository.cs",
-              "RelativeDocumentMoniker": "src\\Modules\\Reservations\\Application\\Interfaces\\IReservationRepository.cs",
-              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Application\\Interfaces\\IReservationRepository.cs",
-              "RelativeToolTip": "src\\Modules\\Reservations\\Application\\Interfaces\\IReservationRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T05:03:07.347Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Application",
-              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Application\\Application.csproj",
-              "RelativeDocumentMoniker": "src\\Modules\\Reservations\\Application\\Application.csproj",
-              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Application\\Application.csproj",
-              "RelativeToolTip": "src\\Modules\\Reservations\\Application\\Application.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-03-13T05:01:47.952Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
@@ -524,7 +185,374 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 3,
+              "Title": "GetReservationByIdHandler.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Application\\Queries\\GetReservationById\\GetReservationByIdHandler.cs",
+              "RelativeDocumentMoniker": "src\\Modules\\Reservations\\Application\\Queries\\GetReservationById\\GetReservationByIdHandler.cs",
+              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Application\\Queries\\GetReservationById\\GetReservationByIdHandler.cs",
+              "RelativeToolTip": "src\\Modules\\Reservations\\Application\\Queries\\GetReservationById\\GetReservationByIdHandler.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAIwBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T07:14:35.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GetReservationByIdQuery.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Application\\Queries\\GetReservationById\\GetReservationByIdQuery.cs",
+              "RelativeDocumentMoniker": "src\\Modules\\Reservations\\Application\\Queries\\GetReservationById\\GetReservationByIdQuery.cs",
+              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Application\\Queries\\GetReservationById\\GetReservationByIdQuery.cs",
+              "RelativeToolTip": "src\\Modules\\Reservations\\Application\\Queries\\GetReservationById\\GetReservationByIdQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T07:14:16.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ReservationDto.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Application\\DTOs\\ReservationDto.cs",
+              "RelativeDocumentMoniker": "src\\Modules\\Reservations\\Application\\DTOs\\ReservationDto.cs",
+              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Application\\DTOs\\ReservationDto.cs",
+              "RelativeToolTip": "src\\Modules\\Reservations\\Application\\DTOs\\ReservationDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T07:13:21.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\API\\appsettings.json",
+              "RelativeDocumentMoniker": "src\\Modules\\Reservations\\API\\appsettings.json",
+              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\API\\appsettings.json",
+              "RelativeToolTip": "src\\Modules\\Reservations\\API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-13T06:48:48.245Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OutboxStore.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Infrastructure\\Messaging\\Outbox\\OutboxStore.cs",
+              "RelativeDocumentMoniker": "src\\Modules\\Reservations\\Infrastructure\\Messaging\\Outbox\\OutboxStore.cs",
+              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Infrastructure\\Messaging\\Outbox\\OutboxStore.cs",
+              "RelativeToolTip": "src\\Modules\\Reservations\\Infrastructure\\Messaging\\Outbox\\OutboxStore.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAIwCYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T06:48:23.256Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "20260313064528_AddOutboxTable.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Infrastructure\\Persistence\\Migrations\\20260313064528_AddOutboxTable.cs",
+              "RelativeDocumentMoniker": "src\\Modules\\Reservations\\Infrastructure\\Persistence\\Migrations\\20260313064528_AddOutboxTable.cs",
+              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Infrastructure\\Persistence\\Migrations\\20260313064528_AddOutboxTable.cs",
+              "RelativeToolTip": "src\\Modules\\Reservations\\Infrastructure\\Persistence\\Migrations\\20260313064528_AddOutboxTable.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAswA8AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T06:45:29.133Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ReservationCreatedIntegrationEvent.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Contracts\\IntegrationEvents\\ReservationCreatedIntegrationEvent.cs",
+              "RelativeDocumentMoniker": "src\\Modules\\Reservations\\Contracts\\IntegrationEvents\\ReservationCreatedIntegrationEvent.cs",
+              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Contracts\\IntegrationEvents\\ReservationCreatedIntegrationEvent.cs",
+              "RelativeToolTip": "src\\Modules\\Reservations\\Contracts\\IntegrationEvents\\ReservationCreatedIntegrationEvent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T06:44:07.963Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IdempotentHandler.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\Messaging\\Idempotency\\IdempotentHandler.cs",
+              "RelativeDocumentMoniker": "src\\BuildingBlocks\\Messaging\\Idempotency\\IdempotentHandler.cs",
+              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\Messaging\\Idempotency\\IdempotentHandler.cs",
+              "RelativeToolTip": "src\\BuildingBlocks\\Messaging\\Idempotency\\IdempotentHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T06:33:54.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ProcessedMessage.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\Messaging\\Idempotency\\ProcessedMessage.cs",
+              "RelativeDocumentMoniker": "src\\BuildingBlocks\\Messaging\\Idempotency\\ProcessedMessage.cs",
+              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\Messaging\\Idempotency\\ProcessedMessage.cs",
+              "RelativeToolTip": "src\\BuildingBlocks\\Messaging\\Idempotency\\ProcessedMessage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T06:33:32.818Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "InboxProcessor.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\Messaging\\Inbox\\InboxProcessor.cs",
+              "RelativeDocumentMoniker": "src\\BuildingBlocks\\Messaging\\Inbox\\InboxProcessor.cs",
+              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\Messaging\\Inbox\\InboxProcessor.cs",
+              "RelativeToolTip": "src\\BuildingBlocks\\Messaging\\Inbox\\InboxProcessor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T06:33:16.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "InboxMessage.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\Messaging\\Inbox\\InboxMessage.cs",
+              "RelativeDocumentMoniker": "src\\BuildingBlocks\\Messaging\\Inbox\\InboxMessage.cs",
+              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\Messaging\\Inbox\\InboxMessage.cs",
+              "RelativeToolTip": "src\\BuildingBlocks\\Messaging\\Inbox\\InboxMessage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T06:33:01.613Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "OutboxProcessor.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\Messaging\\Outbox\\OutboxProcessor.cs",
+              "RelativeDocumentMoniker": "src\\BuildingBlocks\\Messaging\\Outbox\\OutboxProcessor.cs",
+              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\Messaging\\Outbox\\OutboxProcessor.cs",
+              "RelativeToolTip": "src\\BuildingBlocks\\Messaging\\Outbox\\OutboxProcessor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T06:32:39.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IOutboxStore.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\Messaging\\Outbox\\IOutboxStore.cs",
+              "RelativeDocumentMoniker": "src\\BuildingBlocks\\Messaging\\Outbox\\IOutboxStore.cs",
+              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\Messaging\\Outbox\\IOutboxStore.cs",
+              "RelativeToolTip": "src\\BuildingBlocks\\Messaging\\Outbox\\IOutboxStore.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T06:32:21.671Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "OutboxMessage.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\Messaging\\Outbox\\OutboxMessage.cs",
+              "RelativeDocumentMoniker": "src\\BuildingBlocks\\Messaging\\Outbox\\OutboxMessage.cs",
+              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\Messaging\\Outbox\\OutboxMessage.cs",
+              "RelativeToolTip": "src\\BuildingBlocks\\Messaging\\Outbox\\OutboxMessage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T06:32:03.889Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "RabbitMqEventBus.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\EventBus\\RabbitMQ\\RabbitMqEventBus.cs",
+              "RelativeDocumentMoniker": "src\\BuildingBlocks\\EventBus\\RabbitMQ\\RabbitMqEventBus.cs",
+              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\EventBus\\RabbitMQ\\RabbitMqEventBus.cs",
+              "RelativeToolTip": "src\\BuildingBlocks\\EventBus\\RabbitMQ\\RabbitMqEventBus.cs",
+              "ViewState": "AgIAAJQAAAAAAAAAAAAIwLUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T06:04:50.424Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "RabbitMqConnection.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\EventBus\\RabbitMQ\\RabbitMqConnection.cs",
+              "RelativeDocumentMoniker": "src\\BuildingBlocks\\EventBus\\RabbitMQ\\RabbitMqConnection.cs",
+              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\EventBus\\RabbitMQ\\RabbitMqConnection.cs",
+              "RelativeToolTip": "src\\BuildingBlocks\\EventBus\\RabbitMQ\\RabbitMqConnection.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAIwGUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T05:42:21.181Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "RabbitMqOptions.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\EventBus\\RabbitMQ\\RabbitMqOptions.cs",
+              "RelativeDocumentMoniker": "src\\BuildingBlocks\\EventBus\\RabbitMQ\\RabbitMqOptions.cs",
+              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\EventBus\\RabbitMQ\\RabbitMqOptions.cs",
+              "RelativeToolTip": "src\\BuildingBlocks\\EventBus\\RabbitMQ\\RabbitMqOptions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T05:42:06.937Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "IEventBus.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\EventBus\\Abstractions\\IEventBus.cs",
+              "RelativeDocumentMoniker": "src\\BuildingBlocks\\EventBus\\Abstractions\\IEventBus.cs",
+              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\EventBus\\Abstractions\\IEventBus.cs",
+              "RelativeToolTip": "src\\BuildingBlocks\\EventBus\\Abstractions\\IEventBus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T05:40:50.188Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "IIntegrationEventHandler.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\EventBus\\Abstractions\\IIntegrationEventHandler.cs",
+              "RelativeDocumentMoniker": "src\\BuildingBlocks\\EventBus\\Abstractions\\IIntegrationEventHandler.cs",
+              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\EventBus\\Abstractions\\IIntegrationEventHandler.cs",
+              "RelativeToolTip": "src\\BuildingBlocks\\EventBus\\Abstractions\\IIntegrationEventHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T05:40:34.908Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "IIntegrationEvent.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\EventBus\\Abstractions\\IIntegrationEvent.cs",
+              "RelativeDocumentMoniker": "src\\BuildingBlocks\\EventBus\\Abstractions\\IIntegrationEvent.cs",
+              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\EventBus\\Abstractions\\IIntegrationEvent.cs",
+              "RelativeToolTip": "src\\BuildingBlocks\\EventBus\\Abstractions\\IIntegrationEvent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T05:40:14.221Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "20260313053331_InitialReservation.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Infrastructure\\Persistence\\Migrations\\20260313053331_InitialReservation.cs",
+              "RelativeDocumentMoniker": "src\\Modules\\Reservations\\Infrastructure\\Persistence\\Migrations\\20260313053331_InitialReservation.cs",
+              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Infrastructure\\Persistence\\Migrations\\20260313053331_InitialReservation.cs",
+              "RelativeToolTip": "src\\Modules\\Reservations\\Infrastructure\\Persistence\\Migrations\\20260313053331_InitialReservation.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAADwvzcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T05:33:31.567Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ReservationsController.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\API\\Controllers\\ReservationsController.cs",
+              "RelativeDocumentMoniker": "src\\Modules\\Reservations\\API\\Controllers\\ReservationsController.cs",
+              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\API\\Controllers\\ReservationsController.cs",
+              "RelativeToolTip": "src\\Modules\\Reservations\\API\\Controllers\\ReservationsController.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAtwCEAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T05:28:16.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\API\\Program.cs",
+              "RelativeDocumentMoniker": "src\\Modules\\Reservations\\API\\Program.cs",
+              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\API\\Program.cs",
+              "RelativeToolTip": "src\\Modules\\Reservations\\API\\Program.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAIwFEAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T05:27:57.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ReservationRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Infrastructure\\Repositories\\ReservationRepository.cs",
+              "RelativeDocumentMoniker": "src\\Modules\\Reservations\\Infrastructure\\Repositories\\ReservationRepository.cs",
+              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Infrastructure\\Repositories\\ReservationRepository.cs",
+              "RelativeToolTip": "src\\Modules\\Reservations\\Infrastructure\\Repositories\\ReservationRepository.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAgwCgAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T05:12:39.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ReservationsDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Infrastructure\\Persistence\\ReservationsDbContext.cs",
+              "RelativeDocumentMoniker": "src\\Modules\\Reservations\\Infrastructure\\Persistence\\ReservationsDbContext.cs",
+              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Infrastructure\\Persistence\\ReservationsDbContext.cs",
+              "RelativeToolTip": "src\\Modules\\Reservations\\Infrastructure\\Persistence\\ReservationsDbContext.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAD4vzQAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T05:12:19.947Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ReservationConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Infrastructure\\Persistence\\Configurations\\ReservationConfiguration.cs",
+              "RelativeDocumentMoniker": "src\\Modules\\Reservations\\Infrastructure\\Persistence\\Configurations\\ReservationConfiguration.cs",
+              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Infrastructure\\Persistence\\Configurations\\ReservationConfiguration.cs",
+              "RelativeToolTip": "src\\Modules\\Reservations\\Infrastructure\\Persistence\\Configurations\\ReservationConfiguration.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAIwDAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T05:11:57.423Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "CreateReservationHandler.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Application\\Commands\\CreateReservation\\CreateReservationHandler.cs",
+              "RelativeDocumentMoniker": "src\\Modules\\Reservations\\Application\\Commands\\CreateReservation\\CreateReservationHandler.cs",
+              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Application\\Commands\\CreateReservation\\CreateReservationHandler.cs",
+              "RelativeToolTip": "src\\Modules\\Reservations\\Application\\Commands\\CreateReservation\\CreateReservationHandler.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAApwBMAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T05:04:49.993Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "CreateReservationCommand.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Application\\Commands\\CreateReservation\\CreateReservationCommand.cs",
+              "RelativeDocumentMoniker": "src\\Modules\\Reservations\\Application\\Commands\\CreateReservation\\CreateReservationCommand.cs",
+              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Application\\Commands\\CreateReservation\\CreateReservationCommand.cs",
+              "RelativeToolTip": "src\\Modules\\Reservations\\Application\\Commands\\CreateReservation\\CreateReservationCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T05:04:25.692Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IReservationRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Application\\Interfaces\\IReservationRepository.cs",
+              "RelativeDocumentMoniker": "src\\Modules\\Reservations\\Application\\Interfaces\\IReservationRepository.cs",
+              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Application\\Interfaces\\IReservationRepository.cs",
+              "RelativeToolTip": "src\\Modules\\Reservations\\Application\\Interfaces\\IReservationRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T05:03:07.347Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Application.csproj",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Application\\Application.csproj",
+              "RelativeDocumentMoniker": "src\\Modules\\Reservations\\Application\\Application.csproj",
+              "ToolTip": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Application\\Application.csproj",
+              "RelativeToolTip": "src\\Modules\\Reservations\\Application\\Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-13T05:01:47.952Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
               "Title": "Class1.cs",
               "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\EventDrivenBookingPlatform.Modules.Reservations.Application\\Class1.cs",
               "RelativeDocumentMoniker": "src\\Modules\\Reservations\\EventDrivenBookingPlatform.Modules.Reservations.Application\\Class1.cs",
@@ -535,7 +563,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "Microsoft.Managed.Core.targets",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\Roslyn\\Microsoft.Managed.Core.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\Roslyn\\Microsoft.Managed.Core.targets",
@@ -543,12 +571,11 @@
               "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\Roslyn\\Microsoft.Managed.Core.targets",
               "ViewState": "AgIAAKwAAAAAAAAAAAAjwL4AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2026-03-13T04:27:42.488Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-13T04:27:42.488Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "OverlappingReservationSpecification.cs",
               "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\EventDrivenBookingPlatform.Modules.Reservations.Domain\\Specifications\\OverlappingReservationSpecification.cs",
               "RelativeDocumentMoniker": "EventDrivenBookingPlatform.Modules.Reservations.Domain\\Specifications\\OverlappingReservationSpecification.cs",
@@ -559,7 +586,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "IBusinessRule.cs",
               "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\EventDrivenBookingPlatform.Modules.Reservations.Domain\\Rules\\IBusinessRule.cs",
               "RelativeDocumentMoniker": "EventDrivenBookingPlatform.Modules.Reservations.Domain\\Rules\\IBusinessRule.cs",
@@ -570,7 +597,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "TripDetails.cs",
               "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\EventDrivenBookingPlatform.Modules.Reservations.Domain\\ValueObjects\\TripDetails.cs",
               "RelativeDocumentMoniker": "EventDrivenBookingPlatform.Modules.Reservations.Domain\\ValueObjects\\TripDetails.cs",
@@ -581,7 +608,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "PriceDetails.cs",
               "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\EventDrivenBookingPlatform.Modules.Reservations.Domain\\ValueObjects\\PriceDetails.cs",
               "RelativeDocumentMoniker": "EventDrivenBookingPlatform.Modules.Reservations.Domain\\ValueObjects\\PriceDetails.cs",
@@ -592,7 +619,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "ReservationCreatedDomainEvent.cs",
               "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\EventDrivenBookingPlatform.Modules.Reservations.Domain\\Events\\ReservationCreatedDomainEvent.cs",
               "RelativeDocumentMoniker": "EventDrivenBookingPlatform.Modules.Reservations.Domain\\Events\\ReservationCreatedDomainEvent.cs",
@@ -603,7 +630,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "Reservation.cs",
               "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\EventDrivenBookingPlatform.Modules.Reservations.Domain\\Aggregates\\Reservation.cs",
               "RelativeDocumentMoniker": "EventDrivenBookingPlatform.Modules.Reservations.Domain\\Aggregates\\Reservation.cs",
@@ -614,7 +641,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "CustomerInfo.cs",
               "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\EventDrivenBookingPlatform.Modules.Reservations.Domain\\ValueObjects\\CustomerInfo.cs",
               "RelativeDocumentMoniker": "EventDrivenBookingPlatform.Modules.Reservations.Domain\\ValueObjects\\CustomerInfo.cs",
@@ -625,7 +652,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "ReservationStatus.cs",
               "DocumentMoniker": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\EventDrivenBookingPlatform.Modules.Reservations.Domain\\Aggregates\\ReservationStatus.cs",
               "RelativeDocumentMoniker": "EventDrivenBookingPlatform.Modules.Reservations.Domain\\Aggregates\\ReservationStatus.cs",

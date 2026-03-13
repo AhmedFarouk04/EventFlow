@@ -1,7 +1,7 @@
 ﻿using EventDrivenBookingPlatform.Modules.Reservations.Application.Commands.CreateReservation;
+using EventDrivenBookingPlatform.Modules.Reservations.Application.Queries.GetReservationById;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-
 namespace EventDrivenBookingPlatform.Modules.Reservations.API.Controllers;
 
 [ApiController]
@@ -28,11 +28,19 @@ public class ReservationsController : ControllerBase
         return CreatedAtAction(nameof(GetReservation), new { id = result.Value }, result.Value);
     }
 
-    [HttpGet("{id}")]
-    public IActionResult GetReservation(Guid id)
+    
+
+    [HttpGet("{id:guid}")]
+    public async Task<IActionResult> GetReservation(Guid id)
     {
-        // Placeholder for the Query side (CQRS)
-        // We will implement this later when we fill the Queries folder
-        return Ok(new { Message = $"Reservation {id} details will be fetched here." });
+        var query = new GetReservationByIdQuery(id);
+        var reservation = await _mediator.Send(query);
+
+        if (reservation == null)
+        {
+            return NotFound(new { message = $"Reservation with ID {id} not found." });
+        }
+
+        return Ok(reservation);
     }
 }
