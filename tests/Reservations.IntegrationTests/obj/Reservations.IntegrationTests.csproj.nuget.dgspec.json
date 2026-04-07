@@ -1,0 +1,1895 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\tests\\Reservations.IntegrationTests\\Reservations.IntegrationTests.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\BuildingBlocks.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\BuildingBlocks.csproj",
+        "projectName": "BuildingBlocks",
+        "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\BuildingBlocks.csproj",
+        "packagesPath": "C:\\Users\\ahmed\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[10.0.5, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[10.0.5, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[10.0.5, )"
+            },
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[10.0.5, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.8.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.312/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Audit\\Application\\Audit.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Audit\\Application\\Audit.Application.csproj",
+        "projectName": "Audit.Application",
+        "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Audit\\Application\\Audit.Application.csproj",
+        "packagesPath": "C:\\Users\\ahmed\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Audit\\Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\BuildingBlocks.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\BuildingBlocks.csproj"
+              },
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Availability\\Contracts\\Availability.Contracts.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Availability\\Contracts\\Availability.Contracts.csproj"
+              },
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Pricing\\Contracts\\Pricing.Contracts.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Pricing\\Contracts\\Pricing.Contracts.csproj"
+              },
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Contracts\\Contracts.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Contracts\\Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[14.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.312/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Audit\\Infrastructure\\Audit.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Audit\\Infrastructure\\Audit.Infrastructure.csproj",
+        "projectName": "Audit.Infrastructure",
+        "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Audit\\Infrastructure\\Audit.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\ahmed\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Audit\\Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Audit\\Application\\Audit.Application.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Audit\\Application\\Audit.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.25, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.25, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.25, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.312/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Availability\\Application\\Availability.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Availability\\Application\\Availability.Application.csproj",
+        "projectName": "Availability.Application",
+        "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Availability\\Application\\Availability.Application.csproj",
+        "packagesPath": "C:\\Users\\ahmed\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Availability\\Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\BuildingBlocks.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\BuildingBlocks.csproj"
+              },
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Availability\\Contracts\\Availability.Contracts.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Availability\\Contracts\\Availability.Contracts.csproj"
+              },
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Availability\\Domain\\Availability.Domain.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Availability\\Domain\\Availability.Domain.csproj"
+              },
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Contracts\\Contracts.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Contracts\\Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[14.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.312/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Availability\\Contracts\\Availability.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Availability\\Contracts\\Availability.Contracts.csproj",
+        "projectName": "Availability.Contracts",
+        "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Availability\\Contracts\\Availability.Contracts.csproj",
+        "packagesPath": "C:\\Users\\ahmed\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Availability\\Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\BuildingBlocks.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\BuildingBlocks.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.312/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Availability\\Domain\\Availability.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Availability\\Domain\\Availability.Domain.csproj",
+        "projectName": "Availability.Domain",
+        "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Availability\\Domain\\Availability.Domain.csproj",
+        "packagesPath": "C:\\Users\\ahmed\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Availability\\Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\BuildingBlocks.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\BuildingBlocks.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.312/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Availability\\Infrastructure\\Availability.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Availability\\Infrastructure\\Availability.Infrastructure.csproj",
+        "projectName": "Availability.Infrastructure",
+        "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Availability\\Infrastructure\\Availability.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\ahmed\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Availability\\Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\BuildingBlocks.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\BuildingBlocks.csproj"
+              },
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Availability\\Application\\Availability.Application.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Availability\\Application\\Availability.Application.csproj"
+              },
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Availability\\Contracts\\Availability.Contracts.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Availability\\Contracts\\Availability.Contracts.csproj"
+              },
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Availability\\Domain\\Availability.Domain.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Availability\\Domain\\Availability.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.25, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.25, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.25, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.312/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Notifications\\Application\\Notifications.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Notifications\\Application\\Notifications.Application.csproj",
+        "projectName": "Notifications.Application",
+        "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Notifications\\Application\\Notifications.Application.csproj",
+        "packagesPath": "C:\\Users\\ahmed\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Notifications\\Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\BuildingBlocks.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\BuildingBlocks.csproj"
+              },
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Contracts\\Contracts.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Contracts\\Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[14.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.312/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Notifications\\Infrastructure\\Notifications.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Notifications\\Infrastructure\\Notifications.Infrastructure.csproj",
+        "projectName": "Notifications.Infrastructure",
+        "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Notifications\\Infrastructure\\Notifications.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\ahmed\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Notifications\\Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Notifications\\Application\\Notifications.Application.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Notifications\\Application\\Notifications.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.25, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.25, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.25, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.312/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Pricing\\Application\\Pricing.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Pricing\\Application\\Pricing.Application.csproj",
+        "projectName": "Pricing.Application",
+        "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Pricing\\Application\\Pricing.Application.csproj",
+        "packagesPath": "C:\\Users\\ahmed\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Pricing\\Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\BuildingBlocks.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\BuildingBlocks.csproj"
+              },
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Pricing\\Contracts\\Pricing.Contracts.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Pricing\\Contracts\\Pricing.Contracts.csproj"
+              },
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Pricing\\Domain\\Pricing.Domain.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Pricing\\Domain\\Pricing.Domain.csproj"
+              },
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Contracts\\Contracts.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Contracts\\Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[14.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.312/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Pricing\\Contracts\\Pricing.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Pricing\\Contracts\\Pricing.Contracts.csproj",
+        "projectName": "Pricing.Contracts",
+        "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Pricing\\Contracts\\Pricing.Contracts.csproj",
+        "packagesPath": "C:\\Users\\ahmed\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Pricing\\Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\BuildingBlocks.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\BuildingBlocks.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.312/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Pricing\\Domain\\Pricing.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Pricing\\Domain\\Pricing.Domain.csproj",
+        "projectName": "Pricing.Domain",
+        "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Pricing\\Domain\\Pricing.Domain.csproj",
+        "packagesPath": "C:\\Users\\ahmed\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Pricing\\Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\BuildingBlocks.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\BuildingBlocks.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.312/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Pricing\\Infrastructure\\Pricing.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Pricing\\Infrastructure\\Pricing.Infrastructure.csproj",
+        "projectName": "Pricing.Infrastructure",
+        "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Pricing\\Infrastructure\\Pricing.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\ahmed\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Pricing\\Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\BuildingBlocks.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\BuildingBlocks.csproj"
+              },
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Pricing\\Application\\Pricing.Application.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Pricing\\Application\\Pricing.Application.csproj"
+              },
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Pricing\\Contracts\\Pricing.Contracts.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Pricing\\Contracts\\Pricing.Contracts.csproj"
+              },
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Pricing\\Domain\\Pricing.Domain.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Pricing\\Domain\\Pricing.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.25, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.25, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.25, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.312/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\API\\API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\API\\API.csproj",
+        "projectName": "API",
+        "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\ahmed\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\API\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Audit\\Application\\Audit.Application.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Audit\\Application\\Audit.Application.csproj"
+              },
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Audit\\Infrastructure\\Audit.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Audit\\Infrastructure\\Audit.Infrastructure.csproj"
+              },
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Availability\\Application\\Availability.Application.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Availability\\Application\\Availability.Application.csproj"
+              },
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Availability\\Infrastructure\\Availability.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Availability\\Infrastructure\\Availability.Infrastructure.csproj"
+              },
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Notifications\\Application\\Notifications.Application.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Notifications\\Application\\Notifications.Application.csproj"
+              },
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Notifications\\Infrastructure\\Notifications.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Notifications\\Infrastructure\\Notifications.Infrastructure.csproj"
+              },
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Pricing\\Application\\Pricing.Application.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Pricing\\Application\\Pricing.Application.csproj"
+              },
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Pricing\\Infrastructure\\Pricing.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Pricing\\Infrastructure\\Pricing.Infrastructure.csproj"
+              },
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Application\\Application.csproj"
+              },
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Infrastructure\\Infrastructure.csproj"
+              },
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Users\\Application\\Users.Application.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Users\\Application\\Users.Application.csproj"
+              },
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Users\\Infrastructure\\Users.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Users\\Infrastructure\\Users.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[11.11.0, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[8.0.21, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.25, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Serilog.Settings.Configuration": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Serilog.Sinks.Console": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Serilog.Sinks.File": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.6.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.312/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Application\\Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Application\\Application.csproj",
+        "projectName": "Application",
+        "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\ahmed\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\BuildingBlocks.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\BuildingBlocks.csproj"
+              },
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Contracts\\Contracts.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Contracts\\Contracts.csproj"
+              },
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Domain\\Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[12.1.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[14.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.312/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Contracts\\Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Contracts\\Contracts.csproj",
+        "projectName": "Contracts",
+        "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Contracts\\Contracts.csproj",
+        "packagesPath": "C:\\Users\\ahmed\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\BuildingBlocks.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\BuildingBlocks.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.312/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Domain\\Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\ahmed\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\BuildingBlocks.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\BuildingBlocks.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.312/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Infrastructure\\Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Infrastructure\\Infrastructure.csproj",
+        "projectName": "Infrastructure",
+        "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\ahmed\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\BuildingBlocks.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\BuildingBlocks.csproj"
+              },
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Application\\Application.csproj"
+              },
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Contracts\\Contracts.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Contracts\\Contracts.csproj"
+              },
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Domain\\Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.25, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.25, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.25, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.312/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Users\\Application\\Users.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Users\\Application\\Users.Application.csproj",
+        "projectName": "Users.Application",
+        "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Users\\Application\\Users.Application.csproj",
+        "packagesPath": "C:\\Users\\ahmed\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Users\\Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Users\\Domain\\Users.Domain.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Users\\Domain\\Users.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[14.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.312/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Users\\Domain\\Users.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Users\\Domain\\Users.Domain.csproj",
+        "projectName": "Users.Domain",
+        "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Users\\Domain\\Users.Domain.csproj",
+        "packagesPath": "C:\\Users\\ahmed\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Users\\Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\BuildingBlocks.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\BuildingBlocks.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.312/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Users\\Infrastructure\\Users.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Users\\Infrastructure\\Users.Infrastructure.csproj",
+        "projectName": "Users.Infrastructure",
+        "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Users\\Infrastructure\\Users.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\ahmed\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Users\\Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Users\\Application\\Users.Application.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Users\\Application\\Users.Application.csproj"
+              },
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Users\\Domain\\Users.Domain.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Users\\Domain\\Users.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.25, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.25, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.25, )"
+            },
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[10.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.312/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\tests\\Reservations.IntegrationTests\\Reservations.IntegrationTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\tests\\Reservations.IntegrationTests\\Reservations.IntegrationTests.csproj",
+        "projectName": "Reservations.IntegrationTests",
+        "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\tests\\Reservations.IntegrationTests\\Reservations.IntegrationTests.csproj",
+        "packagesPath": "C:\\Users\\ahmed\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\tests\\Reservations.IntegrationTests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\BuildingBlocks.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks\\BuildingBlocks.csproj"
+              },
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\API\\API.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\API\\API.csproj"
+              },
+              "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Infrastructure\\Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Testing": {
+              "target": "Package",
+              "version": "[8.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[8.0.25, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.12.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.9.2, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.8.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.312/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

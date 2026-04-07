@@ -1,4 +1,4 @@
-﻿namespace EventDrivenBookingPlatform.BuildingBlocks.Messaging.Outbox;
+namespace EventDrivenBookingPlatform.BuildingBlocks.Messaging.Outbox;
 
 public class OutboxMessage
 {
@@ -7,5 +7,7 @@ public class OutboxMessage
     public string Content { get; set; } = string.Empty;
     public DateTime OccurredOn { get; set; }
     public DateTime? ProcessedOn { get; set; }
+    public int RetryCount { get; set; }
+    public DateTime? LastRetryOn { get; set; }
     public string? Error { get; set; }
 }

@@ -33,7 +33,11 @@ namespace Infrastructure.Persistence.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Error")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(2000)
+                        .HasColumnType("nvarchar(2000)");
+
+                    b.Property<DateTime?>("LastRetryOn")
+                        .HasColumnType("datetime2");
 
                     b.Property<DateTime>("OccurredOn")
                         .HasColumnType("datetime2");
@@ -41,13 +45,19 @@ namespace Infrastructure.Persistence.Migrations
                     b.Property<DateTime?>("ProcessedOn")
                         .HasColumnType("datetime2");
 
+                    b.Property<int>("RetryCount")
+                        .HasColumnType("int");
+
                     b.Property<string>("Type")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
 
                     b.HasKey("Id");
 
-                    b.ToTable("OutboxMessages");
+                    b.HasIndex("ProcessedOn");
+
+                    b.ToTable("OutboxMessages", (string)null);
                 });
 
             modelBuilder.Entity("EventDrivenBookingPlatform.Modules.Reservations.Domain.Aggregates.Reservation", b =>
@@ -56,30 +66,16 @@ namespace Infrastructure.Persistence.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<DateTime>("CheckInDate")
-                        .HasColumnType("datetime2");
+                    b.Property<Guid>("CustomerId")
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<DateTime>("CheckOutDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("LastModified")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("NumberOfGuests")
-                        .HasColumnType("int");
-
-                    b.Property<string>("SpecialRequests")
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
+                    b.Property<Guid>("ServiceId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<int>("Status")
                         .HasColumnType("int");
 
                     b.Property<int>("Version")
-                        .IsConcurrencyToken()
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -87,36 +83,47 @@ namespace Infrastructure.Persistence.Migrations
                     b.ToTable("Reservations", (string)null);
                 });
 
+            modelBuilder.Entity("EventDrivenBookingPlatform.Modules.Reservations.Domain.Entities.ReservationItem", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(150)
+                        .HasColumnType("nvarchar(150)");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.Property<Guid>("ReservationId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<decimal>("UnitPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ReservationId");
+
+                    b.ToTable("ReservationItems", (string)null);
+                });
+
             modelBuilder.Entity("EventDrivenBookingPlatform.Modules.Reservations.Domain.Aggregates.Reservation", b =>
                 {
-                    b.OwnsOne("EventDrivenBookingPlatform.Modules.Reservations.Domain.ValueObjects.CustomerInfo", "CustomerInfo", b1 =>
+                    b.OwnsOne("EventDrivenBookingPlatform.Modules.Reservations.Domain.ValueObjects.DateRange", "DateRange", b1 =>
                         {
                             b1.Property<Guid>("ReservationId")
                                 .HasColumnType("uniqueidentifier");
 
-                            b1.Property<string>("Email")
-                                .IsRequired()
-                                .HasMaxLength(255)
-                                .HasColumnType("nvarchar(255)");
+                            b1.Property<DateTime>("EndDate")
+                                .HasColumnType("datetime2")
+                                .HasColumnName("EndDate");
 
-                            b1.Property<string>("FullName")
-                                .IsRequired()
-                                .HasMaxLength(100)
-                                .HasColumnType("nvarchar(100)");
-
-                            b1.Property<string>("Nationality")
-                                .IsRequired()
-                                .HasMaxLength(2)
-                                .HasColumnType("nvarchar(2)");
-
-                            b1.Property<string>("PassportNumber")
-                                .HasMaxLength(12)
-                                .HasColumnType("nvarchar(12)");
-
-                            b1.Property<string>("PhoneNumber")
-                                .IsRequired()
-                                .HasMaxLength(15)
-                                .HasColumnType("nvarchar(15)");
+                            b1.Property<DateTime>("StartDate")
+                                .HasColumnType("datetime2")
+                                .HasColumnName("StartDate");
 
                             b1.HasKey("ReservationId");
 
@@ -126,73 +133,22 @@ namespace Infrastructure.Persistence.Migrations
                                 .HasForeignKey("ReservationId");
                         });
 
-                    b.OwnsOne("EventDrivenBookingPlatform.Modules.Reservations.Domain.ValueObjects.PriceDetails", "PriceDetails", b1 =>
-                        {
-                            b1.Property<Guid>("ReservationId")
-                                .HasColumnType("uniqueidentifier");
-
-                            b1.Property<decimal>("BasePrice")
-                                .HasColumnType("decimal(18,2)");
-
-                            b1.Property<string>("Currency")
-                                .IsRequired()
-                                .HasMaxLength(3)
-                                .HasColumnType("nvarchar(3)");
-
-                            b1.Property<decimal>("Discounts")
-                                .HasColumnType("decimal(18,2)");
-
-                            b1.Property<decimal>("Taxes")
-                                .HasColumnType("decimal(18,2)");
-
-                            b1.Property<decimal>("TotalPrice")
-                                .HasColumnType("decimal(18,2)");
-
-                            b1.HasKey("ReservationId");
-
-                            b1.ToTable("Reservations");
-
-                            b1.WithOwner()
-                                .HasForeignKey("ReservationId");
-                        });
-
-                    b.OwnsOne("EventDrivenBookingPlatform.Modules.Reservations.Domain.ValueObjects.TripDetails", "TripDetails", b1 =>
-                        {
-                            b1.Property<Guid>("ReservationId")
-                                .HasColumnType("uniqueidentifier");
-
-                            b1.Property<string>("Destination")
-                                .IsRequired()
-                                .HasMaxLength(100)
-                                .HasColumnType("nvarchar(100)");
-
-                            b1.Property<int>("Duration")
-                                .HasColumnType("int");
-
-                            b1.Property<Guid>("TripId")
-                                .HasColumnType("uniqueidentifier");
-
-                            b1.Property<string>("TripName")
-                                .IsRequired()
-                                .HasMaxLength(200)
-                                .HasColumnType("nvarchar(200)");
-
-                            b1.HasKey("ReservationId");
-
-                            b1.ToTable("Reservations");
-
-                            b1.WithOwner()
-                                .HasForeignKey("ReservationId");
-                        });
-
-                    b.Navigation("CustomerInfo")
+                    b.Navigation("DateRange")
                         .IsRequired();
+                });
 
-                    b.Navigation("PriceDetails")
+            modelBuilder.Entity("EventDrivenBookingPlatform.Modules.Reservations.Domain.Entities.ReservationItem", b =>
+                {
+                    b.HasOne("EventDrivenBookingPlatform.Modules.Reservations.Domain.Aggregates.Reservation", null)
+                        .WithMany("Items")
+                        .HasForeignKey("ReservationId")
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
 
-                    b.Navigation("TripDetails")
-                        .IsRequired();
+            modelBuilder.Entity("EventDrivenBookingPlatform.Modules.Reservations.Domain.Aggregates.Reservation", b =>
+                {
+                    b.Navigation("Items");
                 });
 #pragma warning restore 612, 618
         }

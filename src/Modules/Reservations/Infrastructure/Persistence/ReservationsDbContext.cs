@@ -1,4 +1,4 @@
-﻿using EventDrivenBookingPlatform.BuildingBlocks.Messaging.Outbox;
+using EventDrivenBookingPlatform.BuildingBlocks.Messaging.Outbox;
 using EventDrivenBookingPlatform.BuildingBlocks.SharedKernel;
 using EventDrivenBookingPlatform.Modules.Reservations.Contracts.IntegrationEvents;
 using EventDrivenBookingPlatform.Modules.Reservations.Domain.Aggregates;
@@ -15,8 +15,8 @@ public class ReservationsDbContext : DbContext
     {
     }
 
-    public DbSet<Reservation> Reservations { get; set; }
-    public DbSet<OutboxMessage> OutboxMessages { get; set; } // ضفنا جدول الأوت بوكس
+    public DbSet<Reservation> Reservations => Set<Reservation>();
+    public DbSet<OutboxMessage> OutboxMessages => Set<OutboxMessage>();
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -24,55 +24,69 @@ public class ReservationsDbContext : DbContext
         modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
     }
 
-    // السحر كله بيحصل هنا قبل ما نسيف في الداتابيز
     public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
     {
-        // 1. نجيب كل الكيانات اللي حصل فيها أحداث
         var domainEntities = ChangeTracker
             .Entries<BaseEntity>()
-            .Where(x => x.Entity.DomainEvents != null && x.Entity.DomainEvents.Any())
+            .Where(x => x.Entity.DomainEvents.Any())
             .ToList();
 
-        // 2. نسحب الأحداث دي
         var domainEvents = domainEntities
             .SelectMany(x => x.Entity.DomainEvents)
             .ToList();
 
-        // 3. نفضي الأحداث من الكيانات عشان متتنفذش تاني
         domainEntities.ForEach(entity => entity.Entity.ClearDomainEvents());
 
-        // 4. نحول الـ Domain Event لـ Integration Event ونجهزه يتحفظ في الـ Outbox
-        var outboxMessages = domainEvents.Select(domainEvent =>
+        var outboxMessages = domainEvents
+            .Select(MapToOutboxMessage)
+            .Where(x => x is not null)
+            .Cast<OutboxMessage>()
+            .ToList();
+
+        if (outboxMessages.Count > 0)
         {
-            object? integrationEvent = domainEvent switch
-            {
-                ReservationCreatedDomainEvent e => new ReservationCreatedIntegrationEvent(
-                    e.ReservationId,
-                    e.CustomerEmail,
-                    e.CheckInDate,
-                    e.CheckOutDate,
-                    e.TotalPrice),
-                _ => null
-            };
-
-            if (integrationEvent == null) return null;
-
-            return new OutboxMessage
-            {
-                Id = Guid.NewGuid(),
-                OccurredOn = DateTime.UtcNow,
-                Type = integrationEvent.GetType().AssemblyQualifiedName ?? integrationEvent.GetType().FullName!,
-                Content = JsonSerializer.Serialize(integrationEvent)
-            };
-        }).Where(m => m != null).ToList();
-
-        // 5. نضيف الرسايل دي لجدول الـ Outbox
-        if (outboxMessages.Any())
-        {
-            await OutboxMessages.AddRangeAsync(outboxMessages!, cancellationToken);
+            await OutboxMessages.AddRangeAsync(outboxMessages, cancellationToken);
         }
 
-        // 6. نحفظ كل حاجة (الحجز + الرسالة) في خطوة واحدة جوه نفس الـ Transaction
         return await base.SaveChangesAsync(cancellationToken);
+    }
+
+    private static OutboxMessage? MapToOutboxMessage(DomainEvent domainEvent)
+    {
+        object? integrationEvent = domainEvent switch
+        {
+            ReservationCreatedEvent e => new ReservationCreatedIntegrationEvent(
+                e.ReservationId,
+                e.CustomerId,
+                e.ServiceId,
+                e.StartDate,
+                e.EndDate,
+                e.OccurredOn),
+            ReservationConfirmedEvent e => new ReservationConfirmedIntegrationEvent(
+                e.ReservationId,
+                e.CustomerId,
+                e.ServiceId,
+                e.OccurredOn),
+            ReservationCancelledEvent e => new ReservationCancelledIntegrationEvent(
+                e.ReservationId,
+                e.CustomerId,
+                e.ServiceId,
+                e.Reason,
+                e.OccurredOn),
+            _ => null
+        };
+
+        if (integrationEvent is null)
+        {
+            return null;
+        }
+
+        return new OutboxMessage
+        {
+            Id = Guid.NewGuid(),
+            OccurredOn = DateTime.UtcNow,
+            Type = integrationEvent.GetType().AssemblyQualifiedName ?? integrationEvent.GetType().FullName ?? string.Empty,
+            Content = JsonSerializer.Serialize(integrationEvent)
+        };
     }
 }

@@ -1,22 +1,35 @@
-﻿using EventDrivenBookingPlatform.BuildingBlocks.EventBus.Abstractions;
+using EventDrivenBookingPlatform.BuildingBlocks.EventBus.Abstractions;
 
 namespace EventDrivenBookingPlatform.BuildingBlocks.Messaging.Idempotency;
 
 public abstract class IdempotentHandler<TIntegrationEvent> : IIntegrationEventHandler<TIntegrationEvent>
     where TIntegrationEvent : IIntegrationEvent
 {
-    public async Task Handle(TIntegrationEvent @event)
-    {
-        if (await IsMessageProcessed(@event.Id))
-        {
-            return; // Already processed, idempotency applied. Skip safely.
-        }
+    private readonly IProcessedMessageStore _processedMessageStore;
 
-        await ProcessEvent(@event);
-        await MarkMessageAsProcessed(@event.Id);
+    protected IdempotentHandler(IProcessedMessageStore processedMessageStore)
+    {
+        _processedMessageStore = processedMessageStore;
     }
 
-    protected abstract Task<bool> IsMessageProcessed(Guid eventId);
-    protected abstract Task ProcessEvent(TIntegrationEvent @event);
-    protected abstract Task MarkMessageAsProcessed(Guid eventId);
+    public async Task Handle(TIntegrationEvent @event)
+    {
+        var exists = await _processedMessageStore.ExistsAsync(@event.Id);
+        if (exists)
+        {
+            return;
+        }
+
+        await HandleCoreAsync(@event);
+
+        await _processedMessageStore.AddAsync(new ProcessedMessage
+        {
+            Id = Guid.NewGuid(),
+            MessageId = @event.Id,
+            Name = typeof(TIntegrationEvent).Name,
+            ProcessedOn = DateTime.UtcNow
+        });
+    }
+
+    protected abstract Task HandleCoreAsync(TIntegrationEvent @event);
 }

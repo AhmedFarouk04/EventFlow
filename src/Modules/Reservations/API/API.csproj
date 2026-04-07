@@ -7,21 +7,32 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.11.0" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.21" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.25">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Serilog.AspNetCore" Version="8.0.3" />
+    <PackageReference Include="Serilog.Settings.Configuration" Version="8.0.4" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="5.0.1" />
+    <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Application\Application.csproj" />
     <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Middlewares\" />
+    <ProjectReference Include="..\..\Availability\Application\Availability.Application.csproj" />
+    <ProjectReference Include="..\..\Availability\Infrastructure\Availability.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\Pricing\Application\Pricing.Application.csproj" />
+    <ProjectReference Include="..\..\Pricing\Infrastructure\Pricing.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\Notifications\Application\Notifications.Application.csproj" />
+    <ProjectReference Include="..\..\Notifications\Infrastructure\Notifications.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\Users\Application\Users.Application.csproj" />
+    <ProjectReference Include="..\..\Users\Infrastructure\Users.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\Audit\Application\Audit.Application.csproj" />
+    <ProjectReference Include="..\..\Audit\Infrastructure\Audit.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

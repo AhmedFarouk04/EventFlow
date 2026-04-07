@@ -1,70 +1,84 @@
-using EventDrivenBookingPlatform.Modules.Reservations.Application.Interfaces;
-using EventDrivenBookingPlatform.Modules.Reservations.Infrastructure.Persistence;
-using EventDrivenBookingPlatform.Modules.Reservations.Infrastructure.Repositories;
-using Microsoft.EntityFrameworkCore;
-using EventDrivenBookingPlatform.Modules.Reservations.Application.Commands.CreateReservation;
-
-// --- Messaging, Event Bus & Outbox Usings ---
 using EventDrivenBookingPlatform.BuildingBlocks.EventBus.Abstractions;
 using EventDrivenBookingPlatform.BuildingBlocks.EventBus.RabbitMQ;
 using EventDrivenBookingPlatform.BuildingBlocks.Messaging.Outbox;
+using EventDrivenBookingPlatform.BuildingBlocks.Observability.Correlation;
+using EventDrivenBookingPlatform.Modules.Audit.Application.DependencyInjection;
+using EventDrivenBookingPlatform.Modules.Audit.Infrastructure.DependencyInjection;
+using EventDrivenBookingPlatform.Modules.Availability.Application.DependencyInjection;
+using EventDrivenBookingPlatform.Modules.Availability.Infrastructure.DependencyInjection;
+using EventDrivenBookingPlatform.Modules.Notifications.Application.DependencyInjection;
+using EventDrivenBookingPlatform.Modules.Notifications.Infrastructure;
+using EventDrivenBookingPlatform.Modules.Pricing.Application.DependencyInjection;
+using EventDrivenBookingPlatform.Modules.Pricing.Infrastructure.DependencyInjection;
+using EventDrivenBookingPlatform.Modules.Reservations.API.BackgroundServices;
+using EventDrivenBookingPlatform.Modules.Reservations.API.Extensions;
+using EventDrivenBookingPlatform.Modules.Reservations.API.Middlewares;
 using EventDrivenBookingPlatform.Modules.Reservations.Infrastructure.Messaging.Outbox;
+using EventDrivenBookingPlatform.Modules.Users.Application.DependencyInjection;
+using EventDrivenBookingPlatform.Modules.Users.Infrastructure.DependencyInjection;
 using Microsoft.Extensions.Options;
-using global::RabbitMQ.Client;
+using RabbitMQ.Client;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// 1. Add Controllers
+builder.Host.UseSerilog((context, services, configuration) => configuration
+    .ReadFrom.Configuration(context.Configuration)
+    .ReadFrom.Services(services)
+    .Enrich.FromLogContext()
+    .Enrich.WithProperty("Application", "Reservations.API"));
+
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// 2. Add Infrastructure (Database)
-// Note: In a real project, the connection string comes from appsettings.json.
-// We are using a local SQL Server for development.
-builder.Services.AddDbContext<ReservationsDbContext>(options =>
-    options.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=EventDrivenBookingDB;Trusted_Connection=True;MultipleActiveResultSets=true"));
+builder.Services.AddReservationsModule(builder.Configuration);
+builder.Services.AddAvailabilityApplication();
+builder.Services.AddAvailabilityInfrastructure(builder.Configuration);
+builder.Services.AddPricingApplication();
+builder.Services.AddPricingInfrastructure(builder.Configuration);
+builder.Services.AddNotificationsApplication();
+builder.Services.AddNotificationsInfrastructure(builder.Configuration);
+builder.Services.AddUsersApplication();
+builder.Services.AddUsersInfrastructure(builder.Configuration);
+builder.Services.AddAuditApplication();
+builder.Services.AddAuditInfrastructure(builder.Configuration);
 
-// 3. Add Repositories
-builder.Services.AddScoped<IReservationRepository, ReservationRepository>();
-
-// 4. Add MediatR (Application Layer)
-builder.Services.AddMediatR(cfg => {
-    cfg.RegisterServicesFromAssemblyContaining<CreateReservationCommand>();
-});
-
-// 5. --- Messaging & Event Bus Configuration ---
-
-// Setup RabbitMQ Options from appsettings.json
 builder.Services.Configure<RabbitMqOptions>(builder.Configuration.GetSection("RabbitMq"));
+builder.Services.Configure<OutboxProcessorOptions>(builder.Configuration.GetSection("Outbox"));
 
-// Setup RabbitMQ Connection
 builder.Services.AddSingleton<IConnectionFactory>(sp =>
 {
     var options = sp.GetRequiredService<IOptions<RabbitMqOptions>>().Value;
     return new ConnectionFactory
     {
         HostName = options.HostName,
+        Port = options.Port,
+        VirtualHost = options.VirtualHost,
         UserName = options.UserName,
         Password = options.Password,
-        DispatchConsumersAsync = true // Important for async Handlers
+        DispatchConsumersAsync = true
     };
 });
+
 builder.Services.AddSingleton<RabbitMqConnection>();
-
-// Setup Event Bus
 builder.Services.AddSingleton<IEventBus, RabbitMqEventBus>();
-
-// Setup Outbox Store
 builder.Services.AddScoped<IOutboxStore, OutboxStore>();
-
-// Setup Background Services (The Worker that reads from Outbox and sends to RabbitMQ)
 builder.Services.AddHostedService<OutboxProcessor>();
-
+builder.Services.AddHostedService<EventBusSubscriptionsHostedService>();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+using (var scope = app.Services.CreateScope())
+{
+    var pricingSeedService = scope.ServiceProvider.GetRequiredService<PricingSeedService>();
+    await pricingSeedService.SeedDefaultRuleAsync();
+}
+
+app.UseSerilogRequestLogging();
+app.UseMiddleware<CorrelationIdMiddleware>();
+app.UseMiddleware<ExceptionHandlingMiddleware>();
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -72,11 +86,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
-
 app.MapControllers();
 
-// Note: We will add Middlewares (like Error Handling & Correlation ID) here later
-
 app.Run();
+
+public partial class Program;

@@ -1,0 +1,16 @@
+C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Pricing\Domain\bin\Debug\net8.0\Pricing.Domain.deps.json
+C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Pricing\Domain\bin\Debug\net8.0\Pricing.Domain.dll
+C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Pricing\Domain\bin\Debug\net8.0\Pricing.Domain.pdb
+C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Pricing\Domain\bin\Debug\net8.0\BuildingBlocks.dll
+C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Pricing\Domain\bin\Debug\net8.0\BuildingBlocks.pdb
+C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Pricing\Domain\obj\Debug\net8.0\Pricing.Domain.csproj.AssemblyReference.cache
+C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Pricing\Domain\obj\Debug\net8.0\Pricing.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Pricing\Domain\obj\Debug\net8.0\Pricing.Domain.AssemblyInfoInputs.cache
+C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Pricing\Domain\obj\Debug\net8.0\Pricing.Domain.AssemblyInfo.cs
+C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Pricing\Domain\obj\Debug\net8.0\Pricing.Domain.csproj.CoreCompileInputs.cache
+C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Pricing\Domain\obj\Debug\net8.0\Pricing.Domain.sourcelink.json
+C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Pricing\Domain\obj\Debug\net8.0\Pricing..D95DBA1C.Up2Date
+C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Pricing\Domain\obj\Debug\net8.0\Pricing.Domain.dll
+C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Pricing\Domain\obj\Debug\net8.0\refint\Pricing.Domain.dll
+C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Pricing\Domain\obj\Debug\net8.0\Pricing.Domain.pdb
+C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Pricing\Domain\obj\Debug\net8.0\ref\Pricing.Domain.dll

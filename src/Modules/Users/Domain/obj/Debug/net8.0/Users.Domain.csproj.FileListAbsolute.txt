@@ -1,0 +1,16 @@
+C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Users\Domain\bin\Debug\net8.0\Users.Domain.deps.json
+C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Users\Domain\bin\Debug\net8.0\Users.Domain.dll
+C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Users\Domain\bin\Debug\net8.0\Users.Domain.pdb
+C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Users\Domain\bin\Debug\net8.0\BuildingBlocks.dll
+C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Users\Domain\bin\Debug\net8.0\BuildingBlocks.pdb
+C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Users\Domain\obj\Debug\net8.0\Users.Domain.csproj.AssemblyReference.cache
+C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Users\Domain\obj\Debug\net8.0\Users.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Users\Domain\obj\Debug\net8.0\Users.Domain.AssemblyInfoInputs.cache
+C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Users\Domain\obj\Debug\net8.0\Users.Domain.AssemblyInfo.cs
+C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Users\Domain\obj\Debug\net8.0\Users.Domain.csproj.CoreCompileInputs.cache
+C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Users\Domain\obj\Debug\net8.0\Users.Domain.sourcelink.json
+C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Users\Domain\obj\Debug\net8.0\Users.Do.BCCBE71F.Up2Date
+C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Users\Domain\obj\Debug\net8.0\Users.Domain.dll
+C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Users\Domain\obj\Debug\net8.0\refint\Users.Domain.dll
+C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Users\Domain\obj\Debug\net8.0\Users.Domain.pdb
+C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Users\Domain\obj\Debug\net8.0\ref\Users.Domain.dll

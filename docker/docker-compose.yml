@@ -1,0 +1,254 @@
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: eventdriven-sqlserver
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "YourStrong@Passw0rd"
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserver-data:/var/opt/mssql
+      - ./sqlserver/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "/opt/mssql-tools18/bin/sqlcmd -C -S localhost -U sa -P $$MSSQL_SA_PASSWORD -Q \"SELECT 1\" || exit 1"]
+      interval: 20s
+      timeout: 10s
+      retries: 10
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: eventdriven-rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    volumes:
+      - ./rabbitmq/rabbitmq.conf:/etc/rabbitmq/rabbitmq.conf:ro
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "-q", "ping"]
+      interval: 20s
+      timeout: 10s
+      retries: 10
+
+  reservations-api:
+    build:
+      context: ..
+      dockerfile: src/Modules/Reservations/API/Dockerfile
+    container_name: eventdriven-reservations-api
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://+:8080
+      ConnectionStrings__Reservations: Server=sqlserver,1433;Database=EventDrivenBookingDB;User Id=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=True;
+      ConnectionStrings__Availability: Server=sqlserver,1433;Database=EventDrivenBookingAvailabilityDb;User Id=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=True;
+      ConnectionStrings__Audit: Server=sqlserver,1433;Database=EventDrivenBookingAuditDb;User Id=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=True;
+      ConnectionStrings__Pricing: Server=sqlserver,1433;Database=EventDrivenBookingPricingDb;User Id=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=True;
+      ConnectionStrings__Notifications: Server=sqlserver,1433;Database=EventDrivenBookingNotificationsDb;User Id=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=True;
+      ConnectionStrings__Users: Server=sqlserver,1433;Database=EventDrivenBookingUsersDb;User Id=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=True;
+      RabbitMq__HostName: rabbitmq
+      RabbitMq__Port: 5672
+      RabbitMq__UserName: guest
+      RabbitMq__Password: guest
+      RabbitMq__VirtualHost: /
+    ports:
+      - "8080:8080"
+    depends_on:
+      reservations-migrator:
+        condition: service_completed_successfully
+      availability-migrator:
+        condition: service_completed_successfully
+      audit-migrator:
+        condition: service_completed_successfully
+      pricing-migrator:
+        condition: service_completed_successfully
+      notifications-migrator:
+        condition: service_completed_successfully
+      users-migrator:
+        condition: service_completed_successfully
+      sqlserver:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
+
+  availability-api:
+    build:
+      context: ..
+      dockerfile: src/Modules/Availability/API/Dockerfile
+    container_name: eventdriven-availability-api
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://+:8081
+      ConnectionStrings__Availability: Server=sqlserver,1433;Database=EventDrivenBookingAvailabilityDb;User Id=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=True;
+    ports:
+      - "8081:8081"
+    depends_on:
+      availability-migrator:
+        condition: service_completed_successfully
+      sqlserver:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
+
+  reservations-migrator:
+    image: mcr.microsoft.com/dotnet/sdk:8.0
+    container_name: eventdriven-reservations-migrator
+    working_dir: /src
+    command: >
+      sh -c "dotnet tool install --global dotnet-ef --version 8.0.25 &&
+      export PATH=\"$$PATH:/root/.dotnet/tools\" &&
+      dotnet ef database update
+      --project src/Modules/Reservations/Infrastructure/Infrastructure.csproj
+      --startup-project src/Modules/Reservations/API/API.csproj"
+    environment:
+      ConnectionStrings__Reservations: Server=sqlserver,1433;Database=EventDrivenBookingDB;User Id=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=True;
+      ConnectionStrings__Availability: Server=sqlserver,1433;Database=EventDrivenBookingAvailabilityDb;User Id=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=True;
+      ConnectionStrings__Audit: Server=sqlserver,1433;Database=EventDrivenBookingAuditDb;User Id=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=True;
+      ConnectionStrings__Pricing: Server=sqlserver,1433;Database=EventDrivenBookingPricingDb;User Id=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=True;
+      ConnectionStrings__Notifications: Server=sqlserver,1433;Database=EventDrivenBookingNotificationsDb;User Id=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=True;
+      ConnectionStrings__Users: Server=sqlserver,1433;Database=EventDrivenBookingUsersDb;User Id=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=True;
+      RabbitMq__HostName: rabbitmq
+      RabbitMq__Port: 5672
+      RabbitMq__UserName: guest
+      RabbitMq__Password: guest
+      RabbitMq__VirtualHost: /
+    volumes:
+      - ..:/src
+    depends_on:
+      sqlserver:
+        condition: service_healthy
+
+  availability-migrator:
+    image: mcr.microsoft.com/dotnet/sdk:8.0
+    container_name: eventdriven-availability-migrator
+    working_dir: /src
+    command: >
+      sh -c "dotnet tool install --global dotnet-ef --version 8.0.25 &&
+      export PATH=\"$$PATH:/root/.dotnet/tools\" &&
+      dotnet ef database update
+      --project src/Modules/Availability/Infrastructure/Availability.Infrastructure.csproj
+      --startup-project src/Modules/Availability/API/Availability.API.csproj"
+    environment:
+      ConnectionStrings__Availability: Server=sqlserver,1433;Database=EventDrivenBookingAvailabilityDb;User Id=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=True;
+    volumes:
+      - ..:/src
+    depends_on:
+      sqlserver:
+        condition: service_healthy
+
+  audit-migrator:
+    image: mcr.microsoft.com/dotnet/sdk:8.0
+    container_name: eventdriven-audit-migrator
+    working_dir: /src
+    command: >
+      sh -c "dotnet tool install --global dotnet-ef --version 8.0.25 &&
+      export PATH=\"$$PATH:/root/.dotnet/tools\" &&
+      dotnet ef database update
+      --project src/Modules/Audit/Infrastructure/Audit.Infrastructure.csproj
+      --startup-project src/Modules/Reservations/API/API.csproj
+      --context EventDrivenBookingPlatform.Modules.Audit.Infrastructure.Persistence.AuditDbContext"
+    environment:
+      ConnectionStrings__Reservations: Server=sqlserver,1433;Database=EventDrivenBookingDB;User Id=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=True;
+      ConnectionStrings__Availability: Server=sqlserver,1433;Database=EventDrivenBookingAvailabilityDb;User Id=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=True;
+      ConnectionStrings__Audit: Server=sqlserver,1433;Database=EventDrivenBookingAuditDb;User Id=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=True;
+      ConnectionStrings__Pricing: Server=sqlserver,1433;Database=EventDrivenBookingPricingDb;User Id=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=True;
+      ConnectionStrings__Notifications: Server=sqlserver,1433;Database=EventDrivenBookingNotificationsDb;User Id=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=True;
+      ConnectionStrings__Users: Server=sqlserver,1433;Database=EventDrivenBookingUsersDb;User Id=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=True;
+      RabbitMq__HostName: rabbitmq
+      RabbitMq__Port: 5672
+      RabbitMq__UserName: guest
+      RabbitMq__Password: guest
+      RabbitMq__VirtualHost: /
+    volumes:
+      - ..:/src
+    depends_on:
+      sqlserver:
+        condition: service_healthy
+
+  pricing-migrator:
+    image: mcr.microsoft.com/dotnet/sdk:8.0
+    container_name: eventdriven-pricing-migrator
+    working_dir: /src
+    command: >
+      sh -c "dotnet tool install --global dotnet-ef --version 8.0.25 &&
+      export PATH=\"$$PATH:/root/.dotnet/tools\" &&
+      dotnet ef database update
+      --project src/Modules/Pricing/Infrastructure/Pricing.Infrastructure.csproj
+      --startup-project src/Modules/Reservations/API/API.csproj
+      --context EventDrivenBookingPlatform.Modules.Pricing.Infrastructure.Persistence.PricingDbContext"
+    environment:
+      ConnectionStrings__Reservations: Server=sqlserver,1433;Database=EventDrivenBookingDB;User Id=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=True;
+      ConnectionStrings__Availability: Server=sqlserver,1433;Database=EventDrivenBookingAvailabilityDb;User Id=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=True;
+      ConnectionStrings__Audit: Server=sqlserver,1433;Database=EventDrivenBookingAuditDb;User Id=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=True;
+      ConnectionStrings__Pricing: Server=sqlserver,1433;Database=EventDrivenBookingPricingDb;User Id=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=True;
+      ConnectionStrings__Notifications: Server=sqlserver,1433;Database=EventDrivenBookingNotificationsDb;User Id=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=True;
+      ConnectionStrings__Users: Server=sqlserver,1433;Database=EventDrivenBookingUsersDb;User Id=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=True;
+      RabbitMq__HostName: rabbitmq
+      RabbitMq__Port: 5672
+      RabbitMq__UserName: guest
+      RabbitMq__Password: guest
+      RabbitMq__VirtualHost: /
+    volumes:
+      - ..:/src
+    depends_on:
+      sqlserver:
+        condition: service_healthy
+
+  notifications-migrator:
+    image: mcr.microsoft.com/dotnet/sdk:8.0
+    container_name: eventdriven-notifications-migrator
+    working_dir: /src
+    command: >
+      sh -c "dotnet tool install --global dotnet-ef --version 8.0.25 &&
+      export PATH=\"$$PATH:/root/.dotnet/tools\" &&
+      dotnet ef database update
+      --project src/Modules/Notifications/Infrastructure/Notifications.Infrastructure.csproj
+      --startup-project src/Modules/Reservations/API/API.csproj
+      --context EventDrivenBookingPlatform.Modules.Notifications.Infrastructure.Persistence.NotificationsDbContext"
+    environment:
+      ConnectionStrings__Reservations: Server=sqlserver,1433;Database=EventDrivenBookingDB;User Id=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=True;
+      ConnectionStrings__Availability: Server=sqlserver,1433;Database=EventDrivenBookingAvailabilityDb;User Id=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=True;
+      ConnectionStrings__Audit: Server=sqlserver,1433;Database=EventDrivenBookingAuditDb;User Id=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=True;
+      ConnectionStrings__Pricing: Server=sqlserver,1433;Database=EventDrivenBookingPricingDb;User Id=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=True;
+      ConnectionStrings__Notifications: Server=sqlserver,1433;Database=EventDrivenBookingNotificationsDb;User Id=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=True;
+      ConnectionStrings__Users: Server=sqlserver,1433;Database=EventDrivenBookingUsersDb;User Id=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=True;
+      RabbitMq__HostName: rabbitmq
+      RabbitMq__Port: 5672
+      RabbitMq__UserName: guest
+      RabbitMq__Password: guest
+      RabbitMq__VirtualHost: /
+    volumes:
+      - ..:/src
+    depends_on:
+      sqlserver:
+        condition: service_healthy
+
+  users-migrator:
+    image: mcr.microsoft.com/dotnet/sdk:8.0
+    container_name: eventdriven-users-migrator
+    working_dir: /src
+    command: >
+      sh -c "dotnet tool install --global dotnet-ef --version 8.0.25 &&
+      export PATH=\"$$PATH:/root/.dotnet/tools\" &&
+      dotnet ef database update
+      --project src/Modules/Users/Infrastructure/Users.Infrastructure.csproj
+      --startup-project src/Modules/Reservations/API/API.csproj
+      --context EventDrivenBookingPlatform.Modules.Users.Infrastructure.Persistence.UsersDbContext"
+    environment:
+      ConnectionStrings__Reservations: Server=sqlserver,1433;Database=EventDrivenBookingDB;User Id=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=True;
+      ConnectionStrings__Availability: Server=sqlserver,1433;Database=EventDrivenBookingAvailabilityDb;User Id=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=True;
+      ConnectionStrings__Audit: Server=sqlserver,1433;Database=EventDrivenBookingAuditDb;User Id=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=True;
+      ConnectionStrings__Pricing: Server=sqlserver,1433;Database=EventDrivenBookingPricingDb;User Id=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=True;
+      ConnectionStrings__Notifications: Server=sqlserver,1433;Database=EventDrivenBookingNotificationsDb;User Id=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=True;
+      ConnectionStrings__Users: Server=sqlserver,1433;Database=EventDrivenBookingUsersDb;User Id=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=True;
+      RabbitMq__HostName: rabbitmq
+      RabbitMq__Port: 5672
+      RabbitMq__UserName: guest
+      RabbitMq__Password: guest
+      RabbitMq__VirtualHost: /
+    volumes:
+      - ..:/src
+    depends_on:
+      sqlserver:
+        condition: service_healthy
+
+volumes:
+  sqlserver-data:

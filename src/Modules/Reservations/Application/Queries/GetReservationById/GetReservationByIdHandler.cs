@@ -1,5 +1,6 @@
-﻿using EventDrivenBookingPlatform.Modules.Reservations.Application.DTOs;
+using EventDrivenBookingPlatform.Modules.Reservations.Application.DTOs;
 using EventDrivenBookingPlatform.Modules.Reservations.Application.Interfaces;
+using EventDrivenBookingPlatform.Modules.Reservations.Domain.ValueObjects;
 using MediatR;
 
 namespace EventDrivenBookingPlatform.Modules.Reservations.Application.Queries.GetReservationById;
@@ -15,21 +16,13 @@ public class GetReservationByIdHandler : IRequestHandler<GetReservationByIdQuery
 
     public async Task<ReservationDto?> Handle(GetReservationByIdQuery request, CancellationToken cancellationToken)
     {
-        var reservation = await _repository.GetByIdAsync(request.ReservationId);
+        var reservation = await _repository.GetByIdAsync(new ReservationId(request.ReservationId), cancellationToken);
 
-        if (reservation == null) return null;
+        if (reservation is null)
+        {
+            return null;
+        }
 
-        return new ReservationDto(
-            reservation.Id,
-            reservation.CustomerInfo.FullName,
-            reservation.CustomerInfo.Email,
-            reservation.TripDetails.TripName,
-            reservation.TripDetails.Destination,
-            reservation.PriceDetails.TotalPrice,
-            reservation.PriceDetails.Currency,
-            reservation.CheckInDate,
-            reservation.CheckOutDate,
-            (int)reservation.Status
-        );
+        return ReservationDto.FromDomain(reservation);
     }
 }

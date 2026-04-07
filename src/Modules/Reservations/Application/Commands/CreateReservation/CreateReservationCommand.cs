@@ -1,24 +1,13 @@
-﻿using EventDrivenBookingPlatform.BuildingBlocks.SharedKernel;
+using EventDrivenBookingPlatform.Modules.Reservations.Domain.ValueObjects;
 using MediatR;
 
 namespace EventDrivenBookingPlatform.Modules.Reservations.Application.Commands.CreateReservation;
 
 public record CreateReservationCommand(
-    string FullName,
-    string Email,
-    string PhoneNumber,
-    string Nationality,
-    string? PassportNumber,
-    bool IsDomestic,
-    Guid TripId,
-    string TripName,
-    string Destination,
-    int Duration,
-    decimal BasePrice,
-    decimal Discounts,
-    string Currency,
-    DateTime CheckInDate,
-    DateTime CheckOutDate,
-    int NumberOfGuests,
-    string? SpecialRequests
-) : IRequest<Result<Guid>>;
+    Guid CustomerId,
+    Guid ServiceId,
+    DateTime StartDate,
+    DateTime EndDate,
+    IReadOnlyCollection<CreateReservationItemRequest>? Items) : IRequest<Guid>;
+
+public record CreateReservationItemRequest(string Name, int Quantity, decimal UnitPrice);

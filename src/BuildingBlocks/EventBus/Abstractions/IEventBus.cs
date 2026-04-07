@@ -1,8 +1,9 @@
-﻿namespace EventDrivenBookingPlatform.BuildingBlocks.EventBus.Abstractions;
+namespace EventDrivenBookingPlatform.BuildingBlocks.EventBus.Abstractions;
 
 public interface IEventBus
 {
-    void Publish(IIntegrationEvent @event);
+    Task PublishAsync<T>(T @event, CancellationToken cancellationToken = default)
+        where T : IIntegrationEvent;
 
     void Subscribe<T, TH>()
         where T : IIntegrationEvent

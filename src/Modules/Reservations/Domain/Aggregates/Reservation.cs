@@ -1,103 +1,94 @@
-﻿using EventDrivenBookingPlatform.BuildingBlocks.SharedKernel;
+using EventDrivenBookingPlatform.BuildingBlocks.SharedKernel;
+using EventDrivenBookingPlatform.Modules.Reservations.Domain.Entities;
 using EventDrivenBookingPlatform.Modules.Reservations.Domain.Events;
+using EventDrivenBookingPlatform.Modules.Reservations.Domain.Rules;
 using EventDrivenBookingPlatform.Modules.Reservations.Domain.ValueObjects;
 
 namespace EventDrivenBookingPlatform.Modules.Reservations.Domain.Aggregates;
 
 public class Reservation : AggregateRoot
 {
-    public CustomerInfo CustomerInfo { get; private set; }
-    public TripDetails TripDetails { get; private set; }
-    public PriceDetails PriceDetails { get; private set; }
+    public CustomerId CustomerId { get; private set; } = null!;
+    public ServiceId ServiceId { get; private set; } = null!;
+    public DateRange DateRange { get; private set; } = null!;
     public ReservationStatus Status { get; private set; }
-    public DateTime CreatedAt { get; private set; }
-    public DateTime LastModified { get; private set; }
-    public DateTime CheckInDate { get; private set; }
-    public DateTime CheckOutDate { get; private set; }
-    public int NumberOfGuests { get; private set; }
-    public string? SpecialRequests { get; private set; }
+    public List<ReservationItem> Items { get; private set; } = new();
 
-    private Reservation() { } // For EF Core
-
-    private Reservation(
-        Guid id,
-        CustomerInfo customerInfo,
-        TripDetails tripDetails,
-        PriceDetails priceDetails,
-        DateTime checkInDate,
-        DateTime checkOutDate,
-        int numberOfGuests,
-        string? specialRequests)
+    private Reservation()
     {
-        Id = id;
-        CustomerInfo = customerInfo;
-        TripDetails = tripDetails;
-        PriceDetails = priceDetails;
-        CheckInDate = checkInDate;
-        CheckOutDate = checkOutDate;
-        NumberOfGuests = numberOfGuests;
-        SpecialRequests = specialRequests;
+    }
+
+    private Reservation(ReservationId id, CustomerId customerId, ServiceId serviceId, DateRange dateRange)
+    {
+        Id = id.Value;
+        CustomerId = customerId;
+        ServiceId = serviceId;
+        DateRange = dateRange;
         Status = ReservationStatus.Pending;
-        CreatedAt = DateTime.UtcNow;
-        LastModified = DateTime.UtcNow;
 
-        AddDomainEvent(new ReservationCreatedDomainEvent(
-            Id,
-            CustomerInfo.Email,
-            CheckInDate,
-            CheckOutDate,
-            PriceDetails.TotalPrice));
+        AddDomainEvent(new ReservationCreatedEvent(Id, customerId.Value, serviceId.Value, dateRange.StartDate, dateRange.EndDate));
     }
 
-    public static Result<Reservation> Create(
-        CustomerInfo customerInfo,
-        TripDetails tripDetails,
-        PriceDetails priceDetails,
-        DateTime checkInDate,
-        DateTime checkOutDate,
-        int numberOfGuests,
-        string? specialRequests,
-        DateTime currentDate)
+    public static Result<Reservation> Create(ReservationId id, CustomerId customerId, ServiceId serviceId, DateRange dateRange)
     {
-        if (checkInDate < currentDate.AddHours(24))
-            return Result<Reservation>.Failure("Reservations must be made at least 24 hours in advance.");
+        var dateRangeRule = new ReservationMustHaveValidDateRangeRule(dateRange);
+        if (dateRangeRule.IsBroken())
+        {
+            return Result<Reservation>.Failure(dateRangeRule.Message);
+        }
 
-        if (checkInDate > currentDate.AddYears(1))
-            return Result<Reservation>.Failure("Cannot book more than 1 year in advance.");
+        if (dateRange.StartDate < DateTime.UtcNow.Date)
+        {
+            return Result<Reservation>.Failure("Reservation start date cannot be in the past.");
+        }
 
-        if (checkOutDate <= checkInDate)
-            return Result<Reservation>.Failure("Check-out date must be after check-in date.");
-
-        if ((checkOutDate - checkInDate).Days > 30)
-            return Result<Reservation>.Failure("Maximum stay duration is 30 days.");
-
-        if (numberOfGuests < 1)
-            return Result<Reservation>.Failure("At least 1 guest is required.");
-
-        if (specialRequests?.Length > 500)
-            return Result<Reservation>.Failure("Special requests cannot exceed 500 characters.");
-
-        var reservation = new Reservation(
-            Guid.NewGuid(),
-            customerInfo,
-            tripDetails,
-            priceDetails,
-            checkInDate,
-            checkOutDate,
-            numberOfGuests,
-            specialRequests);
-
-        return Result<Reservation>.Success(reservation);
+        return Result<Reservation>.Success(new Reservation(id, customerId, serviceId, dateRange));
     }
 
-    public Result ConfirmPayment()
+    public Result Confirm()
     {
         if (Status != ReservationStatus.Pending)
+        {
             return Result.Failure("Only pending reservations can be confirmed.");
+        }
 
         Status = ReservationStatus.Confirmed;
-        LastModified = DateTime.UtcNow;
+        AddDomainEvent(new ReservationConfirmedEvent(Id, CustomerId.Value, ServiceId.Value));
 
+        return Result.Success();
+    }
+
+    public Result Cancel(string reason)
+    {
+        if (Status == ReservationStatus.Cancelled)
+        {
+            return Result.Failure("Reservation is already cancelled.");
+        }
+
+        Status = ReservationStatus.Cancelled;
+        AddDomainEvent(new ReservationCancelledEvent(Id, CustomerId.Value, ServiceId.Value, reason));
+
+        return Result.Success();
+    }
+
+    public Result AddItem(string name, int quantity, decimal unitPrice)
+    {
+        if (string.IsNullOrWhiteSpace(name))
+        {
+            return Result.Failure("Item name is required.");
+        }
+
+        if (quantity <= 0)
+        {
+            return Result.Failure("Item quantity must be greater than zero.");
+        }
+
+        if (unitPrice < 0)
+        {
+            return Result.Failure("Item unit price cannot be negative.");
+        }
+
+        Items.Add(ReservationItem.Create(name, quantity, unitPrice));
         return Result.Success();
     }
 }

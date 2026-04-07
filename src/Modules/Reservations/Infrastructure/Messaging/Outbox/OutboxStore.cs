@@ -1,4 +1,4 @@
-﻿using EventDrivenBookingPlatform.BuildingBlocks.Messaging.Outbox;
+using EventDrivenBookingPlatform.BuildingBlocks.Messaging.Outbox;
 using EventDrivenBookingPlatform.Modules.Reservations.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 
@@ -18,22 +18,41 @@ public class OutboxStore : IOutboxStore
         await _dbContext.OutboxMessages.AddAsync(message, cancellationToken);
     }
 
-    public async Task<IReadOnlyList<OutboxMessage>> GetUnprocessedMessagesAsync(CancellationToken cancellationToken = default)
+    public async Task<IReadOnlyList<OutboxMessage>> GetUnprocessedMessagesAsync(int batchSize, CancellationToken cancellationToken = default)
     {
-        // بنسحب الرسايل اللي لسه متبعتتش وبناخد 20 رسالة بـ 20 رسالة عشان الـ Performance
         return await _dbContext.OutboxMessages
             .Where(m => m.ProcessedOn == null)
-            .Take(20)
+            .OrderBy(m => m.OccurredOn)
+            .Take(batchSize)
             .ToListAsync(cancellationToken);
     }
 
     public async Task MarkAsProcessedAsync(Guid id, CancellationToken cancellationToken = default)
     {
-        var message = await _dbContext.OutboxMessages.FindAsync(new object[] { id }, cancellationToken);
-        if (message != null)
+        var message = await _dbContext.OutboxMessages.FindAsync([id], cancellationToken);
+        if (message is null)
         {
-            message.ProcessedOn = DateTime.UtcNow;
+            return;
         }
+
+        message.ProcessedOn = DateTime.UtcNow;
+        message.Error = null;
+
+        await _dbContext.SaveChangesAsync(cancellationToken);
+    }
+
+    public async Task MarkAsFailedAsync(Guid id, string error, CancellationToken cancellationToken = default)
+    {
+        var message = await _dbContext.OutboxMessages.FindAsync([id], cancellationToken);
+        if (message is null)
+        {
+            return;
+        }
+
+        message.RetryCount += 1;
+        message.LastRetryOn = DateTime.UtcNow;
+        message.Error = error;
+
         await _dbContext.SaveChangesAsync(cancellationToken);
     }
 }

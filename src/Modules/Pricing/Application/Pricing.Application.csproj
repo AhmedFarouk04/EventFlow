@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><TargetFramework>net8.0</TargetFramework><ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable></PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="14.1.0" />
+    <ProjectReference Include="..\..\..\BuildingBlocks\BuildingBlocks.csproj" />
+    <ProjectReference Include="..\Domain\Pricing.Domain.csproj" />
+    <ProjectReference Include="..\Contracts\Pricing.Contracts.csproj" />
+    <ProjectReference Include="..\..\Reservations\Contracts\Contracts.csproj" />
+  </ItemGroup>
+</Project>

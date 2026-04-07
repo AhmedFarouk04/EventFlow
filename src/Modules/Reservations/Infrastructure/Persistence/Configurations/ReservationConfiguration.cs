@@ -1,4 +1,5 @@
-﻿using EventDrivenBookingPlatform.Modules.Reservations.Domain.Aggregates;
+using EventDrivenBookingPlatform.Modules.Reservations.Domain.Aggregates;
+using EventDrivenBookingPlatform.Modules.Reservations.Domain.ValueObjects;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
@@ -11,39 +12,34 @@ public class ReservationConfiguration : IEntityTypeConfiguration<Reservation>
         builder.ToTable("Reservations");
         builder.HasKey(r => r.Id);
 
-        // Configure Value Objects (Owned Types)
-        builder.OwnsOne(r => r.CustomerInfo, ci =>
+        builder.Property(r => r.CustomerId)
+            .HasConversion(id => id.Value, value => new CustomerId(value))
+            .IsRequired();
+
+        builder.Property(r => r.ServiceId)
+            .HasConversion(id => id.Value, value => new ServiceId(value))
+            .IsRequired();
+
+        builder.OwnsOne(r => r.DateRange, dateRange =>
         {
-            ci.Property(c => c.FullName).HasMaxLength(100).IsRequired();
-            ci.Property(c => c.Email).HasMaxLength(255).IsRequired();
-            ci.Property(c => c.PhoneNumber).HasMaxLength(15).IsRequired();
-            ci.Property(c => c.Nationality).HasMaxLength(2).IsRequired();
-            ci.Property(c => c.PassportNumber).HasMaxLength(12);
+            dateRange.Property(d => d.StartDate)
+                .HasColumnName("StartDate")
+                .IsRequired();
+
+            dateRange.Property(d => d.EndDate)
+                .HasColumnName("EndDate")
+                .IsRequired();
         });
 
-        builder.OwnsOne(r => r.TripDetails, td =>
-        {
-            td.Property(t => t.TripId).IsRequired();
-            td.Property(t => t.TripName).HasMaxLength(200).IsRequired();
-            td.Property(t => t.Destination).HasMaxLength(100).IsRequired();
-            td.Property(t => t.Duration).IsRequired();
-        });
+        builder.Property(r => r.Status)
+            .HasConversion<int>()
+            .IsRequired();
 
-        builder.OwnsOne(r => r.PriceDetails, pd =>
-        {
-            pd.Property(p => p.BasePrice).HasColumnType("decimal(18,2)").IsRequired();
-            pd.Property(p => p.Taxes).HasColumnType("decimal(18,2)").IsRequired();
-            pd.Property(p => p.Discounts).HasColumnType("decimal(18,2)").IsRequired();
-            pd.Property(p => p.TotalPrice).HasColumnType("decimal(18,2)").IsRequired();
-            pd.Property(p => p.Currency).HasMaxLength(3).IsRequired();
-        });
+        builder.HasMany(r => r.Items)
+            .WithOne()
+            .HasForeignKey("ReservationId")
+            .OnDelete(DeleteBehavior.Cascade);
 
-        builder.Property(r => r.SpecialRequests).HasMaxLength(500);
-
-        // Optimistic Concurrency
-        builder.Property(r => r.Version).IsConcurrencyToken();
-
-        // Ignore Domain Events so EF doesn't try to map them to a database column
         builder.Ignore(r => r.DomainEvents);
     }
 }

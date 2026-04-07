@@ -1,0 +1,16 @@
+C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Availability\Domain\bin\Debug\net8.0\Availability.Domain.deps.json
+C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Availability\Domain\bin\Debug\net8.0\Availability.Domain.dll
+C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Availability\Domain\bin\Debug\net8.0\Availability.Domain.pdb
+C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Availability\Domain\bin\Debug\net8.0\BuildingBlocks.dll
+C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Availability\Domain\bin\Debug\net8.0\BuildingBlocks.pdb
+C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Availability\Domain\obj\Debug\net8.0\Availability.Domain.csproj.AssemblyReference.cache
+C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Availability\Domain\obj\Debug\net8.0\Availability.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Availability\Domain\obj\Debug\net8.0\Availability.Domain.AssemblyInfoInputs.cache
+C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Availability\Domain\obj\Debug\net8.0\Availability.Domain.AssemblyInfo.cs
+C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Availability\Domain\obj\Debug\net8.0\Availability.Domain.csproj.CoreCompileInputs.cache
+C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Availability\Domain\obj\Debug\net8.0\Availability.Domain.sourcelink.json
+C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Availability\Domain\obj\Debug\net8.0\Availabi.FF7FB835.Up2Date
+C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Availability\Domain\obj\Debug\net8.0\Availability.Domain.dll
+C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Availability\Domain\obj\Debug\net8.0\refint\Availability.Domain.dll
+C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Availability\Domain\obj\Debug\net8.0\Availability.Domain.pdb
+C:\Users\ahmed\Downloads\My-Github\EventDriven\EventDrivenBookingPlatform\src\Modules\Availability\Domain\obj\Debug\net8.0\ref\Availability.Domain.dll

@@ -1,0 +1,545 @@
+[2026-04-07 06:42:48.495 +02:00 INF] () Request starting HTTP/1.1 POST http://localhost/api/reservations - application/json; charset=utf-8 227
+[2026-04-07 06:42:48.538 +02:00 WRN] (e671034b2c744330882fd787e47619a5) Failed to determine the https port for redirect.
+[2026-04-07 06:42:48.542 +02:00 INF] (e671034b2c744330882fd787e47619a5) Executing endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API)'
+[2026-04-07 06:42:48.563 +02:00 INF] (e671034b2c744330882fd787e47619a5) Route matched with {action = "CreateReservation", controller = "Reservations"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateReservation(EventDrivenBookingPlatform.Modules.Reservations.Application.Commands.CreateReservation.CreateReservationCommand) on controller EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController (API).
+[2026-04-07 06:42:48.571 +02:00 WRN] (e671034b2c744330882fd787e47619a5) You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+[2026-04-07 06:42:48.652 +02:00 INF] (e671034b2c744330882fd787e47619a5) Handling request CreateReservationCommand: {"CustomerId":"c105a19c-5767-4faa-b3d8-2a712d1b0500","ServiceId":"0f40017c-b520-412a-92b7-3f796c854629","StartDate":"2026-04-09T00:00:00.0000000Z","EndDate":"2026-04-11T00:00:00.0000000Z","Items":[{"Name":"Room","Quantity":1,"UnitPrice":150,"$type":"CreateReservationItemRequest"}],"$type":"CreateReservationCommand"}
+[2026-04-07 06:42:48.708 +02:00 INF] (e671034b2c744330882fd787e47619a5) Saved 4 entities to in-memory store.
+[2026-04-07 06:42:48.708 +02:00 INF] (e671034b2c744330882fd787e47619a5) Handled request CreateReservationCommand
+[2026-04-07 06:42:48.712 +02:00 INF] (e671034b2c744330882fd787e47619a5) Executing CreatedAtActionResult, writing value of type 'System.Guid'.
+[2026-04-07 06:42:48.730 +02:00 INF] (e671034b2c744330882fd787e47619a5) Executed action EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API) in 163.9718ms
+[2026-04-07 06:42:48.731 +02:00 INF] (e671034b2c744330882fd787e47619a5) Executed endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API)'
+[2026-04-07 06:42:48.732 +02:00 INF] () HTTP POST /api/reservations responded 201 in 196.8324 ms
+[2026-04-07 06:42:48.734 +02:00 INF] () Request finished HTTP/1.1 POST http://localhost/api/reservations - 201 null application/json; charset=utf-8 241.9695ms
+[2026-04-07 06:42:48.740 +02:00 INF] () Request starting HTTP/1.1 GET http://localhost/api/reservations/a74be860-7a20-4785-95a5-0822d3158a3a - null null
+[2026-04-07 06:42:48.741 +02:00 INF] (16e724ced7c44845afb8b3ba04faf7d3) Executing endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.GetById (API)'
+[2026-04-07 06:42:48.743 +02:00 INF] (16e724ced7c44845afb8b3ba04faf7d3) Route matched with {action = "GetById", controller = "Reservations"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid) on controller EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController (API).
+[2026-04-07 06:42:48.748 +02:00 INF] (16e724ced7c44845afb8b3ba04faf7d3) Handling request GetReservationByIdQuery: {"ReservationId":"a74be860-7a20-4785-95a5-0822d3158a3a","$type":"GetReservationByIdQuery"}
+[2026-04-07 06:42:48.760 +02:00 INF] (16e724ced7c44845afb8b3ba04faf7d3) Handled request GetReservationByIdQuery
+[2026-04-07 06:42:48.761 +02:00 INF] (16e724ced7c44845afb8b3ba04faf7d3) Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+[2026-04-07 06:42:48.770 +02:00 INF] (16e724ced7c44845afb8b3ba04faf7d3) Executed action EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.GetById (API) in 26.4233ms
+[2026-04-07 06:42:48.770 +02:00 INF] (16e724ced7c44845afb8b3ba04faf7d3) Executed endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.GetById (API)'
+[2026-04-07 06:42:48.770 +02:00 INF] () HTTP GET /api/reservations/a74be860-7a20-4785-95a5-0822d3158a3a responded 404 in 29.8344 ms
+[2026-04-07 06:42:48.770 +02:00 INF] () Request finished HTTP/1.1 GET http://localhost/api/reservations/a74be860-7a20-4785-95a5-0822d3158a3a - 404 null application/problem+json; charset=utf-8 30.4605ms
+[2026-04-07 06:43:20.470 +02:00 INF] () Request starting HTTP/1.1 POST http://localhost/api/reservations - application/json; charset=utf-8 227
+[2026-04-07 06:43:20.521 +02:00 WRN] (ffdd8f7016004510aa5bfd89a4d3a367) Failed to determine the https port for redirect.
+[2026-04-07 06:43:20.526 +02:00 INF] (ffdd8f7016004510aa5bfd89a4d3a367) Executing endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API)'
+[2026-04-07 06:43:20.545 +02:00 INF] (ffdd8f7016004510aa5bfd89a4d3a367) Route matched with {action = "CreateReservation", controller = "Reservations"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateReservation(EventDrivenBookingPlatform.Modules.Reservations.Application.Commands.CreateReservation.CreateReservationCommand) on controller EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController (API).
+[2026-04-07 06:43:20.553 +02:00 WRN] (ffdd8f7016004510aa5bfd89a4d3a367) You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+[2026-04-07 06:43:20.641 +02:00 INF] (ffdd8f7016004510aa5bfd89a4d3a367) Handling request CreateReservationCommand: {"CustomerId":"0f2d22c1-943f-488b-b054-ef781f801750","ServiceId":"7b569ac6-5d85-4ad0-bb15-60b2ce8b3f03","StartDate":"2026-04-09T00:00:00.0000000Z","EndDate":"2026-04-11T00:00:00.0000000Z","Items":[{"Name":"Room","Quantity":1,"UnitPrice":150,"$type":"CreateReservationItemRequest"}],"$type":"CreateReservationCommand"}
+[2026-04-07 06:43:20.837 +02:00 INF] (ffdd8f7016004510aa5bfd89a4d3a367) Saved 4 entities to in-memory store.
+[2026-04-07 06:43:20.838 +02:00 INF] (ffdd8f7016004510aa5bfd89a4d3a367) Handled request CreateReservationCommand
+[2026-04-07 06:43:20.842 +02:00 INF] (ffdd8f7016004510aa5bfd89a4d3a367) Executing CreatedAtActionResult, writing value of type 'System.Guid'.
+[2026-04-07 06:43:20.869 +02:00 INF] (ffdd8f7016004510aa5bfd89a4d3a367) Executed action EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API) in 321.231ms
+[2026-04-07 06:43:20.870 +02:00 INF] (ffdd8f7016004510aa5bfd89a4d3a367) Executed endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API)'
+[2026-04-07 06:43:20.871 +02:00 INF] () HTTP POST /api/reservations responded 201 in 355.5148 ms
+[2026-04-07 06:43:20.874 +02:00 INF] () Request finished HTTP/1.1 POST http://localhost/api/reservations - 201 null application/json; charset=utf-8 405.6159ms
+[2026-04-07 06:43:20.881 +02:00 INF] () Request starting HTTP/1.1 GET http://localhost/api/reservations/18bd3e2a-02d6-4790-8750-5a90d1b4b5bc - null null
+[2026-04-07 06:43:20.881 +02:00 INF] (ec7a6c4bd63e4de894399ec7bcd5bb32) Executing endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.GetById (API)'
+[2026-04-07 06:43:20.886 +02:00 INF] (ec7a6c4bd63e4de894399ec7bcd5bb32) Route matched with {action = "GetById", controller = "Reservations"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid) on controller EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController (API).
+[2026-04-07 06:43:20.891 +02:00 INF] (ec7a6c4bd63e4de894399ec7bcd5bb32) Handling request GetReservationByIdQuery: {"ReservationId":"18bd3e2a-02d6-4790-8750-5a90d1b4b5bc","$type":"GetReservationByIdQuery"}
+[2026-04-07 06:43:20.916 +02:00 INF] (ec7a6c4bd63e4de894399ec7bcd5bb32) Handled request GetReservationByIdQuery
+[2026-04-07 06:43:20.918 +02:00 INF] (ec7a6c4bd63e4de894399ec7bcd5bb32) Executing OkObjectResult, writing value of type 'EventDrivenBookingPlatform.Modules.Reservations.Application.DTOs.ReservationDto'.
+[2026-04-07 06:43:20.922 +02:00 INF] (ec7a6c4bd63e4de894399ec7bcd5bb32) Executed action EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.GetById (API) in 35.5292ms
+[2026-04-07 06:43:20.922 +02:00 INF] (ec7a6c4bd63e4de894399ec7bcd5bb32) Executed endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.GetById (API)'
+[2026-04-07 06:43:20.922 +02:00 INF] () HTTP GET /api/reservations/18bd3e2a-02d6-4790-8750-5a90d1b4b5bc responded 200 in 41.2898 ms
+[2026-04-07 06:43:20.923 +02:00 INF] () Request finished HTTP/1.1 GET http://localhost/api/reservations/18bd3e2a-02d6-4790-8750-5a90d1b4b5bc - 200 null application/json; charset=utf-8 42.0694ms
+[2026-04-07 06:52:37.952 +02:00 INF] () Request starting HTTP/1.1 POST http://localhost/api/reservations - application/json; charset=utf-8 227
+[2026-04-07 06:52:37.994 +02:00 WRN] (9de1f2cce4624ee39ed021ea8359ce7a) Failed to determine the https port for redirect.
+[2026-04-07 06:52:37.998 +02:00 INF] (9de1f2cce4624ee39ed021ea8359ce7a) Executing endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API)'
+[2026-04-07 06:52:38.014 +02:00 INF] (9de1f2cce4624ee39ed021ea8359ce7a) Route matched with {action = "CreateReservation", controller = "Reservations"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateReservation(EventDrivenBookingPlatform.Modules.Reservations.Application.Commands.CreateReservation.CreateReservationCommand) on controller EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController (API).
+[2026-04-07 06:52:38.021 +02:00 WRN] (9de1f2cce4624ee39ed021ea8359ce7a) You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+[2026-04-07 06:52:38.093 +02:00 INF] (9de1f2cce4624ee39ed021ea8359ce7a) Handling request CreateReservationCommand: {"CustomerId":"e73058b9-26ea-4b05-b740-e5ebd492c990","ServiceId":"a35ba41b-b28e-4de3-b37c-d8484a7b8b8b","StartDate":"2026-04-09T00:00:00.0000000Z","EndDate":"2026-04-11T00:00:00.0000000Z","Items":[{"Name":"Room","Quantity":1,"UnitPrice":150,"$type":"CreateReservationItemRequest"}],"$type":"CreateReservationCommand"}
+[2026-04-07 06:52:38.148 +02:00 INF] (9de1f2cce4624ee39ed021ea8359ce7a) Saved 4 entities to in-memory store.
+[2026-04-07 06:52:38.148 +02:00 INF] (9de1f2cce4624ee39ed021ea8359ce7a) Handled request CreateReservationCommand
+[2026-04-07 06:52:38.152 +02:00 INF] (9de1f2cce4624ee39ed021ea8359ce7a) Executing CreatedAtActionResult, writing value of type 'System.Guid'.
+[2026-04-07 06:52:38.171 +02:00 INF] (9de1f2cce4624ee39ed021ea8359ce7a) Executed action EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API) in 153.8288ms
+[2026-04-07 06:52:38.172 +02:00 INF] (9de1f2cce4624ee39ed021ea8359ce7a) Executed endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API)'
+[2026-04-07 06:52:38.174 +02:00 INF] () HTTP POST /api/reservations responded 201 in 181.6430 ms
+[2026-04-07 06:52:38.176 +02:00 INF] () Request finished HTTP/1.1 POST http://localhost/api/reservations - 201 null application/json; charset=utf-8 225.4782ms
+[2026-04-07 06:52:38.182 +02:00 INF] () Request starting HTTP/1.1 GET http://localhost/api/reservations/c4d2e381-865a-49e2-8190-354322df4a5a - null null
+[2026-04-07 06:52:38.182 +02:00 INF] (3b000cb3a2c94cf183d378e8c667b3df) Executing endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.GetById (API)'
+[2026-04-07 06:52:38.185 +02:00 INF] (3b000cb3a2c94cf183d378e8c667b3df) Route matched with {action = "GetById", controller = "Reservations"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid) on controller EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController (API).
+[2026-04-07 06:52:38.190 +02:00 INF] (3b000cb3a2c94cf183d378e8c667b3df) Handling request GetReservationByIdQuery: {"ReservationId":"c4d2e381-865a-49e2-8190-354322df4a5a","$type":"GetReservationByIdQuery"}
+[2026-04-07 06:52:38.198 +02:00 INF] (3b000cb3a2c94cf183d378e8c667b3df) Handled request GetReservationByIdQuery
+[2026-04-07 06:52:38.199 +02:00 INF] (3b000cb3a2c94cf183d378e8c667b3df) Executing OkObjectResult, writing value of type 'EventDrivenBookingPlatform.Modules.Reservations.Application.DTOs.ReservationDto'.
+[2026-04-07 06:52:38.201 +02:00 INF] (3b000cb3a2c94cf183d378e8c667b3df) Executed action EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.GetById (API) in 15.6581ms
+[2026-04-07 06:52:38.201 +02:00 INF] (3b000cb3a2c94cf183d378e8c667b3df) Executed endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.GetById (API)'
+[2026-04-07 06:52:38.201 +02:00 INF] () HTTP GET /api/reservations/c4d2e381-865a-49e2-8190-354322df4a5a responded 200 in 19.2613 ms
+[2026-04-07 06:52:38.202 +02:00 INF] () Request finished HTTP/1.1 GET http://localhost/api/reservations/c4d2e381-865a-49e2-8190-354322df4a5a - 200 null application/json; charset=utf-8 20.0779ms
+[2026-04-07 06:52:38.208 +02:00 INF] () Request starting HTTP/1.1 POST http://localhost/api/reservations - application/json; charset=utf-8 227
+[2026-04-07 06:52:38.209 +02:00 INF] (de57fcc8977f4174ac38152a0519311f) Executing endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API)'
+[2026-04-07 06:52:38.209 +02:00 INF] (de57fcc8977f4174ac38152a0519311f) Route matched with {action = "CreateReservation", controller = "Reservations"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateReservation(EventDrivenBookingPlatform.Modules.Reservations.Application.Commands.CreateReservation.CreateReservationCommand) on controller EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController (API).
+[2026-04-07 06:52:38.211 +02:00 INF] (de57fcc8977f4174ac38152a0519311f) Handling request CreateReservationCommand: {"CustomerId":"cb1dfb8b-3b1a-47c3-aa34-bd0879aa369d","ServiceId":"4d81fbaf-9acd-4ea4-a9dd-71e95892249f","StartDate":"2026-04-12T00:00:00.0000000Z","EndDate":"2026-04-14T00:00:00.0000000Z","Items":[{"Name":"Room","Quantity":1,"UnitPrice":150,"$type":"CreateReservationItemRequest"}],"$type":"CreateReservationCommand"}
+[2026-04-07 06:52:38.214 +02:00 INF] (de57fcc8977f4174ac38152a0519311f) Saved 4 entities to in-memory store.
+[2026-04-07 06:52:38.214 +02:00 INF] (de57fcc8977f4174ac38152a0519311f) Handled request CreateReservationCommand
+[2026-04-07 06:52:38.214 +02:00 INF] (de57fcc8977f4174ac38152a0519311f) Executing CreatedAtActionResult, writing value of type 'System.Guid'.
+[2026-04-07 06:52:38.214 +02:00 INF] (de57fcc8977f4174ac38152a0519311f) Executed action EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API) in 5.4218ms
+[2026-04-07 06:52:38.214 +02:00 INF] (de57fcc8977f4174ac38152a0519311f) Executed endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API)'
+[2026-04-07 06:52:38.215 +02:00 INF] () HTTP POST /api/reservations responded 201 in 5.8497 ms
+[2026-04-07 06:52:38.215 +02:00 INF] () Request finished HTTP/1.1 POST http://localhost/api/reservations - 201 null application/json; charset=utf-8 6.5871ms
+[2026-04-07 06:52:38.228 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 06:52:38.229 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 06:53:17.180 +02:00 INF] () Request starting HTTP/1.1 POST http://localhost/api/reservations - application/json; charset=utf-8 227
+[2026-04-07 06:53:17.240 +02:00 WRN] (9e3bc5df03994868a702fa92f289e4a3) Failed to determine the https port for redirect.
+[2026-04-07 06:53:17.247 +02:00 INF] (9e3bc5df03994868a702fa92f289e4a3) Executing endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API)'
+[2026-04-07 06:53:17.268 +02:00 INF] (9e3bc5df03994868a702fa92f289e4a3) Route matched with {action = "CreateReservation", controller = "Reservations"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateReservation(EventDrivenBookingPlatform.Modules.Reservations.Application.Commands.CreateReservation.CreateReservationCommand) on controller EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController (API).
+[2026-04-07 06:53:17.277 +02:00 WRN] (9e3bc5df03994868a702fa92f289e4a3) You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+[2026-04-07 06:53:17.388 +02:00 INF] (9e3bc5df03994868a702fa92f289e4a3) Handling request CreateReservationCommand: {"CustomerId":"1fa1daf0-1258-4c05-af6c-8a8f413fca34","ServiceId":"b66bcab2-cfa2-40da-8050-ef844c5804ed","StartDate":"2026-04-09T00:00:00.0000000Z","EndDate":"2026-04-11T00:00:00.0000000Z","Items":[{"Name":"Room","Quantity":1,"UnitPrice":150,"$type":"CreateReservationItemRequest"}],"$type":"CreateReservationCommand"}
+[2026-04-07 06:53:17.462 +02:00 INF] (9e3bc5df03994868a702fa92f289e4a3) Saved 4 entities to in-memory store.
+[2026-04-07 06:53:17.463 +02:00 INF] (9e3bc5df03994868a702fa92f289e4a3) Handled request CreateReservationCommand
+[2026-04-07 06:53:17.467 +02:00 INF] (9e3bc5df03994868a702fa92f289e4a3) Executing CreatedAtActionResult, writing value of type 'System.Guid'.
+[2026-04-07 06:53:17.494 +02:00 INF] (9e3bc5df03994868a702fa92f289e4a3) Executed action EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API) in 223.4465ms
+[2026-04-07 06:53:17.496 +02:00 INF] (9e3bc5df03994868a702fa92f289e4a3) Executed endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API)'
+[2026-04-07 06:53:17.497 +02:00 INF] () HTTP POST /api/reservations responded 201 in 260.7771 ms
+[2026-04-07 06:53:17.500 +02:00 INF] () Request finished HTTP/1.1 POST http://localhost/api/reservations - 201 null application/json; charset=utf-8 322.8901ms
+[2026-04-07 06:53:17.509 +02:00 INF] () Request starting HTTP/1.1 GET http://localhost/api/reservations/c0ce24a0-7842-4be4-823e-489720565b22 - null null
+[2026-04-07 06:53:17.510 +02:00 INF] (512df0790d09425d934a606debd7f076) Executing endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.GetById (API)'
+[2026-04-07 06:53:17.513 +02:00 INF] (512df0790d09425d934a606debd7f076) Route matched with {action = "GetById", controller = "Reservations"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid) on controller EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController (API).
+[2026-04-07 06:53:17.520 +02:00 INF] (512df0790d09425d934a606debd7f076) Handling request GetReservationByIdQuery: {"ReservationId":"c0ce24a0-7842-4be4-823e-489720565b22","$type":"GetReservationByIdQuery"}
+[2026-04-07 06:53:17.531 +02:00 INF] (512df0790d09425d934a606debd7f076) Handled request GetReservationByIdQuery
+[2026-04-07 06:53:17.531 +02:00 INF] (512df0790d09425d934a606debd7f076) Executing OkObjectResult, writing value of type 'EventDrivenBookingPlatform.Modules.Reservations.Application.DTOs.ReservationDto'.
+[2026-04-07 06:53:17.536 +02:00 INF] (512df0790d09425d934a606debd7f076) Executed action EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.GetById (API) in 22.38ms
+[2026-04-07 06:53:17.536 +02:00 INF] (512df0790d09425d934a606debd7f076) Executed endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.GetById (API)'
+[2026-04-07 06:53:17.536 +02:00 INF] () HTTP GET /api/reservations/c0ce24a0-7842-4be4-823e-489720565b22 responded 200 in 26.4832 ms
+[2026-04-07 06:53:17.536 +02:00 INF] () Request finished HTTP/1.1 GET http://localhost/api/reservations/c0ce24a0-7842-4be4-823e-489720565b22 - 200 null application/json; charset=utf-8 27.2244ms
+[2026-04-07 06:53:17.543 +02:00 INF] () Request starting HTTP/1.1 POST http://localhost/api/reservations - application/json; charset=utf-8 227
+[2026-04-07 06:53:17.543 +02:00 INF] (01a7796da24d4caf974051f22589f30e) Executing endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API)'
+[2026-04-07 06:53:17.543 +02:00 INF] (01a7796da24d4caf974051f22589f30e) Route matched with {action = "CreateReservation", controller = "Reservations"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateReservation(EventDrivenBookingPlatform.Modules.Reservations.Application.Commands.CreateReservation.CreateReservationCommand) on controller EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController (API).
+[2026-04-07 06:53:17.545 +02:00 INF] (01a7796da24d4caf974051f22589f30e) Handling request CreateReservationCommand: {"CustomerId":"6fa8832a-480f-468f-ad46-a5238b9a5f2b","ServiceId":"ff5a25a9-8e90-462f-a43b-aa737a5ac46f","StartDate":"2026-04-12T00:00:00.0000000Z","EndDate":"2026-04-14T00:00:00.0000000Z","Items":[{"Name":"Room","Quantity":1,"UnitPrice":150,"$type":"CreateReservationItemRequest"}],"$type":"CreateReservationCommand"}
+[2026-04-07 06:53:17.547 +02:00 INF] (01a7796da24d4caf974051f22589f30e) Saved 4 entities to in-memory store.
+[2026-04-07 06:53:17.548 +02:00 INF] (01a7796da24d4caf974051f22589f30e) Handled request CreateReservationCommand
+[2026-04-07 06:53:17.548 +02:00 INF] (01a7796da24d4caf974051f22589f30e) Executing CreatedAtActionResult, writing value of type 'System.Guid'.
+[2026-04-07 06:53:17.548 +02:00 INF] (01a7796da24d4caf974051f22589f30e) Executed action EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API) in 4.6657ms
+[2026-04-07 06:53:17.548 +02:00 INF] (01a7796da24d4caf974051f22589f30e) Executed endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API)'
+[2026-04-07 06:53:17.548 +02:00 INF] () HTTP POST /api/reservations responded 201 in 5.0194 ms
+[2026-04-07 06:53:17.548 +02:00 INF] () Request finished HTTP/1.1 POST http://localhost/api/reservations - 201 null application/json; charset=utf-8 5.8053ms
+[2026-04-07 06:53:17.565 +02:00 INF] () Handling request BlockAvailabilityCommand: {"ServiceId":"b66bcab2-cfa2-40da-8050-ef844c5804ed","Date":"2026-04-09T00:00:00.0000000Z","Quantity":1,"$type":"BlockAvailabilityCommand"}
+[2026-04-07 06:53:17.570 +02:00 INF] () Handled request BlockAvailabilityCommand
+[2026-04-07 06:53:17.575 +02:00 INF] () Handling request CalculatePriceQuery: {"ServiceId":"b66bcab2-cfa2-40da-8050-ef844c5804ed","StartDate":"2026-04-09T00:00:00.0000000Z","EndDate":"2026-04-11T00:00:00.0000000Z","$type":"CalculatePriceQuery"}
+[2026-04-07 06:53:17.617 +02:00 INF] () Handled request CalculatePriceQuery
+[2026-04-07 06:53:17.630 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 06:53:17.633 +02:00 INF] () Handling request BlockAvailabilityCommand: {"ServiceId":"ff5a25a9-8e90-462f-a43b-aa737a5ac46f","Date":"2026-04-12T00:00:00.0000000Z","Quantity":1,"$type":"BlockAvailabilityCommand"}
+[2026-04-07 06:53:17.633 +02:00 INF] () Handled request BlockAvailabilityCommand
+[2026-04-07 06:53:17.635 +02:00 INF] () Handling request CalculatePriceQuery: {"ServiceId":"ff5a25a9-8e90-462f-a43b-aa737a5ac46f","StartDate":"2026-04-12T00:00:00.0000000Z","EndDate":"2026-04-14T00:00:00.0000000Z","$type":"CalculatePriceQuery"}
+[2026-04-07 06:53:17.635 +02:00 INF] () Handled request CalculatePriceQuery
+[2026-04-07 06:53:17.636 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 06:53:18.305 +02:00 INF] () Request starting HTTP/1.1 POST http://localhost/api/reservations - application/json; charset=utf-8 227
+[2026-04-07 06:53:18.347 +02:00 WRN] (28828434e8e045eabe49cedb09acd06f) Failed to determine the https port for redirect.
+[2026-04-07 06:53:18.351 +02:00 INF] (28828434e8e045eabe49cedb09acd06f) Executing endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API)'
+[2026-04-07 06:53:18.367 +02:00 INF] (28828434e8e045eabe49cedb09acd06f) Route matched with {action = "CreateReservation", controller = "Reservations"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateReservation(EventDrivenBookingPlatform.Modules.Reservations.Application.Commands.CreateReservation.CreateReservationCommand) on controller EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController (API).
+[2026-04-07 06:53:18.375 +02:00 WRN] (28828434e8e045eabe49cedb09acd06f) You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+[2026-04-07 06:53:18.450 +02:00 INF] (28828434e8e045eabe49cedb09acd06f) Handling request CreateReservationCommand: {"CustomerId":"a2ca614a-bd9c-4f31-b99a-debe1432a7d1","ServiceId":"94036d62-87de-43a2-b58b-b425df4be7d8","StartDate":"2026-04-09T00:00:00.0000000Z","EndDate":"2026-04-11T00:00:00.0000000Z","Items":[{"Name":"Room","Quantity":1,"UnitPrice":150,"$type":"CreateReservationItemRequest"}],"$type":"CreateReservationCommand"}
+[2026-04-07 06:53:18.504 +02:00 INF] (28828434e8e045eabe49cedb09acd06f) Saved 4 entities to in-memory store.
+[2026-04-07 06:53:18.504 +02:00 INF] (28828434e8e045eabe49cedb09acd06f) Handled request CreateReservationCommand
+[2026-04-07 06:53:18.509 +02:00 INF] (28828434e8e045eabe49cedb09acd06f) Executing CreatedAtActionResult, writing value of type 'System.Guid'.
+[2026-04-07 06:53:18.528 +02:00 INF] (28828434e8e045eabe49cedb09acd06f) Executed action EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API) in 158.8045ms
+[2026-04-07 06:53:18.529 +02:00 INF] (28828434e8e045eabe49cedb09acd06f) Executed endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API)'
+[2026-04-07 06:53:18.530 +02:00 INF] () HTTP POST /api/reservations responded 201 in 186.3594 ms
+[2026-04-07 06:53:18.532 +02:00 INF] () Request finished HTTP/1.1 POST http://localhost/api/reservations - 201 null application/json; charset=utf-8 230.1916ms
+[2026-04-07 06:53:18.539 +02:00 INF] () Request starting HTTP/1.1 GET http://localhost/api/reservations/0c7366b7-c404-4f1e-b5a9-3e9f9dd4edd2 - null null
+[2026-04-07 06:53:18.540 +02:00 INF] (47b440dddfa4441abc77f213f4785456) Executing endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.GetById (API)'
+[2026-04-07 06:53:18.543 +02:00 INF] (47b440dddfa4441abc77f213f4785456) Route matched with {action = "GetById", controller = "Reservations"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid) on controller EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController (API).
+[2026-04-07 06:53:18.548 +02:00 INF] (47b440dddfa4441abc77f213f4785456) Handling request GetReservationByIdQuery: {"ReservationId":"0c7366b7-c404-4f1e-b5a9-3e9f9dd4edd2","$type":"GetReservationByIdQuery"}
+[2026-04-07 06:53:18.557 +02:00 INF] (47b440dddfa4441abc77f213f4785456) Handled request GetReservationByIdQuery
+[2026-04-07 06:53:18.558 +02:00 INF] (47b440dddfa4441abc77f213f4785456) Executing OkObjectResult, writing value of type 'EventDrivenBookingPlatform.Modules.Reservations.Application.DTOs.ReservationDto'.
+[2026-04-07 06:53:18.561 +02:00 INF] (47b440dddfa4441abc77f213f4785456) Executed action EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.GetById (API) in 17.9916ms
+[2026-04-07 06:53:18.561 +02:00 INF] (47b440dddfa4441abc77f213f4785456) Executed endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.GetById (API)'
+[2026-04-07 06:53:18.561 +02:00 INF] () HTTP GET /api/reservations/0c7366b7-c404-4f1e-b5a9-3e9f9dd4edd2 responded 200 in 21.6986 ms
+[2026-04-07 06:53:18.562 +02:00 INF] () Request finished HTTP/1.1 GET http://localhost/api/reservations/0c7366b7-c404-4f1e-b5a9-3e9f9dd4edd2 - 200 null application/json; charset=utf-8 22.5677ms
+[2026-04-07 06:53:18.570 +02:00 INF] () Request starting HTTP/1.1 POST http://localhost/api/reservations - application/json; charset=utf-8 227
+[2026-04-07 06:53:18.571 +02:00 INF] (db224ec22a8c421a963a532142ffd0d0) Executing endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API)'
+[2026-04-07 06:53:18.571 +02:00 INF] (db224ec22a8c421a963a532142ffd0d0) Route matched with {action = "CreateReservation", controller = "Reservations"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateReservation(EventDrivenBookingPlatform.Modules.Reservations.Application.Commands.CreateReservation.CreateReservationCommand) on controller EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController (API).
+[2026-04-07 06:53:18.574 +02:00 INF] (db224ec22a8c421a963a532142ffd0d0) Handling request CreateReservationCommand: {"CustomerId":"9e2fb259-9a70-493d-b608-d1698eed3af1","ServiceId":"294a0957-a2fa-4dd9-ac22-ae5132973032","StartDate":"2026-04-12T00:00:00.0000000Z","EndDate":"2026-04-14T00:00:00.0000000Z","Items":[{"Name":"Room","Quantity":1,"UnitPrice":150,"$type":"CreateReservationItemRequest"}],"$type":"CreateReservationCommand"}
+[2026-04-07 06:53:18.576 +02:00 INF] (db224ec22a8c421a963a532142ffd0d0) Saved 4 entities to in-memory store.
+[2026-04-07 06:53:18.577 +02:00 INF] (db224ec22a8c421a963a532142ffd0d0) Handled request CreateReservationCommand
+[2026-04-07 06:53:18.577 +02:00 INF] (db224ec22a8c421a963a532142ffd0d0) Executing CreatedAtActionResult, writing value of type 'System.Guid'.
+[2026-04-07 06:53:18.577 +02:00 INF] (db224ec22a8c421a963a532142ffd0d0) Executed action EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API) in 5.7994ms
+[2026-04-07 06:53:18.577 +02:00 INF] (db224ec22a8c421a963a532142ffd0d0) Executed endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API)'
+[2026-04-07 06:53:18.577 +02:00 INF] () HTTP POST /api/reservations responded 201 in 6.5983 ms
+[2026-04-07 06:53:18.577 +02:00 INF] () Request finished HTTP/1.1 POST http://localhost/api/reservations - 201 null application/json; charset=utf-8 7.8813ms
+[2026-04-07 06:53:18.589 +02:00 INF] () Handling request BlockAvailabilityCommand: {"ServiceId":"94036d62-87de-43a2-b58b-b425df4be7d8","Date":"2026-04-09T00:00:00.0000000Z","Quantity":1,"$type":"BlockAvailabilityCommand"}
+[2026-04-07 06:53:18.592 +02:00 INF] () Handled request BlockAvailabilityCommand
+[2026-04-07 06:53:18.596 +02:00 INF] () Handling request CalculatePriceQuery: {"ServiceId":"94036d62-87de-43a2-b58b-b425df4be7d8","StartDate":"2026-04-09T00:00:00.0000000Z","EndDate":"2026-04-11T00:00:00.0000000Z","$type":"CalculatePriceQuery"}
+[2026-04-07 06:53:18.597 +02:00 INF] () Handled request CalculatePriceQuery
+[2026-04-07 06:53:18.608 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 06:53:18.609 +02:00 INF] () Handling request BlockAvailabilityCommand: {"ServiceId":"294a0957-a2fa-4dd9-ac22-ae5132973032","Date":"2026-04-12T00:00:00.0000000Z","Quantity":1,"$type":"BlockAvailabilityCommand"}
+[2026-04-07 06:53:18.609 +02:00 INF] () Handled request BlockAvailabilityCommand
+[2026-04-07 06:53:18.610 +02:00 INF] () Handling request CalculatePriceQuery: {"ServiceId":"294a0957-a2fa-4dd9-ac22-ae5132973032","StartDate":"2026-04-12T00:00:00.0000000Z","EndDate":"2026-04-14T00:00:00.0000000Z","$type":"CalculatePriceQuery"}
+[2026-04-07 06:53:18.610 +02:00 INF] () Handled request CalculatePriceQuery
+[2026-04-07 06:53:18.612 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 06:57:30.156 +02:00 INF] () Request starting HTTP/1.1 POST http://localhost/api/reservations - application/json; charset=utf-8 227
+[2026-04-07 06:57:30.192 +02:00 WRN] (96b3ef94c7c6405f86a85c0c203204df) Failed to determine the https port for redirect.
+[2026-04-07 06:57:30.196 +02:00 INF] (96b3ef94c7c6405f86a85c0c203204df) Executing endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API)'
+[2026-04-07 06:57:30.209 +02:00 INF] (96b3ef94c7c6405f86a85c0c203204df) Route matched with {action = "CreateReservation", controller = "Reservations"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateReservation(EventDrivenBookingPlatform.Modules.Reservations.Application.Commands.CreateReservation.CreateReservationCommand) on controller EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController (API).
+[2026-04-07 06:57:30.216 +02:00 WRN] (96b3ef94c7c6405f86a85c0c203204df) You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+[2026-04-07 06:57:30.287 +02:00 INF] (96b3ef94c7c6405f86a85c0c203204df) Handling request CreateReservationCommand: {"CustomerId":"b40f41be-dfd7-4803-bf22-85674a4e7f7d","ServiceId":"1476d33d-c8e9-4103-917b-c0c03c19bd73","StartDate":"2026-04-09T00:00:00.0000000Z","EndDate":"2026-04-11T00:00:00.0000000Z","Items":[{"Name":"Room","Quantity":1,"UnitPrice":150,"$type":"CreateReservationItemRequest"}],"$type":"CreateReservationCommand"}
+[2026-04-07 06:57:30.323 +02:00 INF] (96b3ef94c7c6405f86a85c0c203204df) Saved 4 entities to in-memory store.
+[2026-04-07 06:57:30.324 +02:00 INF] (96b3ef94c7c6405f86a85c0c203204df) Handled request CreateReservationCommand
+[2026-04-07 06:57:30.327 +02:00 INF] (96b3ef94c7c6405f86a85c0c203204df) Executing CreatedAtActionResult, writing value of type 'System.Guid'.
+[2026-04-07 06:57:30.344 +02:00 INF] (96b3ef94c7c6405f86a85c0c203204df) Executed action EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API) in 132.2387ms
+[2026-04-07 06:57:30.345 +02:00 INF] (96b3ef94c7c6405f86a85c0c203204df) Executed endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API)'
+[2026-04-07 06:57:30.346 +02:00 INF] () HTTP POST /api/reservations responded 201 in 155.4475 ms
+[2026-04-07 06:57:30.348 +02:00 INF] () Request finished HTTP/1.1 POST http://localhost/api/reservations - 201 null application/json; charset=utf-8 194.097ms
+[2026-04-07 06:57:30.353 +02:00 INF] () Request starting HTTP/1.1 GET http://localhost/api/reservations/a6a88aff-7c01-46b8-bc12-6ec59ec028a1 - null null
+[2026-04-07 06:57:30.354 +02:00 INF] (d756af50267d461d93f7a123e7654a4f) Executing endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.GetById (API)'
+[2026-04-07 06:57:30.357 +02:00 INF] (d756af50267d461d93f7a123e7654a4f) Route matched with {action = "GetById", controller = "Reservations"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid) on controller EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController (API).
+[2026-04-07 06:57:30.361 +02:00 INF] (d756af50267d461d93f7a123e7654a4f) Handling request GetReservationByIdQuery: {"ReservationId":"a6a88aff-7c01-46b8-bc12-6ec59ec028a1","$type":"GetReservationByIdQuery"}
+[2026-04-07 06:57:30.369 +02:00 INF] (d756af50267d461d93f7a123e7654a4f) Handled request GetReservationByIdQuery
+[2026-04-07 06:57:30.369 +02:00 INF] (d756af50267d461d93f7a123e7654a4f) Executing OkObjectResult, writing value of type 'EventDrivenBookingPlatform.Modules.Reservations.Application.DTOs.ReservationDto'.
+[2026-04-07 06:57:30.372 +02:00 INF] (d756af50267d461d93f7a123e7654a4f) Executed action EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.GetById (API) in 15.4029ms
+[2026-04-07 06:57:30.372 +02:00 INF] (d756af50267d461d93f7a123e7654a4f) Executed endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.GetById (API)'
+[2026-04-07 06:57:30.372 +02:00 INF] () HTTP GET /api/reservations/a6a88aff-7c01-46b8-bc12-6ec59ec028a1 responded 200 in 18.6979 ms
+[2026-04-07 06:57:30.373 +02:00 INF] () Request finished HTTP/1.1 GET http://localhost/api/reservations/a6a88aff-7c01-46b8-bc12-6ec59ec028a1 - 200 null application/json; charset=utf-8 19.3742ms
+[2026-04-07 06:57:30.379 +02:00 INF] () Request starting HTTP/1.1 POST http://localhost/api/reservations - application/json; charset=utf-8 227
+[2026-04-07 06:57:30.380 +02:00 INF] (f37ce9ab44554fd3a43519f48db898d5) Executing endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API)'
+[2026-04-07 06:57:30.380 +02:00 INF] (f37ce9ab44554fd3a43519f48db898d5) Route matched with {action = "CreateReservation", controller = "Reservations"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateReservation(EventDrivenBookingPlatform.Modules.Reservations.Application.Commands.CreateReservation.CreateReservationCommand) on controller EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController (API).
+[2026-04-07 06:57:30.382 +02:00 INF] (f37ce9ab44554fd3a43519f48db898d5) Handling request CreateReservationCommand: {"CustomerId":"00fc8145-4105-4d31-aa38-54d3e6d6c87e","ServiceId":"7e6be256-ca8a-477f-827a-5f9fcbe8c172","StartDate":"2026-04-12T00:00:00.0000000Z","EndDate":"2026-04-14T00:00:00.0000000Z","Items":[{"Name":"Room","Quantity":1,"UnitPrice":150,"$type":"CreateReservationItemRequest"}],"$type":"CreateReservationCommand"}
+[2026-04-07 06:57:30.384 +02:00 INF] (f37ce9ab44554fd3a43519f48db898d5) Saved 4 entities to in-memory store.
+[2026-04-07 06:57:30.384 +02:00 INF] (f37ce9ab44554fd3a43519f48db898d5) Handled request CreateReservationCommand
+[2026-04-07 06:57:30.384 +02:00 INF] (f37ce9ab44554fd3a43519f48db898d5) Executing CreatedAtActionResult, writing value of type 'System.Guid'.
+[2026-04-07 06:57:30.385 +02:00 INF] (f37ce9ab44554fd3a43519f48db898d5) Executed action EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API) in 4.7554ms
+[2026-04-07 06:57:30.385 +02:00 INF] (f37ce9ab44554fd3a43519f48db898d5) Executed endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API)'
+[2026-04-07 06:57:30.385 +02:00 INF] () HTTP POST /api/reservations responded 201 in 5.1236 ms
+[2026-04-07 06:57:30.385 +02:00 INF] () Request finished HTTP/1.1 POST http://localhost/api/reservations - 201 null application/json; charset=utf-8 5.9225ms
+[2026-04-07 06:57:30.402 +02:00 INF] () Handling request BlockAvailabilityCommand: {"ServiceId":"1476d33d-c8e9-4103-917b-c0c03c19bd73","Date":"2026-04-09T00:00:00.0000000Z","Quantity":1,"$type":"BlockAvailabilityCommand"}
+[2026-04-07 06:57:30.405 +02:00 INF] () Handled request BlockAvailabilityCommand
+[2026-04-07 06:57:30.410 +02:00 INF] () Handling request BlockAvailabilityCommand: {"ServiceId":"1476d33d-c8e9-4103-917b-c0c03c19bd73","Date":"2026-04-10T00:00:00.0000000Z","Quantity":1,"$type":"BlockAvailabilityCommand"}
+[2026-04-07 06:57:30.410 +02:00 INF] () Handled request BlockAvailabilityCommand
+[2026-04-07 06:57:30.413 +02:00 INF] () Handling request CalculatePriceQuery: {"ServiceId":"1476d33d-c8e9-4103-917b-c0c03c19bd73","StartDate":"2026-04-09T00:00:00.0000000Z","EndDate":"2026-04-11T00:00:00.0000000Z","$type":"CalculatePriceQuery"}
+[2026-04-07 06:57:30.437 +02:00 INF] () Handled request CalculatePriceQuery
+[2026-04-07 06:57:30.446 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 06:57:30.447 +02:00 INF] () Handling request BlockAvailabilityCommand: {"ServiceId":"7e6be256-ca8a-477f-827a-5f9fcbe8c172","Date":"2026-04-12T00:00:00.0000000Z","Quantity":1,"$type":"BlockAvailabilityCommand"}
+[2026-04-07 06:57:30.447 +02:00 INF] () Handled request BlockAvailabilityCommand
+[2026-04-07 06:57:30.447 +02:00 INF] () Handling request BlockAvailabilityCommand: {"ServiceId":"7e6be256-ca8a-477f-827a-5f9fcbe8c172","Date":"2026-04-13T00:00:00.0000000Z","Quantity":1,"$type":"BlockAvailabilityCommand"}
+[2026-04-07 06:57:30.447 +02:00 INF] () Handled request BlockAvailabilityCommand
+[2026-04-07 06:57:30.448 +02:00 INF] () Handling request CalculatePriceQuery: {"ServiceId":"7e6be256-ca8a-477f-827a-5f9fcbe8c172","StartDate":"2026-04-12T00:00:00.0000000Z","EndDate":"2026-04-14T00:00:00.0000000Z","$type":"CalculatePriceQuery"}
+[2026-04-07 06:57:30.448 +02:00 INF] () Handled request CalculatePriceQuery
+[2026-04-07 06:57:30.449 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 06:58:31.441 +02:00 INF] () Request starting HTTP/1.1 POST http://localhost/api/reservations - application/json; charset=utf-8 227
+[2026-04-07 06:58:31.481 +02:00 WRN] (0fe63332a31e4d548943d07108884da3) Failed to determine the https port for redirect.
+[2026-04-07 06:58:31.485 +02:00 INF] (0fe63332a31e4d548943d07108884da3) Executing endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API)'
+[2026-04-07 06:58:31.500 +02:00 INF] (0fe63332a31e4d548943d07108884da3) Route matched with {action = "CreateReservation", controller = "Reservations"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateReservation(EventDrivenBookingPlatform.Modules.Reservations.Application.Commands.CreateReservation.CreateReservationCommand) on controller EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController (API).
+[2026-04-07 06:58:31.507 +02:00 WRN] (0fe63332a31e4d548943d07108884da3) You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+[2026-04-07 06:58:31.575 +02:00 INF] (0fe63332a31e4d548943d07108884da3) Handling request CreateReservationCommand: {"CustomerId":"5de293cd-6a72-45b9-bad8-b831b7179ce6","ServiceId":"b1650366-fb28-4634-99cf-f381b4846fed","StartDate":"2026-04-09T00:00:00.0000000Z","EndDate":"2026-04-11T00:00:00.0000000Z","Items":[{"Name":"Room","Quantity":1,"UnitPrice":150,"$type":"CreateReservationItemRequest"}],"$type":"CreateReservationCommand"}
+[2026-04-07 06:58:31.624 +02:00 INF] (0fe63332a31e4d548943d07108884da3) Saved 4 entities to in-memory store.
+[2026-04-07 06:58:31.625 +02:00 INF] (0fe63332a31e4d548943d07108884da3) Handled request CreateReservationCommand
+[2026-04-07 06:58:31.628 +02:00 INF] (0fe63332a31e4d548943d07108884da3) Executing CreatedAtActionResult, writing value of type 'System.Guid'.
+[2026-04-07 06:58:31.644 +02:00 INF] (0fe63332a31e4d548943d07108884da3) Executed action EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API) in 142.6359ms
+[2026-04-07 06:58:31.645 +02:00 INF] (0fe63332a31e4d548943d07108884da3) Executed endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API)'
+[2026-04-07 06:58:31.647 +02:00 INF] () HTTP POST /api/reservations responded 201 in 167.7776 ms
+[2026-04-07 06:58:31.648 +02:00 INF] () Request finished HTTP/1.1 POST http://localhost/api/reservations - 201 null application/json; charset=utf-8 209.7396ms
+[2026-04-07 06:58:31.654 +02:00 INF] () Request starting HTTP/1.1 GET http://localhost/api/reservations/35d8f2b8-c0de-4bba-b5cb-de21524e18e9 - null null
+[2026-04-07 06:58:31.655 +02:00 INF] (9c0477d9e8da47d89dc1869ec6e59521) Executing endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.GetById (API)'
+[2026-04-07 06:58:31.657 +02:00 INF] (9c0477d9e8da47d89dc1869ec6e59521) Route matched with {action = "GetById", controller = "Reservations"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid) on controller EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController (API).
+[2026-04-07 06:58:31.661 +02:00 INF] (9c0477d9e8da47d89dc1869ec6e59521) Handling request GetReservationByIdQuery: {"ReservationId":"35d8f2b8-c0de-4bba-b5cb-de21524e18e9","$type":"GetReservationByIdQuery"}
+[2026-04-07 06:58:31.670 +02:00 INF] (9c0477d9e8da47d89dc1869ec6e59521) Handled request GetReservationByIdQuery
+[2026-04-07 06:58:31.670 +02:00 INF] (9c0477d9e8da47d89dc1869ec6e59521) Executing OkObjectResult, writing value of type 'EventDrivenBookingPlatform.Modules.Reservations.Application.DTOs.ReservationDto'.
+[2026-04-07 06:58:31.672 +02:00 INF] (9c0477d9e8da47d89dc1869ec6e59521) Executed action EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.GetById (API) in 15.1486ms
+[2026-04-07 06:58:31.672 +02:00 INF] (9c0477d9e8da47d89dc1869ec6e59521) Executed endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.GetById (API)'
+[2026-04-07 06:58:31.673 +02:00 INF] () HTTP GET /api/reservations/35d8f2b8-c0de-4bba-b5cb-de21524e18e9 responded 200 in 17.9762 ms
+[2026-04-07 06:58:31.673 +02:00 INF] () Request finished HTTP/1.1 GET http://localhost/api/reservations/35d8f2b8-c0de-4bba-b5cb-de21524e18e9 - 200 null application/json; charset=utf-8 18.5952ms
+[2026-04-07 06:58:31.679 +02:00 INF] () Request starting HTTP/1.1 POST http://localhost/api/reservations - application/json; charset=utf-8 227
+[2026-04-07 06:58:31.680 +02:00 INF] (04741a6bb5b34442b2c7d6a1ef8b7813) Executing endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API)'
+[2026-04-07 06:58:31.680 +02:00 INF] (04741a6bb5b34442b2c7d6a1ef8b7813) Route matched with {action = "CreateReservation", controller = "Reservations"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateReservation(EventDrivenBookingPlatform.Modules.Reservations.Application.Commands.CreateReservation.CreateReservationCommand) on controller EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController (API).
+[2026-04-07 06:58:31.682 +02:00 INF] (04741a6bb5b34442b2c7d6a1ef8b7813) Handling request CreateReservationCommand: {"CustomerId":"e3e48293-eb46-45ad-97ae-93316af34a18","ServiceId":"39305f1c-518b-4360-bf7b-d0e4b7276863","StartDate":"2026-04-12T00:00:00.0000000Z","EndDate":"2026-04-14T00:00:00.0000000Z","Items":[{"Name":"Room","Quantity":1,"UnitPrice":150,"$type":"CreateReservationItemRequest"}],"$type":"CreateReservationCommand"}
+[2026-04-07 06:58:31.684 +02:00 INF] (04741a6bb5b34442b2c7d6a1ef8b7813) Saved 4 entities to in-memory store.
+[2026-04-07 06:58:31.684 +02:00 INF] (04741a6bb5b34442b2c7d6a1ef8b7813) Handled request CreateReservationCommand
+[2026-04-07 06:58:31.684 +02:00 INF] (04741a6bb5b34442b2c7d6a1ef8b7813) Executing CreatedAtActionResult, writing value of type 'System.Guid'.
+[2026-04-07 06:58:31.685 +02:00 INF] (04741a6bb5b34442b2c7d6a1ef8b7813) Executed action EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API) in 4.7123ms
+[2026-04-07 06:58:31.685 +02:00 INF] (04741a6bb5b34442b2c7d6a1ef8b7813) Executed endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API)'
+[2026-04-07 06:58:31.685 +02:00 INF] () HTTP POST /api/reservations responded 201 in 5.0563 ms
+[2026-04-07 06:58:31.685 +02:00 INF] () Request finished HTTP/1.1 POST http://localhost/api/reservations - 201 null application/json; charset=utf-8 5.7203ms
+[2026-04-07 06:58:31.697 +02:00 INF] () Handling request BlockAvailabilityCommand: {"ServiceId":"b1650366-fb28-4634-99cf-f381b4846fed","Date":"2026-04-09T00:00:00.0000000Z","Quantity":1,"$type":"BlockAvailabilityCommand"}
+[2026-04-07 06:58:31.700 +02:00 INF] () Handled request BlockAvailabilityCommand
+[2026-04-07 06:58:31.703 +02:00 INF] () Handling request BlockAvailabilityCommand: {"ServiceId":"b1650366-fb28-4634-99cf-f381b4846fed","Date":"2026-04-10T00:00:00.0000000Z","Quantity":1,"$type":"BlockAvailabilityCommand"}
+[2026-04-07 06:58:31.704 +02:00 INF] () Handled request BlockAvailabilityCommand
+[2026-04-07 06:58:31.705 +02:00 INF] () Handling request CalculatePriceQuery: {"ServiceId":"b1650366-fb28-4634-99cf-f381b4846fed","StartDate":"2026-04-09T00:00:00.0000000Z","EndDate":"2026-04-11T00:00:00.0000000Z","$type":"CalculatePriceQuery"}
+[2026-04-07 06:58:31.706 +02:00 INF] () Handled request CalculatePriceQuery
+[2026-04-07 06:58:31.715 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 06:58:31.716 +02:00 INF] () Handling request BlockAvailabilityCommand: {"ServiceId":"39305f1c-518b-4360-bf7b-d0e4b7276863","Date":"2026-04-12T00:00:00.0000000Z","Quantity":1,"$type":"BlockAvailabilityCommand"}
+[2026-04-07 06:58:31.716 +02:00 INF] () Handled request BlockAvailabilityCommand
+[2026-04-07 06:58:31.717 +02:00 INF] () Handling request BlockAvailabilityCommand: {"ServiceId":"39305f1c-518b-4360-bf7b-d0e4b7276863","Date":"2026-04-13T00:00:00.0000000Z","Quantity":1,"$type":"BlockAvailabilityCommand"}
+[2026-04-07 06:58:31.717 +02:00 INF] () Handled request BlockAvailabilityCommand
+[2026-04-07 06:58:31.718 +02:00 INF] () Handling request CalculatePriceQuery: {"ServiceId":"39305f1c-518b-4360-bf7b-d0e4b7276863","StartDate":"2026-04-12T00:00:00.0000000Z","EndDate":"2026-04-14T00:00:00.0000000Z","$type":"CalculatePriceQuery"}
+[2026-04-07 06:58:31.718 +02:00 INF] () Handled request CalculatePriceQuery
+[2026-04-07 06:58:31.718 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 07:09:05.474 +02:00 INF] () Request starting HTTP/1.1 POST http://localhost/api/reservations - application/json; charset=utf-8 227
+[2026-04-07 07:09:05.518 +02:00 WRN] (d2584b9a47764a6d8eceb82b200ba0c3) Failed to determine the https port for redirect.
+[2026-04-07 07:09:05.522 +02:00 INF] (d2584b9a47764a6d8eceb82b200ba0c3) Executing endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API)'
+[2026-04-07 07:09:05.536 +02:00 INF] (d2584b9a47764a6d8eceb82b200ba0c3) Route matched with {action = "CreateReservation", controller = "Reservations"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateReservation(EventDrivenBookingPlatform.Modules.Reservations.Application.Commands.CreateReservation.CreateReservationCommand) on controller EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController (API).
+[2026-04-07 07:09:05.550 +02:00 WRN] (d2584b9a47764a6d8eceb82b200ba0c3) You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+[2026-04-07 07:09:05.623 +02:00 INF] (d2584b9a47764a6d8eceb82b200ba0c3) Handling request CreateReservationCommand: {"CustomerId":"85d727c2-9a94-48ed-afd5-a0ca1f2566e2","ServiceId":"1ba5d821-6366-410f-abd8-c53dbe7acdaf","StartDate":"2026-04-09T00:00:00.0000000Z","EndDate":"2026-04-11T00:00:00.0000000Z","Items":[{"Name":"Room","Quantity":1,"UnitPrice":150,"$type":"CreateReservationItemRequest"}],"$type":"CreateReservationCommand"}
+[2026-04-07 07:09:05.674 +02:00 INF] (d2584b9a47764a6d8eceb82b200ba0c3) Saved 4 entities to in-memory store.
+[2026-04-07 07:09:05.675 +02:00 INF] (d2584b9a47764a6d8eceb82b200ba0c3) Handled request CreateReservationCommand
+[2026-04-07 07:09:05.679 +02:00 INF] (d2584b9a47764a6d8eceb82b200ba0c3) Executing CreatedAtActionResult, writing value of type 'System.Guid'.
+[2026-04-07 07:09:05.701 +02:00 INF] (d2584b9a47764a6d8eceb82b200ba0c3) Executed action EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API) in 161.7551ms
+[2026-04-07 07:09:05.702 +02:00 INF] (d2584b9a47764a6d8eceb82b200ba0c3) Executed endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API)'
+[2026-04-07 07:09:05.703 +02:00 INF] () HTTP POST /api/reservations responded 201 in 187.7995 ms
+[2026-04-07 07:09:05.705 +02:00 INF] () Request finished HTTP/1.1 POST http://localhost/api/reservations - 201 null application/json; charset=utf-8 233.1647ms
+[2026-04-07 07:09:05.712 +02:00 INF] () Request starting HTTP/1.1 GET http://localhost/api/reservations/2d1a2b08-373a-4c0c-b3f3-06a92c0e3d19 - null null
+[2026-04-07 07:09:05.712 +02:00 INF] (cd1ca21c35c7495d9979bda57f44a0ac) Executing endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.GetById (API)'
+[2026-04-07 07:09:05.715 +02:00 INF] (cd1ca21c35c7495d9979bda57f44a0ac) Route matched with {action = "GetById", controller = "Reservations"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid) on controller EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController (API).
+[2026-04-07 07:09:05.720 +02:00 INF] (cd1ca21c35c7495d9979bda57f44a0ac) Handling request GetReservationByIdQuery: {"ReservationId":"2d1a2b08-373a-4c0c-b3f3-06a92c0e3d19","$type":"GetReservationByIdQuery"}
+[2026-04-07 07:09:05.729 +02:00 INF] (cd1ca21c35c7495d9979bda57f44a0ac) Handled request GetReservationByIdQuery
+[2026-04-07 07:09:05.729 +02:00 INF] (cd1ca21c35c7495d9979bda57f44a0ac) Executing OkObjectResult, writing value of type 'EventDrivenBookingPlatform.Modules.Reservations.Application.DTOs.ReservationDto'.
+[2026-04-07 07:09:05.732 +02:00 INF] (cd1ca21c35c7495d9979bda57f44a0ac) Executed action EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.GetById (API) in 16.9301ms
+[2026-04-07 07:09:05.733 +02:00 INF] (cd1ca21c35c7495d9979bda57f44a0ac) Executed endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.GetById (API)'
+[2026-04-07 07:09:05.733 +02:00 INF] () HTTP GET /api/reservations/2d1a2b08-373a-4c0c-b3f3-06a92c0e3d19 responded 200 in 20.8432 ms
+[2026-04-07 07:09:05.733 +02:00 INF] () Request finished HTTP/1.1 GET http://localhost/api/reservations/2d1a2b08-373a-4c0c-b3f3-06a92c0e3d19 - 200 null application/json; charset=utf-8 21.5971ms
+[2026-04-07 07:09:05.740 +02:00 INF] () Request starting HTTP/1.1 POST http://localhost/api/reservations - application/json; charset=utf-8 227
+[2026-04-07 07:09:05.740 +02:00 INF] (38734fc971994f13bf36309175988983) Executing endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API)'
+[2026-04-07 07:09:05.741 +02:00 INF] (38734fc971994f13bf36309175988983) Route matched with {action = "CreateReservation", controller = "Reservations"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateReservation(EventDrivenBookingPlatform.Modules.Reservations.Application.Commands.CreateReservation.CreateReservationCommand) on controller EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController (API).
+[2026-04-07 07:09:05.743 +02:00 INF] (38734fc971994f13bf36309175988983) Handling request CreateReservationCommand: {"CustomerId":"53982a21-caf4-45af-ae48-d2a5943c893b","ServiceId":"45e76085-5d66-4ed5-bbc3-a732e9d04fb9","StartDate":"2026-04-12T00:00:00.0000000Z","EndDate":"2026-04-14T00:00:00.0000000Z","Items":[{"Name":"Room","Quantity":1,"UnitPrice":150,"$type":"CreateReservationItemRequest"}],"$type":"CreateReservationCommand"}
+[2026-04-07 07:09:05.745 +02:00 INF] (38734fc971994f13bf36309175988983) Saved 4 entities to in-memory store.
+[2026-04-07 07:09:05.745 +02:00 INF] (38734fc971994f13bf36309175988983) Handled request CreateReservationCommand
+[2026-04-07 07:09:05.745 +02:00 INF] (38734fc971994f13bf36309175988983) Executing CreatedAtActionResult, writing value of type 'System.Guid'.
+[2026-04-07 07:09:05.746 +02:00 INF] (38734fc971994f13bf36309175988983) Executed action EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API) in 4.9394ms
+[2026-04-07 07:09:05.746 +02:00 INF] (38734fc971994f13bf36309175988983) Executed endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API)'
+[2026-04-07 07:09:05.746 +02:00 INF] () HTTP POST /api/reservations responded 201 in 5.4105 ms
+[2026-04-07 07:09:05.746 +02:00 INF] () Request finished HTTP/1.1 POST http://localhost/api/reservations - 201 null application/json; charset=utf-8 6.1447ms
+[2026-04-07 07:09:05.760 +02:00 INF] () Handling request BlockAvailabilityCommand: {"ServiceId":"1ba5d821-6366-410f-abd8-c53dbe7acdaf","Date":"2026-04-09T00:00:00.0000000Z","Quantity":1,"$type":"BlockAvailabilityCommand"}
+[2026-04-07 07:09:05.797 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 07:09:05.797 +02:00 INF] () Handled request BlockAvailabilityCommand
+[2026-04-07 07:09:05.800 +02:00 INF] () Handling request BlockAvailabilityCommand: {"ServiceId":"1ba5d821-6366-410f-abd8-c53dbe7acdaf","Date":"2026-04-10T00:00:00.0000000Z","Quantity":1,"$type":"BlockAvailabilityCommand"}
+[2026-04-07 07:09:05.802 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 07:09:05.802 +02:00 INF] () Handled request BlockAvailabilityCommand
+[2026-04-07 07:09:05.804 +02:00 INF] () Handling request CalculatePriceQuery: {"ServiceId":"1ba5d821-6366-410f-abd8-c53dbe7acdaf","StartDate":"2026-04-09T00:00:00.0000000Z","EndDate":"2026-04-11T00:00:00.0000000Z","$type":"CalculatePriceQuery"}
+[2026-04-07 07:09:05.806 +02:00 INF] () Handled request CalculatePriceQuery
+[2026-04-07 07:09:05.814 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 07:09:05.815 +02:00 INF] () Handling request BlockAvailabilityCommand: {"ServiceId":"45e76085-5d66-4ed5-bbc3-a732e9d04fb9","Date":"2026-04-12T00:00:00.0000000Z","Quantity":1,"$type":"BlockAvailabilityCommand"}
+[2026-04-07 07:09:05.817 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 07:09:05.817 +02:00 INF] () Handled request BlockAvailabilityCommand
+[2026-04-07 07:09:05.818 +02:00 INF] () Handling request BlockAvailabilityCommand: {"ServiceId":"45e76085-5d66-4ed5-bbc3-a732e9d04fb9","Date":"2026-04-13T00:00:00.0000000Z","Quantity":1,"$type":"BlockAvailabilityCommand"}
+[2026-04-07 07:09:05.818 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 07:09:05.818 +02:00 INF] () Handled request BlockAvailabilityCommand
+[2026-04-07 07:09:05.819 +02:00 INF] () Handling request CalculatePriceQuery: {"ServiceId":"45e76085-5d66-4ed5-bbc3-a732e9d04fb9","StartDate":"2026-04-12T00:00:00.0000000Z","EndDate":"2026-04-14T00:00:00.0000000Z","$type":"CalculatePriceQuery"}
+[2026-04-07 07:09:05.819 +02:00 INF] () Handled request CalculatePriceQuery
+[2026-04-07 07:09:05.819 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 07:10:11.666 +02:00 INF] () Request starting HTTP/1.1 POST http://localhost/api/reservations - application/json; charset=utf-8 227
+[2026-04-07 07:10:11.721 +02:00 WRN] (f78944610d2648abbdb342e925b1d45d) Failed to determine the https port for redirect.
+[2026-04-07 07:10:11.727 +02:00 INF] (f78944610d2648abbdb342e925b1d45d) Executing endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API)'
+[2026-04-07 07:10:11.747 +02:00 INF] (f78944610d2648abbdb342e925b1d45d) Route matched with {action = "CreateReservation", controller = "Reservations"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateReservation(EventDrivenBookingPlatform.Modules.Reservations.Application.Commands.CreateReservation.CreateReservationCommand) on controller EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController (API).
+[2026-04-07 07:10:11.757 +02:00 WRN] (f78944610d2648abbdb342e925b1d45d) You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+[2026-04-07 07:10:11.842 +02:00 INF] (f78944610d2648abbdb342e925b1d45d) Handling request CreateReservationCommand: {"CustomerId":"90afea60-0323-4060-9080-ef5d74558bca","ServiceId":"f6adb7d4-99bc-43b6-9d62-8dee503dc244","StartDate":"2026-04-09T00:00:00.0000000Z","EndDate":"2026-04-11T00:00:00.0000000Z","Items":[{"Name":"Room","Quantity":1,"UnitPrice":150,"$type":"CreateReservationItemRequest"}],"$type":"CreateReservationCommand"}
+[2026-04-07 07:10:11.904 +02:00 INF] (f78944610d2648abbdb342e925b1d45d) Saved 4 entities to in-memory store.
+[2026-04-07 07:10:11.905 +02:00 INF] (f78944610d2648abbdb342e925b1d45d) Handled request CreateReservationCommand
+[2026-04-07 07:10:11.909 +02:00 INF] (f78944610d2648abbdb342e925b1d45d) Executing CreatedAtActionResult, writing value of type 'System.Guid'.
+[2026-04-07 07:10:11.931 +02:00 INF] (f78944610d2648abbdb342e925b1d45d) Executed action EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API) in 179.9872ms
+[2026-04-07 07:10:11.933 +02:00 INF] (f78944610d2648abbdb342e925b1d45d) Executed endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API)'
+[2026-04-07 07:10:11.935 +02:00 INF] () HTTP POST /api/reservations responded 201 in 218.1596 ms
+[2026-04-07 07:10:11.938 +02:00 INF] () Request finished HTTP/1.1 POST http://localhost/api/reservations - 201 null application/json; charset=utf-8 275.6034ms
+[2026-04-07 07:10:11.945 +02:00 INF] () Request starting HTTP/1.1 GET http://localhost/api/reservations/5480b5d4-b66a-4ec7-88cd-4272dd329139 - null null
+[2026-04-07 07:10:11.946 +02:00 INF] (d6384368bb7d4fd489694b4c196ddd43) Executing endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.GetById (API)'
+[2026-04-07 07:10:11.951 +02:00 INF] (d6384368bb7d4fd489694b4c196ddd43) Route matched with {action = "GetById", controller = "Reservations"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid) on controller EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController (API).
+[2026-04-07 07:10:11.956 +02:00 INF] (d6384368bb7d4fd489694b4c196ddd43) Handling request GetReservationByIdQuery: {"ReservationId":"5480b5d4-b66a-4ec7-88cd-4272dd329139","$type":"GetReservationByIdQuery"}
+[2026-04-07 07:10:11.967 +02:00 INF] (d6384368bb7d4fd489694b4c196ddd43) Handled request GetReservationByIdQuery
+[2026-04-07 07:10:11.967 +02:00 INF] (d6384368bb7d4fd489694b4c196ddd43) Executing OkObjectResult, writing value of type 'EventDrivenBookingPlatform.Modules.Reservations.Application.DTOs.ReservationDto'.
+[2026-04-07 07:10:11.970 +02:00 INF] (d6384368bb7d4fd489694b4c196ddd43) Executed action EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.GetById (API) in 19.2916ms
+[2026-04-07 07:10:11.970 +02:00 INF] (d6384368bb7d4fd489694b4c196ddd43) Executed endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.GetById (API)'
+[2026-04-07 07:10:11.971 +02:00 INF] () HTTP GET /api/reservations/5480b5d4-b66a-4ec7-88cd-4272dd329139 responded 200 in 24.2077 ms
+[2026-04-07 07:10:11.971 +02:00 INF] () Request finished HTTP/1.1 GET http://localhost/api/reservations/5480b5d4-b66a-4ec7-88cd-4272dd329139 - 200 null application/json; charset=utf-8 25.362ms
+[2026-04-07 07:10:11.979 +02:00 INF] () Request starting HTTP/1.1 POST http://localhost/api/reservations - application/json; charset=utf-8 227
+[2026-04-07 07:10:11.980 +02:00 INF] (766e00b5984c4035b0528dadf32bbb16) Executing endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API)'
+[2026-04-07 07:10:11.981 +02:00 INF] (766e00b5984c4035b0528dadf32bbb16) Route matched with {action = "CreateReservation", controller = "Reservations"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateReservation(EventDrivenBookingPlatform.Modules.Reservations.Application.Commands.CreateReservation.CreateReservationCommand) on controller EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController (API).
+[2026-04-07 07:10:11.984 +02:00 INF] (766e00b5984c4035b0528dadf32bbb16) Handling request CreateReservationCommand: {"CustomerId":"055fb245-5495-46c5-a683-49c04291fe40","ServiceId":"2c69a2b5-9613-492a-9ede-182bf0f7788c","StartDate":"2026-04-12T00:00:00.0000000Z","EndDate":"2026-04-14T00:00:00.0000000Z","Items":[{"Name":"Room","Quantity":1,"UnitPrice":150,"$type":"CreateReservationItemRequest"}],"$type":"CreateReservationCommand"}
+[2026-04-07 07:10:11.986 +02:00 INF] (766e00b5984c4035b0528dadf32bbb16) Saved 4 entities to in-memory store.
+[2026-04-07 07:10:11.987 +02:00 INF] (766e00b5984c4035b0528dadf32bbb16) Handled request CreateReservationCommand
+[2026-04-07 07:10:11.987 +02:00 INF] (766e00b5984c4035b0528dadf32bbb16) Executing CreatedAtActionResult, writing value of type 'System.Guid'.
+[2026-04-07 07:10:11.988 +02:00 INF] (766e00b5984c4035b0528dadf32bbb16) Executed action EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API) in 6.7162ms
+[2026-04-07 07:10:11.988 +02:00 INF] (766e00b5984c4035b0528dadf32bbb16) Executed endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API)'
+[2026-04-07 07:10:11.988 +02:00 INF] () HTTP POST /api/reservations responded 201 in 7.4032 ms
+[2026-04-07 07:10:11.988 +02:00 INF] () Request finished HTTP/1.1 POST http://localhost/api/reservations - 201 null application/json; charset=utf-8 8.9141ms
+[2026-04-07 07:10:12.002 +02:00 INF] () Handling request BlockAvailabilityCommand: {"ServiceId":"f6adb7d4-99bc-43b6-9d62-8dee503dc244","Date":"2026-04-09T00:00:00.0000000Z","Quantity":1,"$type":"BlockAvailabilityCommand"}
+[2026-04-07 07:10:12.037 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 07:10:12.038 +02:00 INF] () Handled request BlockAvailabilityCommand
+[2026-04-07 07:10:12.042 +02:00 INF] () Handling request BlockAvailabilityCommand: {"ServiceId":"f6adb7d4-99bc-43b6-9d62-8dee503dc244","Date":"2026-04-10T00:00:00.0000000Z","Quantity":1,"$type":"BlockAvailabilityCommand"}
+[2026-04-07 07:10:12.044 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 07:10:12.044 +02:00 INF] () Handled request BlockAvailabilityCommand
+[2026-04-07 07:10:12.046 +02:00 INF] () Handling request CalculatePriceQuery: {"ServiceId":"f6adb7d4-99bc-43b6-9d62-8dee503dc244","StartDate":"2026-04-09T00:00:00.0000000Z","EndDate":"2026-04-11T00:00:00.0000000Z","$type":"CalculatePriceQuery"}
+[2026-04-07 07:10:12.048 +02:00 INF] () Handled request CalculatePriceQuery
+[2026-04-07 07:10:12.059 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 07:10:12.074 +02:00 INF] () Handling request BlockAvailabilityCommand: {"ServiceId":"2c69a2b5-9613-492a-9ede-182bf0f7788c","Date":"2026-04-12T00:00:00.0000000Z","Quantity":1,"$type":"BlockAvailabilityCommand"}
+[2026-04-07 07:10:12.076 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 07:10:12.076 +02:00 INF] () Handled request BlockAvailabilityCommand
+[2026-04-07 07:10:12.077 +02:00 INF] () Handling request BlockAvailabilityCommand: {"ServiceId":"2c69a2b5-9613-492a-9ede-182bf0f7788c","Date":"2026-04-13T00:00:00.0000000Z","Quantity":1,"$type":"BlockAvailabilityCommand"}
+[2026-04-07 07:10:12.077 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 07:10:12.077 +02:00 INF] () Handled request BlockAvailabilityCommand
+[2026-04-07 07:10:12.078 +02:00 INF] () Handling request CalculatePriceQuery: {"ServiceId":"2c69a2b5-9613-492a-9ede-182bf0f7788c","StartDate":"2026-04-12T00:00:00.0000000Z","EndDate":"2026-04-14T00:00:00.0000000Z","$type":"CalculatePriceQuery"}
+[2026-04-07 07:10:12.078 +02:00 INF] () Handled request CalculatePriceQuery
+[2026-04-07 07:10:12.079 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 07:10:50.675 +02:00 INF] () Request starting HTTP/1.1 POST http://localhost/api/reservations - application/json; charset=utf-8 227
+[2026-04-07 07:10:50.722 +02:00 WRN] (931b300f8f4647eaaa476c4794eaee4a) Failed to determine the https port for redirect.
+[2026-04-07 07:10:50.726 +02:00 INF] (931b300f8f4647eaaa476c4794eaee4a) Executing endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API)'
+[2026-04-07 07:10:50.742 +02:00 INF] (931b300f8f4647eaaa476c4794eaee4a) Route matched with {action = "CreateReservation", controller = "Reservations"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateReservation(EventDrivenBookingPlatform.Modules.Reservations.Application.Commands.CreateReservation.CreateReservationCommand) on controller EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController (API).
+[2026-04-07 07:10:50.750 +02:00 WRN] (931b300f8f4647eaaa476c4794eaee4a) You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+[2026-04-07 07:10:50.828 +02:00 INF] (931b300f8f4647eaaa476c4794eaee4a) Handling request CreateReservationCommand: {"CustomerId":"bf368fc0-ecbd-4820-997e-7bcff6ff5d32","ServiceId":"4bf4f440-a5f5-4758-a891-70f6550dd058","StartDate":"2026-04-09T00:00:00.0000000Z","EndDate":"2026-04-11T00:00:00.0000000Z","Items":[{"Name":"Room","Quantity":1,"UnitPrice":150,"$type":"CreateReservationItemRequest"}],"$type":"CreateReservationCommand"}
+[2026-04-07 07:10:50.939 +02:00 INF] (931b300f8f4647eaaa476c4794eaee4a) Saved 4 entities to in-memory store.
+[2026-04-07 07:10:50.940 +02:00 INF] (931b300f8f4647eaaa476c4794eaee4a) Handled request CreateReservationCommand
+[2026-04-07 07:10:50.947 +02:00 INF] (931b300f8f4647eaaa476c4794eaee4a) Executing CreatedAtActionResult, writing value of type 'System.Guid'.
+[2026-04-07 07:10:50.969 +02:00 INF] (931b300f8f4647eaaa476c4794eaee4a) Executed action EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API) in 224.4975ms
+[2026-04-07 07:10:50.971 +02:00 INF] (931b300f8f4647eaaa476c4794eaee4a) Executed endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API)'
+[2026-04-07 07:10:50.981 +02:00 INF] () HTTP POST /api/reservations responded 201 in 260.2297 ms
+[2026-04-07 07:10:50.984 +02:00 INF] () Request finished HTTP/1.1 POST http://localhost/api/reservations - 201 null application/json; charset=utf-8 317.6205ms
+[2026-04-07 07:10:51.010 +02:00 INF] () Request starting HTTP/1.1 GET http://localhost/api/reservations/9ca4569e-e118-403a-b4da-95c0f371f040 - null null
+[2026-04-07 07:10:51.014 +02:00 INF] (7dfff4a3863a4924a7758335376f881f) Executing endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.GetById (API)'
+[2026-04-07 07:10:51.020 +02:00 INF] (7dfff4a3863a4924a7758335376f881f) Route matched with {action = "GetById", controller = "Reservations"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid) on controller EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController (API).
+[2026-04-07 07:10:51.027 +02:00 INF] (7dfff4a3863a4924a7758335376f881f) Handling request GetReservationByIdQuery: {"ReservationId":"9ca4569e-e118-403a-b4da-95c0f371f040","$type":"GetReservationByIdQuery"}
+[2026-04-07 07:10:51.037 +02:00 INF] (7dfff4a3863a4924a7758335376f881f) Handled request GetReservationByIdQuery
+[2026-04-07 07:10:51.037 +02:00 INF] (7dfff4a3863a4924a7758335376f881f) Executing OkObjectResult, writing value of type 'EventDrivenBookingPlatform.Modules.Reservations.Application.DTOs.ReservationDto'.
+[2026-04-07 07:10:51.040 +02:00 INF] (7dfff4a3863a4924a7758335376f881f) Executed action EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.GetById (API) in 20.1339ms
+[2026-04-07 07:10:51.040 +02:00 INF] (7dfff4a3863a4924a7758335376f881f) Executed endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.GetById (API)'
+[2026-04-07 07:10:51.041 +02:00 INF] () HTTP GET /api/reservations/9ca4569e-e118-403a-b4da-95c0f371f040 responded 200 in 27.5827 ms
+[2026-04-07 07:10:51.041 +02:00 INF] () Request finished HTTP/1.1 GET http://localhost/api/reservations/9ca4569e-e118-403a-b4da-95c0f371f040 - 200 null application/json; charset=utf-8 30.9508ms
+[2026-04-07 07:10:51.048 +02:00 INF] () Request starting HTTP/1.1 POST http://localhost/api/reservations - application/json; charset=utf-8 227
+[2026-04-07 07:10:51.049 +02:00 INF] (99826be5370f44bfb1cf12195adc9f4f) Executing endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API)'
+[2026-04-07 07:10:51.049 +02:00 INF] (99826be5370f44bfb1cf12195adc9f4f) Route matched with {action = "CreateReservation", controller = "Reservations"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateReservation(EventDrivenBookingPlatform.Modules.Reservations.Application.Commands.CreateReservation.CreateReservationCommand) on controller EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController (API).
+[2026-04-07 07:10:51.051 +02:00 INF] (99826be5370f44bfb1cf12195adc9f4f) Handling request CreateReservationCommand: {"CustomerId":"b5e47133-7ab1-4f28-a0ce-03bfcdc3a17a","ServiceId":"acd1a17f-d8cb-4349-be41-083326595afb","StartDate":"2026-04-12T00:00:00.0000000Z","EndDate":"2026-04-14T00:00:00.0000000Z","Items":[{"Name":"Room","Quantity":1,"UnitPrice":150,"$type":"CreateReservationItemRequest"}],"$type":"CreateReservationCommand"}
+[2026-04-07 07:10:51.053 +02:00 INF] (99826be5370f44bfb1cf12195adc9f4f) Saved 4 entities to in-memory store.
+[2026-04-07 07:10:51.053 +02:00 INF] (99826be5370f44bfb1cf12195adc9f4f) Handled request CreateReservationCommand
+[2026-04-07 07:10:51.053 +02:00 INF] (99826be5370f44bfb1cf12195adc9f4f) Executing CreatedAtActionResult, writing value of type 'System.Guid'.
+[2026-04-07 07:10:51.054 +02:00 INF] (99826be5370f44bfb1cf12195adc9f4f) Executed action EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API) in 4.8629ms
+[2026-04-07 07:10:51.054 +02:00 INF] (99826be5370f44bfb1cf12195adc9f4f) Executed endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API)'
+[2026-04-07 07:10:51.054 +02:00 INF] () HTTP POST /api/reservations responded 201 in 5.3646 ms
+[2026-04-07 07:10:51.054 +02:00 INF] () Request finished HTTP/1.1 POST http://localhost/api/reservations - 201 null application/json; charset=utf-8 6.237ms
+[2026-04-07 07:10:51.070 +02:00 INF] () Handling request BlockAvailabilityCommand: {"ServiceId":"4bf4f440-a5f5-4758-a891-70f6550dd058","Date":"2026-04-09T00:00:00.0000000Z","Quantity":1,"$type":"BlockAvailabilityCommand"}
+[2026-04-07 07:10:51.112 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 07:10:51.113 +02:00 INF] () Handled request BlockAvailabilityCommand
+[2026-04-07 07:10:51.116 +02:00 INF] () Handling request BlockAvailabilityCommand: {"ServiceId":"4bf4f440-a5f5-4758-a891-70f6550dd058","Date":"2026-04-10T00:00:00.0000000Z","Quantity":1,"$type":"BlockAvailabilityCommand"}
+[2026-04-07 07:10:51.117 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 07:10:51.117 +02:00 INF] () Handled request BlockAvailabilityCommand
+[2026-04-07 07:10:51.119 +02:00 INF] () Handling request CalculatePriceQuery: {"ServiceId":"4bf4f440-a5f5-4758-a891-70f6550dd058","StartDate":"2026-04-09T00:00:00.0000000Z","EndDate":"2026-04-11T00:00:00.0000000Z","$type":"CalculatePriceQuery"}
+[2026-04-07 07:10:51.120 +02:00 INF] () Handled request CalculatePriceQuery
+[2026-04-07 07:10:51.129 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 07:10:51.130 +02:00 INF] () Handling request BlockAvailabilityCommand: {"ServiceId":"acd1a17f-d8cb-4349-be41-083326595afb","Date":"2026-04-12T00:00:00.0000000Z","Quantity":1,"$type":"BlockAvailabilityCommand"}
+[2026-04-07 07:10:51.132 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 07:10:51.132 +02:00 INF] () Handled request BlockAvailabilityCommand
+[2026-04-07 07:10:51.132 +02:00 INF] () Handling request BlockAvailabilityCommand: {"ServiceId":"acd1a17f-d8cb-4349-be41-083326595afb","Date":"2026-04-13T00:00:00.0000000Z","Quantity":1,"$type":"BlockAvailabilityCommand"}
+[2026-04-07 07:10:51.133 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 07:10:51.133 +02:00 INF] () Handled request BlockAvailabilityCommand
+[2026-04-07 07:10:51.133 +02:00 INF] () Handling request CalculatePriceQuery: {"ServiceId":"acd1a17f-d8cb-4349-be41-083326595afb","StartDate":"2026-04-12T00:00:00.0000000Z","EndDate":"2026-04-14T00:00:00.0000000Z","$type":"CalculatePriceQuery"}
+[2026-04-07 07:10:51.133 +02:00 INF] () Handled request CalculatePriceQuery
+[2026-04-07 07:10:51.134 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 07:16:14.279 +02:00 INF] () Request starting HTTP/1.1 POST http://localhost/api/reservations - application/json; charset=utf-8 227
+[2026-04-07 07:16:14.317 +02:00 WRN] (f68c7b76ca434fdaad8ba9b9038ee6e3) Failed to determine the https port for redirect.
+[2026-04-07 07:16:14.321 +02:00 INF] (f68c7b76ca434fdaad8ba9b9038ee6e3) Executing endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API)'
+[2026-04-07 07:16:14.334 +02:00 INF] (f68c7b76ca434fdaad8ba9b9038ee6e3) Route matched with {action = "CreateReservation", controller = "Reservations"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateReservation(EventDrivenBookingPlatform.Modules.Reservations.Application.Commands.CreateReservation.CreateReservationCommand) on controller EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController (API).
+[2026-04-07 07:16:14.341 +02:00 WRN] (f68c7b76ca434fdaad8ba9b9038ee6e3) You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+[2026-04-07 07:16:14.407 +02:00 INF] (f68c7b76ca434fdaad8ba9b9038ee6e3) Handling request CreateReservationCommand: {"CustomerId":"2cb13862-4b54-4f92-8f19-3adcf5b7eccf","ServiceId":"907e0b26-932d-49a3-badc-a223b106fbaa","StartDate":"2026-04-09T00:00:00.0000000Z","EndDate":"2026-04-11T00:00:00.0000000Z","Items":[{"Name":"Room","Quantity":1,"UnitPrice":150,"$type":"CreateReservationItemRequest"}],"$type":"CreateReservationCommand"}
+[2026-04-07 07:16:14.456 +02:00 INF] (f68c7b76ca434fdaad8ba9b9038ee6e3) Saved 4 entities to in-memory store.
+[2026-04-07 07:16:14.457 +02:00 INF] (f68c7b76ca434fdaad8ba9b9038ee6e3) Handled request CreateReservationCommand
+[2026-04-07 07:16:14.460 +02:00 INF] (f68c7b76ca434fdaad8ba9b9038ee6e3) Executing CreatedAtActionResult, writing value of type 'System.Guid'.
+[2026-04-07 07:16:14.477 +02:00 INF] (f68c7b76ca434fdaad8ba9b9038ee6e3) Executed action EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API) in 140.3181ms
+[2026-04-07 07:16:14.478 +02:00 INF] (f68c7b76ca434fdaad8ba9b9038ee6e3) Executed endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API)'
+[2026-04-07 07:16:14.479 +02:00 INF] () HTTP POST /api/reservations responded 201 in 164.2621 ms
+[2026-04-07 07:16:14.481 +02:00 INF] () Request finished HTTP/1.1 POST http://localhost/api/reservations - 201 null application/json; charset=utf-8 203.748ms
+[2026-04-07 07:16:14.487 +02:00 INF] () Request starting HTTP/1.1 GET http://localhost/api/reservations/a3d1187f-0023-4574-afad-91f9c5482baf - null null
+[2026-04-07 07:16:14.487 +02:00 INF] (97795159c18645e891a2863224b5bb6a) Executing endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.GetById (API)'
+[2026-04-07 07:16:14.490 +02:00 INF] (97795159c18645e891a2863224b5bb6a) Route matched with {action = "GetById", controller = "Reservations"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid) on controller EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController (API).
+[2026-04-07 07:16:14.495 +02:00 INF] (97795159c18645e891a2863224b5bb6a) Handling request GetReservationByIdQuery: {"ReservationId":"a3d1187f-0023-4574-afad-91f9c5482baf","$type":"GetReservationByIdQuery"}
+[2026-04-07 07:16:14.504 +02:00 INF] (97795159c18645e891a2863224b5bb6a) Handled request GetReservationByIdQuery
+[2026-04-07 07:16:14.505 +02:00 INF] (97795159c18645e891a2863224b5bb6a) Executing OkObjectResult, writing value of type 'EventDrivenBookingPlatform.Modules.Reservations.Application.DTOs.ReservationDto'.
+[2026-04-07 07:16:14.509 +02:00 INF] (97795159c18645e891a2863224b5bb6a) Executed action EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.GetById (API) in 18.0835ms
+[2026-04-07 07:16:14.509 +02:00 INF] (97795159c18645e891a2863224b5bb6a) Executed endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.GetById (API)'
+[2026-04-07 07:16:14.509 +02:00 INF] () HTTP GET /api/reservations/a3d1187f-0023-4574-afad-91f9c5482baf responded 200 in 21.5329 ms
+[2026-04-07 07:16:14.509 +02:00 INF] () Request finished HTTP/1.1 GET http://localhost/api/reservations/a3d1187f-0023-4574-afad-91f9c5482baf - 200 null application/json; charset=utf-8 22.0972ms
+[2026-04-07 07:16:14.517 +02:00 INF] () Request starting HTTP/1.1 POST http://localhost/api/reservations - application/json; charset=utf-8 227
+[2026-04-07 07:16:14.517 +02:00 INF] (e6d1786832324e5ca26d901957d991d8) Executing endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API)'
+[2026-04-07 07:16:14.517 +02:00 INF] (e6d1786832324e5ca26d901957d991d8) Route matched with {action = "CreateReservation", controller = "Reservations"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateReservation(EventDrivenBookingPlatform.Modules.Reservations.Application.Commands.CreateReservation.CreateReservationCommand) on controller EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController (API).
+[2026-04-07 07:16:14.519 +02:00 INF] (e6d1786832324e5ca26d901957d991d8) Handling request CreateReservationCommand: {"CustomerId":"ede42a61-e6a7-47f4-9612-9591ca23c3de","ServiceId":"8bc6453c-0827-40eb-8da6-7733bfb68b5b","StartDate":"2026-04-12T00:00:00.0000000Z","EndDate":"2026-04-14T00:00:00.0000000Z","Items":[{"Name":"Room","Quantity":1,"UnitPrice":150,"$type":"CreateReservationItemRequest"}],"$type":"CreateReservationCommand"}
+[2026-04-07 07:16:14.522 +02:00 INF] (e6d1786832324e5ca26d901957d991d8) Saved 4 entities to in-memory store.
+[2026-04-07 07:16:14.522 +02:00 INF] (e6d1786832324e5ca26d901957d991d8) Handled request CreateReservationCommand
+[2026-04-07 07:16:14.522 +02:00 INF] (e6d1786832324e5ca26d901957d991d8) Executing CreatedAtActionResult, writing value of type 'System.Guid'.
+[2026-04-07 07:16:14.522 +02:00 INF] (e6d1786832324e5ca26d901957d991d8) Executed action EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API) in 4.8899ms
+[2026-04-07 07:16:14.523 +02:00 INF] (e6d1786832324e5ca26d901957d991d8) Executed endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API)'
+[2026-04-07 07:16:14.523 +02:00 INF] () HTTP POST /api/reservations responded 201 in 5.3757 ms
+[2026-04-07 07:16:14.523 +02:00 INF] () Request finished HTTP/1.1 POST http://localhost/api/reservations - 201 null application/json; charset=utf-8 6.1052ms
+[2026-04-07 07:16:14.535 +02:00 INF] () Handling request BlockAvailabilityCommand: {"ServiceId":"907e0b26-932d-49a3-badc-a223b106fbaa","Date":"2026-04-09T00:00:00.0000000Z","Quantity":1,"$type":"BlockAvailabilityCommand"}
+[2026-04-07 07:16:14.563 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 07:16:14.563 +02:00 INF] () Handled request BlockAvailabilityCommand
+[2026-04-07 07:16:14.576 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 07:16:14.577 +02:00 INF] () Handling request BlockAvailabilityCommand: {"ServiceId":"907e0b26-932d-49a3-badc-a223b106fbaa","Date":"2026-04-10T00:00:00.0000000Z","Quantity":1,"$type":"BlockAvailabilityCommand"}
+[2026-04-07 07:16:14.578 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 07:16:14.578 +02:00 INF] () Handled request BlockAvailabilityCommand
+[2026-04-07 07:16:14.579 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 07:16:14.581 +02:00 INF] () Handling request CalculatePriceQuery: {"ServiceId":"907e0b26-932d-49a3-badc-a223b106fbaa","StartDate":"2026-04-09T00:00:00.0000000Z","EndDate":"2026-04-11T00:00:00.0000000Z","$type":"CalculatePriceQuery"}
+[2026-04-07 07:16:14.582 +02:00 INF] () Handled request CalculatePriceQuery
+[2026-04-07 07:16:14.584 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 07:16:14.586 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 07:16:14.590 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 07:16:14.591 +02:00 INF] () Handling request BlockAvailabilityCommand: {"ServiceId":"8bc6453c-0827-40eb-8da6-7733bfb68b5b","Date":"2026-04-12T00:00:00.0000000Z","Quantity":1,"$type":"BlockAvailabilityCommand"}
+[2026-04-07 07:16:14.602 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 07:16:14.603 +02:00 INF] () Handled request BlockAvailabilityCommand
+[2026-04-07 07:16:14.605 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 07:16:14.605 +02:00 INF] () Handling request BlockAvailabilityCommand: {"ServiceId":"8bc6453c-0827-40eb-8da6-7733bfb68b5b","Date":"2026-04-13T00:00:00.0000000Z","Quantity":1,"$type":"BlockAvailabilityCommand"}
+[2026-04-07 07:16:14.605 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 07:16:14.605 +02:00 INF] () Handled request BlockAvailabilityCommand
+[2026-04-07 07:16:14.605 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 07:16:14.606 +02:00 INF] () Handling request CalculatePriceQuery: {"ServiceId":"8bc6453c-0827-40eb-8da6-7733bfb68b5b","StartDate":"2026-04-12T00:00:00.0000000Z","EndDate":"2026-04-14T00:00:00.0000000Z","$type":"CalculatePriceQuery"}
+[2026-04-07 07:16:14.606 +02:00 INF] () Handled request CalculatePriceQuery
+[2026-04-07 07:16:14.606 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 07:16:14.607 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 07:16:14.607 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 07:29:06.582 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 07:29:06.751 +02:00 INF] () Request starting HTTP/1.1 POST http://localhost/api/reservations - application/json; charset=utf-8 227
+[2026-04-07 07:29:06.769 +02:00 WRN] (7300d177356d4d9fa4c8f14e214dba70) Failed to determine the https port for redirect.
+[2026-04-07 07:29:06.772 +02:00 INF] (7300d177356d4d9fa4c8f14e214dba70) Executing endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API)'
+[2026-04-07 07:29:06.786 +02:00 INF] (7300d177356d4d9fa4c8f14e214dba70) Route matched with {action = "CreateReservation", controller = "Reservations"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateReservation(EventDrivenBookingPlatform.Modules.Reservations.Application.Commands.CreateReservation.CreateReservationCommand) on controller EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController (API).
+[2026-04-07 07:29:06.793 +02:00 WRN] (7300d177356d4d9fa4c8f14e214dba70) You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+[2026-04-07 07:29:06.867 +02:00 INF] (7300d177356d4d9fa4c8f14e214dba70) Handling request CreateReservationCommand: {"CustomerId":"7e46656b-2ee0-4750-9d92-47221a4ffb28","ServiceId":"1389aa6f-f23d-4f0b-83c0-997225eb0034","StartDate":"2026-04-09T00:00:00.0000000Z","EndDate":"2026-04-11T00:00:00.0000000Z","Items":[{"Name":"Room","Quantity":1,"UnitPrice":150,"$type":"CreateReservationItemRequest"}],"$type":"CreateReservationCommand"}
+[2026-04-07 07:29:06.888 +02:00 INF] (7300d177356d4d9fa4c8f14e214dba70) Saved 4 entities to in-memory store.
+[2026-04-07 07:29:06.889 +02:00 INF] (7300d177356d4d9fa4c8f14e214dba70) Handled request CreateReservationCommand
+[2026-04-07 07:29:06.893 +02:00 INF] (7300d177356d4d9fa4c8f14e214dba70) Executing CreatedAtActionResult, writing value of type 'System.Guid'.
+[2026-04-07 07:29:06.913 +02:00 INF] (7300d177356d4d9fa4c8f14e214dba70) Executed action EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API) in 124.3072ms
+[2026-04-07 07:29:06.915 +02:00 INF] (7300d177356d4d9fa4c8f14e214dba70) Executed endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API)'
+[2026-04-07 07:29:06.916 +02:00 INF] () HTTP POST /api/reservations responded 201 in 149.1014 ms
+[2026-04-07 07:29:06.918 +02:00 INF] () Request finished HTTP/1.1 POST http://localhost/api/reservations - 201 null application/json; charset=utf-8 168.7228ms
+[2026-04-07 07:29:06.924 +02:00 INF] () Request starting HTTP/1.1 GET http://localhost/api/reservations/1e210e40-e2b6-454a-b83e-2a0d8c75293d - null null
+[2026-04-07 07:29:06.925 +02:00 INF] (cfda0192d60a432fb58a1ac94c0c41fe) Executing endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.GetById (API)'
+[2026-04-07 07:29:06.928 +02:00 INF] (cfda0192d60a432fb58a1ac94c0c41fe) Route matched with {action = "GetById", controller = "Reservations"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid) on controller EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController (API).
+[2026-04-07 07:29:06.933 +02:00 INF] (cfda0192d60a432fb58a1ac94c0c41fe) Handling request GetReservationByIdQuery: {"ReservationId":"1e210e40-e2b6-454a-b83e-2a0d8c75293d","$type":"GetReservationByIdQuery"}
+[2026-04-07 07:29:06.941 +02:00 INF] (cfda0192d60a432fb58a1ac94c0c41fe) Handled request GetReservationByIdQuery
+[2026-04-07 07:29:06.941 +02:00 INF] (cfda0192d60a432fb58a1ac94c0c41fe) Executing OkObjectResult, writing value of type 'EventDrivenBookingPlatform.Modules.Reservations.Application.DTOs.ReservationDto'.
+[2026-04-07 07:29:06.944 +02:00 INF] (cfda0192d60a432fb58a1ac94c0c41fe) Executed action EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.GetById (API) in 16.0525ms
+[2026-04-07 07:29:06.944 +02:00 INF] (cfda0192d60a432fb58a1ac94c0c41fe) Executed endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.GetById (API)'
+[2026-04-07 07:29:06.944 +02:00 INF] () HTTP GET /api/reservations/1e210e40-e2b6-454a-b83e-2a0d8c75293d responded 200 in 19.2569 ms
+[2026-04-07 07:29:06.944 +02:00 INF] () Request finished HTTP/1.1 GET http://localhost/api/reservations/1e210e40-e2b6-454a-b83e-2a0d8c75293d - 200 null application/json; charset=utf-8 20.1967ms
+[2026-04-07 07:29:06.951 +02:00 INF] () Request starting HTTP/1.1 POST http://localhost/api/reservations - application/json; charset=utf-8 227
+[2026-04-07 07:29:06.952 +02:00 INF] (675d84aa2de64954a5311f4a995d2dab) Executing endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API)'
+[2026-04-07 07:29:06.952 +02:00 INF] (675d84aa2de64954a5311f4a995d2dab) Route matched with {action = "CreateReservation", controller = "Reservations"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateReservation(EventDrivenBookingPlatform.Modules.Reservations.Application.Commands.CreateReservation.CreateReservationCommand) on controller EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController (API).
+[2026-04-07 07:29:06.954 +02:00 INF] (675d84aa2de64954a5311f4a995d2dab) Handling request CreateReservationCommand: {"CustomerId":"b76fd32d-b09c-4652-b3f2-54c881da8d94","ServiceId":"f9d86e49-7010-489c-9752-5d17f63de917","StartDate":"2026-04-12T00:00:00.0000000Z","EndDate":"2026-04-14T00:00:00.0000000Z","Items":[{"Name":"Room","Quantity":1,"UnitPrice":150,"$type":"CreateReservationItemRequest"}],"$type":"CreateReservationCommand"}
+[2026-04-07 07:29:06.956 +02:00 INF] (675d84aa2de64954a5311f4a995d2dab) Saved 4 entities to in-memory store.
+[2026-04-07 07:29:06.956 +02:00 INF] (675d84aa2de64954a5311f4a995d2dab) Handled request CreateReservationCommand
+[2026-04-07 07:29:06.956 +02:00 INF] (675d84aa2de64954a5311f4a995d2dab) Executing CreatedAtActionResult, writing value of type 'System.Guid'.
+[2026-04-07 07:29:06.957 +02:00 INF] (675d84aa2de64954a5311f4a995d2dab) Executed action EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API) in 4.7878ms
+[2026-04-07 07:29:06.957 +02:00 INF] (675d84aa2de64954a5311f4a995d2dab) Executed endpoint 'EventDrivenBookingPlatform.Modules.Reservations.API.Controllers.ReservationsController.CreateReservation (API)'
+[2026-04-07 07:29:06.957 +02:00 INF] () HTTP POST /api/reservations responded 201 in 5.1483 ms
+[2026-04-07 07:29:06.957 +02:00 INF] () Request finished HTTP/1.1 POST http://localhost/api/reservations - 201 null application/json; charset=utf-8 5.9363ms
+[2026-04-07 07:29:06.970 +02:00 INF] () Handling request BlockAvailabilityCommand: {"ServiceId":"1389aa6f-f23d-4f0b-83c0-997225eb0034","Date":"2026-04-09T00:00:00.0000000Z","Quantity":1,"$type":"BlockAvailabilityCommand"}
+[2026-04-07 07:29:06.994 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 07:29:06.994 +02:00 INF] () Handled request BlockAvailabilityCommand
+[2026-04-07 07:29:07.017 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 07:29:07.017 +02:00 INF] () Handling request BlockAvailabilityCommand: {"ServiceId":"1389aa6f-f23d-4f0b-83c0-997225eb0034","Date":"2026-04-10T00:00:00.0000000Z","Quantity":1,"$type":"BlockAvailabilityCommand"}
+[2026-04-07 07:29:07.019 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 07:29:07.019 +02:00 INF] () Handled request BlockAvailabilityCommand
+[2026-04-07 07:29:07.020 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 07:29:07.022 +02:00 INF] () Handling request CalculatePriceQuery: {"ServiceId":"1389aa6f-f23d-4f0b-83c0-997225eb0034","StartDate":"2026-04-09T00:00:00.0000000Z","EndDate":"2026-04-11T00:00:00.0000000Z","$type":"CalculatePriceQuery"}
+[2026-04-07 07:29:07.031 +02:00 INF] () Handled request CalculatePriceQuery
+[2026-04-07 07:29:07.043 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 07:29:07.046 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 07:29:07.048 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 07:29:07.053 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 07:29:07.054 +02:00 INF] () Handling request BlockAvailabilityCommand: {"ServiceId":"f9d86e49-7010-489c-9752-5d17f63de917","Date":"2026-04-12T00:00:00.0000000Z","Quantity":1,"$type":"BlockAvailabilityCommand"}
+[2026-04-07 07:29:07.056 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 07:29:07.056 +02:00 INF] () Handled request BlockAvailabilityCommand
+[2026-04-07 07:29:07.058 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 07:29:07.058 +02:00 INF] () Handling request BlockAvailabilityCommand: {"ServiceId":"f9d86e49-7010-489c-9752-5d17f63de917","Date":"2026-04-13T00:00:00.0000000Z","Quantity":1,"$type":"BlockAvailabilityCommand"}
+[2026-04-07 07:29:07.058 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 07:29:07.058 +02:00 INF] () Handled request BlockAvailabilityCommand
+[2026-04-07 07:29:07.059 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 07:29:07.059 +02:00 INF] () Handling request CalculatePriceQuery: {"ServiceId":"f9d86e49-7010-489c-9752-5d17f63de917","StartDate":"2026-04-12T00:00:00.0000000Z","EndDate":"2026-04-14T00:00:00.0000000Z","$type":"CalculatePriceQuery"}
+[2026-04-07 07:29:07.060 +02:00 INF] () Handled request CalculatePriceQuery
+[2026-04-07 07:29:07.060 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 07:29:07.061 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 07:29:07.061 +02:00 INF] () Saved 1 entities to in-memory store.
+[2026-04-07 07:29:07.062 +02:00 INF] () Saved 1 entities to in-memory store.

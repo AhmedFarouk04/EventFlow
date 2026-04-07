@@ -1,0 +1,9 @@
+{
+  "Availability.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Availability\\API",
+  "Availability.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Availability\\Application",
+  "Availability.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Availability\\Contracts",
+  "Availability.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Availability\\Domain",
+  "Availability.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Availability\\Infrastructure",
+  "BuildingBlocks, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks",
+  "Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Contracts"
+}

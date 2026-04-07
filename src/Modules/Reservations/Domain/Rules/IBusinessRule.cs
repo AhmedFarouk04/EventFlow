@@ -1,7 +1,7 @@
-﻿namespace EventDrivenBookingPlatform.Modules.Reservations.Domain.Rules;
+namespace EventDrivenBookingPlatform.Modules.Reservations.Domain.Rules;
 
 public interface IBusinessRule
 {
-    string Message { get; }
     bool IsBroken();
+    string Message { get; }
 }

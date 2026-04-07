@@ -1,12 +1,12 @@
-﻿using EventDrivenBookingPlatform.BuildingBlocks.SharedKernel;
-using EventDrivenBookingPlatform.Modules.Reservations.Domain.Aggregates;
-using EventDrivenBookingPlatform.Modules.Reservations.Domain.ValueObjects;
 using EventDrivenBookingPlatform.Modules.Reservations.Application.Interfaces;
+using EventDrivenBookingPlatform.Modules.Reservations.Domain.Aggregates;
+using EventDrivenBookingPlatform.Modules.Reservations.Domain.Rules;
+using EventDrivenBookingPlatform.Modules.Reservations.Domain.ValueObjects;
 using MediatR;
 
 namespace EventDrivenBookingPlatform.Modules.Reservations.Application.Commands.CreateReservation;
 
-public class CreateReservationHandler : IRequestHandler<CreateReservationCommand, Result<Guid>>
+public class CreateReservationHandler : IRequestHandler<CreateReservationCommand, Guid>
 {
     private readonly IReservationRepository _reservationRepository;
 
@@ -15,46 +15,43 @@ public class CreateReservationHandler : IRequestHandler<CreateReservationCommand
         _reservationRepository = reservationRepository;
     }
 
-    public async Task<Result<Guid>> Handle(CreateReservationCommand request, CancellationToken cancellationToken)
+    public async Task<Guid> Handle(CreateReservationCommand request, CancellationToken cancellationToken)
     {
-        // 1. Create and Validate Value Objects
-        var customerInfoResult = CustomerInfo.Create(
-            request.FullName, request.Email, request.PhoneNumber, request.Nationality, request.PassportNumber, request.IsDomestic);
-        if (customerInfoResult.IsFailure) return Result<Guid>.Failure(customerInfoResult.Error);
+        var reservationId = ReservationId.New();
+        var customerId = new CustomerId(request.CustomerId);
+        var serviceId = new ServiceId(request.ServiceId);
+        var dateRange = new DateRange(request.StartDate, request.EndDate);
 
-        var tripDetailsResult = TripDetails.Create(
-            request.TripId, request.TripName, request.Destination, request.Duration);
-        if (tripDetailsResult.IsFailure) return Result<Guid>.Failure(tripDetailsResult.Error);
+        var hasOverlap = await _reservationRepository.HasOverlapAsync(customerId, dateRange, cancellationToken);
+        var overlapRule = new ReservationCannotOverlapRule(hasOverlap, dateRange);
+        if (overlapRule.IsBroken())
+        {
+            throw new InvalidOperationException(overlapRule.Message);
+        }
 
-        var priceDetailsResult = PriceDetails.Create(
-            request.BasePrice, request.Discounts, request.Currency);
-        if (priceDetailsResult.IsFailure) return Result<Guid>.Failure(priceDetailsResult.Error);
+        var createResult = Reservation.Create(reservationId, customerId, serviceId, dateRange);
+        if (createResult.IsFailure)
+        {
+            throw new InvalidOperationException(createResult.Error);
+        }
 
-        // 2. Business Rule: Check for Overlapping Reservations (Rule R007)
-        var isOverlapping = await _reservationRepository.IsOverlappingAsync(
-            request.Email, request.CheckInDate, request.CheckOutDate, cancellationToken);
+        var reservation = createResult.Value;
 
-        if (isOverlapping)
-            return Result<Guid>.Failure("Customer already has a reservation during these dates.");
+        if (request.Items is not null)
+        {
+            foreach (var item in request.Items)
+            {
+                var addItemResult = reservation.AddItem(item.Name, item.Quantity, item.UnitPrice);
+                if (addItemResult.IsFailure)
+                {
+                    throw new InvalidOperationException(addItemResult.Error);
+                }
+            }
+        }
 
-        // 3. Create Reservation Aggregate
-        var reservationResult = Reservation.Create(
-            customerInfoResult.Value,
-            tripDetailsResult.Value,
-            priceDetailsResult.Value,
-            request.CheckInDate,
-            request.CheckOutDate,
-            request.NumberOfGuests,
-            request.SpecialRequests,
-            DateTime.UtcNow);
-
-        if (reservationResult.IsFailure) return Result<Guid>.Failure(reservationResult.Error);
-
-        // 4. Save to Database
-        await _reservationRepository.AddAsync(reservationResult.Value, cancellationToken);
+        await _reservationRepository.AddAsync(reservation, cancellationToken);
         await _reservationRepository.SaveChangesAsync(cancellationToken);
 
-        // Return the created Reservation ID
-        return Result<Guid>.Success(reservationResult.Value.Id);
+        return reservation.Id;
     }
 }

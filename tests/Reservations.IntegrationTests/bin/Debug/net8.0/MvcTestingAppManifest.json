@@ -1,0 +1,23 @@
+{
+  "API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\API",
+  "Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Application",
+  "Audit.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Audit\\Application",
+  "Audit.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Audit\\Infrastructure",
+  "Availability.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Availability\\Application",
+  "Availability.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Availability\\Contracts",
+  "Availability.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Availability\\Domain",
+  "Availability.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Availability\\Infrastructure",
+  "BuildingBlocks, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\BuildingBlocks",
+  "Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Contracts",
+  "Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Domain",
+  "Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Reservations\\Infrastructure",
+  "Notifications.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Notifications\\Application",
+  "Notifications.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Notifications\\Infrastructure",
+  "Pricing.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Pricing\\Application",
+  "Pricing.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Pricing\\Contracts",
+  "Pricing.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Pricing\\Domain",
+  "Pricing.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Pricing\\Infrastructure",
+  "Users.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Users\\Application",
+  "Users.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Users\\Domain",
+  "Users.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\ahmed\\Downloads\\My-Github\\EventDriven\\EventDrivenBookingPlatform\\src\\Modules\\Users\\Infrastructure"
+}

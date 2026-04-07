@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="coverlet.collector" Version="6.0.2" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.12.0" />
+    <PackageReference Include="NetArchTest.Rules" Version="1.3.2" />
+    <PackageReference Include="xunit" Version="2.9.2" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Modules\Availability\API\Availability.API.csproj" />
+    <ProjectReference Include="..\..\src\Modules\Availability\Domain\Availability.Domain.csproj" />
+    <ProjectReference Include="..\..\src\Modules\Availability\Infrastructure\Availability.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\src\Modules\Reservations\API\API.csproj" />
+    <ProjectReference Include="..\..\src\Modules\Reservations\Application\Application.csproj" />
+    <ProjectReference Include="..\..\src\Modules\Reservations\Domain\Domain.csproj" />
+    <ProjectReference Include="..\..\src\Modules\Reservations\Infrastructure\Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Xunit" />
+  </ItemGroup>
+
+</Project>
